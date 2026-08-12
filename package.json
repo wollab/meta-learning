@@ -10,6 +10,7 @@
     "sync:data": "node scripts/sync-data.mjs",
     "validate:data": "node scripts/validate-data.mjs",
     "build": "npm run sync:data && npm run validate:data && astro check && astro build && node scripts/validate-links.mjs",
+    "build:pages": "npm run validate:data && astro check && astro build && node scripts/validate-links.mjs",
     "preview": "astro preview",
     "preview:lan": "astro preview --host 0.0.0.0 --port 4328"
   },

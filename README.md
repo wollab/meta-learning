@@ -64,7 +64,7 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/export-brand-assets.ps1
 npm run build
 ```
 
-คำสั่ง build จะ sync ข้อมูล ตรวจ public snapshot เรียก Astro check และสร้าง static site ตามลำดับ GitHub Pages build ใช้ `BASE_PATH=/meta-learning/` ผ่าน workflow ใน `.github/workflows/deploy-pages.yml`
+คำสั่ง `npm run build` จะ sync ข้อมูลจาก canonical KB ก่อน ตรวจ public snapshot เรียก Astro check และสร้าง static site ตามลำดับ ส่วน GitHub Pages ใช้ `npm run build:pages` กับ snapshot ที่ commit แล้ว เพราะ GitHub runner ไม่มี canonical KB ในเครื่องเรา
 
 ## GitHub publish
 
