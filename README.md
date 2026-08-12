@@ -2,6 +2,9 @@
 
 เว็บ Astro สำหรับอ่าน public snapshot ของคลังภาษาไทยว่าด้วยประวัติศาสตร์แนวคิดการเรียนรู้โลก ภายใต้ชื่อ public brand: Meta Learning — มาเรียนรู้ว่าเราเรียนรู้กันอย่างไร
 
+Live site: `https://wollab.github.io/meta-learning/`
+Repository: `https://github.com/wollab/meta-learning`
+
 ## Current Experience
 
 ระบบภาพแบบ WoL ที่อนุมัติแล้วถูกนำมาใช้ในสามเส้นทางหลัก:
@@ -61,18 +64,15 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/export-brand-assets.ps1
 npm run build
 ```
 
-คำสั่ง build จะ sync ข้อมูล ตรวจ public snapshot เรียก Astro check และสร้าง static site ตามลำดับ การ deploy และ social publishing อยู่นอกคำสั่งนี้
+คำสั่ง build จะ sync ข้อมูล ตรวจ public snapshot เรียก Astro check และสร้าง static site ตามลำดับ GitHub Pages build ใช้ `BASE_PATH=/meta-learning/` ผ่าน workflow ใน `.github/workflows/deploy-pages.yml`
 
 ## GitHub publish
 
-โปรเจกต์นี้เป็น Git repo แยกของตัวเองแล้ว ใช้เครื่องมือกลางใน workspace หลัง `gh auth login` สำเร็จ:
+โปรเจกต์นี้เป็น Git repo แยกของตัวเองและ push ไป `wollab/meta-learning` แล้ว ใช้เครื่องมือกลางใน workspace สำหรับ push ซ้ำหลังแก้เว็บ:
 
 ```powershell
 pwsh -NoProfile -File C:\Users\moren\OneDrive\Desktop\Work\Codex-AI\01_Agent_Ops\github-web-publish\publish-web.ps1 `
   -ProjectRoot "C:\Users\moren\OneDrive\Desktop\Work\Codex-AI\02_Programs\04_Experimental\Global-Learning-Theories-History-Web" `
-  -CreateRemote `
-  -RepoName "meta-learning" `
-  -Visibility private `
   -CommitMessage "Update Meta Learning prototype" `
   -Push
 ```

@@ -5,6 +5,10 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const htmlFiles = [];
+const rawBasePath = process.env.BASE_PATH || '';
+const basePath = rawBasePath && rawBasePath !== '/'
+  ? `/${rawBasePath.replace(/^\/+|\/+$/g, '')}/`
+  : '/';
 
 const walk = (dir) => {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -24,9 +28,12 @@ for (const file of htmlFiles) {
     if (/^(https?:|mailto:|tel:|data:|#|javascript:)/.test(rawHref)) continue;
     const href = rawHref.split('#')[0].split('?')[0];
     if (!href) continue;
-    const candidate = href.startsWith('/')
-      ? path.join(dist, href.replace(/^\/+/, ''))
-      : path.resolve(path.dirname(file), href);
+    const normalizedHref = href.startsWith(basePath) && basePath !== '/'
+      ? `/${href.slice(basePath.length)}`
+      : href;
+    const candidate = normalizedHref.startsWith('/')
+      ? path.join(dist, normalizedHref.replace(/^\/+/, ''))
+      : path.resolve(path.dirname(file), normalizedHref);
     const options = path.extname(candidate) ? [candidate] : [candidate, `${candidate}.html`, path.join(candidate, 'index.html')];
     if (!options.some((item) => fs.existsSync(item))) {
       broken.push(`${path.relative(dist, file)} -> ${rawHref}`);
