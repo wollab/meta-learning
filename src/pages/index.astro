@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TheoryCard from '../components/TheoryCard.astro';
 import { archive } from '../data/theories';
-import { ArrowRight, BookOpen, Clock3, Compass, GitFork, Search, ShieldCheck, Users } from 'lucide-astro';
+import { ArrowRight, BookOpen, Clock3, Compass, GitFork, Search, ShieldCheck, Sparkles, Users } from 'lucide-astro';
 
 const base = import.meta.env.BASE_URL;
 const featured = ['lt-skinner', 'lt-piaget', 'lt-vygotsky', 'lt-bandura']
@@ -81,6 +81,7 @@ const questions = [
       <a href={`${base}paths/`}><Compass /><span><strong>เริ่มจากเป้าหมายของฉัน</strong><small>เด็ก ผู้ใหญ่ การทำงาน พัฒนาตนเอง และโจทย์การเรียนรู้อื่น</small></span><ArrowRight /></a>
       <a href={`${base}timeline/`}><Clock3 /><span><strong>เดินตามเส้นเวลา</strong><small>ดูว่าความคิดแต่ละสายเกิดและเปลี่ยนอย่างไร</small></span><ArrowRight /></a>
       <a href={`${base}compare/`}><GitFork /><span><strong>ลองเทียบคำอธิบาย</strong><small>วางแนวคิด 3 แบบบนสถานการณ์เดียวกัน</small></span><ArrowRight /></a>
+      <a href={`${base}tools/`}><Sparkles /><span><strong>ใช้คู่กับเครื่องมือ WoL</strong><small>เริ่มจาก Learning Move สะท้อนด้วย Tarot แล้วออกแบบ outcome ต่อด้วย Wizard Hat</small></span><ArrowRight /></a>
       <a href={`${base}theories/`}><BookOpen /><span><strong>เปิดคลังแนวคิด</strong><small>ค้นตามตระกูล ช่วงเวลา และชนิดของแนวคิด</small></span><ArrowRight /></a>
       <a href={`${base}method/`}><ShieldCheck /><span><strong>อ่านสถานะหลักฐาน</strong><small>แยกอิทธิพลทางประวัติศาสตร์ออกจากหลักฐานปัจจุบัน</small></span><ArrowRight /></a>
       <a href={`${base}people/`}><Users /><span><strong>สำรวจผู้คนและชุมชน</strong><small>ใช้รายชื่อเป็นทางเข้าหาผลงาน ไม่ลดประวัติศาสตร์เหลือคนเดียว</small></span><ArrowRight /></a>

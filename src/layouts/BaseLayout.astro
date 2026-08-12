@@ -10,6 +10,7 @@ import {
   Menu,
   Search,
   Scale,
+  Sparkles,
   X,
 } from 'lucide-astro';
 
@@ -25,6 +26,7 @@ const nav = [
   ['timeline/', 'เส้นเวลา', Clock3],
   ['map/', 'ความสัมพันธ์', GitFork],
   ['compare/', 'เปรียบเทียบ', Scale],
+  ['tools/', 'เครื่องมือ', Sparkles],
   ['sources/', 'แหล่งข้อมูล', Search],
 ];
 ---
@@ -71,6 +73,7 @@ const nav = [
         <a href={url('contexts/')}>บริบทโลก</a>
         <a href={url('gaps/')}>เรื่องที่ชวนค้นต่อ</a>
         <a href={url('method/')}>วิธีอ่านหลักฐาน</a>
+        <a href={url('tools/')}>เครื่องมือ WoL</a>
       </div>
     </footer>
     <script is:inline>

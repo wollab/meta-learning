@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ArrowRight, BookOpen, Compass, Sparkles, Wand2 } from 'lucide-astro';
+
+const base = import.meta.env.BASE_URL;
+const tools = [
+  {
+    title: '9 Learning Angles',
+    eyebrow: 'เริ่มจากตัวเอง',
+    detail: 'ตอบคำถามสั้น ๆ เพื่อเห็น Learning Move ที่กำลังใช้บ่อย และมุมที่อยากฝึกเพิ่ม',
+    href: 'https://wollab.github.io/WoL_GameLab/9-learning-angles/',
+    icon: Compass,
+  },
+  {
+    title: 'Meta Learning',
+    eyebrow: 'อ่านรากแนวคิด',
+    detail: 'ใช้ผลหรือคำถามของตัวเองเป็นทางเข้า แล้วอ่านประวัติศาสตร์ แนวคิด และหลักฐานที่เกี่ยวข้อง',
+    href: `${base}paths/`,
+    icon: BookOpen,
+  },
+  {
+    title: 'Tarot of Learning',
+    eyebrow: 'สะท้อนคำถามวันนี้',
+    detail: 'เปิดไพ่เพื่อเปลี่ยนความกังวลหรือเป้าหมายให้เป็นคำถามเรียนรู้ที่จับต้องได้',
+    href: 'https://wollab.github.io/WoL_Tarot_of_Learning/',
+    icon: Sparkles,
+  },
+  {
+    title: 'Wizard Hat — Learning Outcome',
+    eyebrow: 'แปลงเป็น outcome',
+    detail: 'ใช้เมื่ออยากออกแบบกิจกรรม เกม หรือ workshop แล้วประเมินว่า deck/กลไกน่าจะฝึกทักษะอะไร',
+    href: 'https://wollab.github.io/WizardHat_LearningOutcome/',
+    icon: Wand2,
+  },
+];
+---
+
+<BaseLayout
+  title="Meta Learning | เครื่องมือ WoL"
+  description="ทางเข้าเครื่องมือ WoL สำหรับเริ่มจากตัวเอง อ่านทฤษฎี สะท้อนคำถาม และออกแบบ learning outcome"
+>
+  <section class="play-section">
+    <div class="section-title playful-title">
+      <div>
+        <p class="eyebrow">WoL Learning Tools</p>
+        <h1>เลือกทางเข้าที่ตรงกับเป้าหมายตอนนี้</h1>
+      </div>
+      <p>ไม่ต้องเริ่มจากทฤษฎีเสมอไป เริ่มจากตัวเอง โจทย์วันนี้ หรือกิจกรรมที่อยากออกแบบ แล้วค่อยย้อนกลับมาอ่านแนวคิดที่เกี่ยวข้อง</p>
+    </div>
+
+    <div class="journey-list">
+      {tools.map(({ title, eyebrow, detail, href, icon: Icon }) => (
+        <a href={href}>
+          <Icon />
+          <span>
+            <strong>{title}</strong>
+            <small>{eyebrow} · {detail}</small>
+          </span>
+          <ArrowRight />
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="play-section">
+    <div class="section-title playful-title">
+      <div>
+        <p class="eyebrow">วิธีใช้เป็นวงจร</p>
+        <h2>จาก “ฉันเรียนรู้อย่างไร” ไปสู่ “ฉันจะออกแบบการเรียนรู้อย่างไร”</h2>
+      </div>
+    </div>
+    <div class="journey-list">
+      <a href="https://wollab.github.io/WoL_GameLab/9-learning-angles/">
+        <Compass />
+        <span><strong>1. รู้จัก Learning Move ของตัวเอง</strong><small>เห็นจุดแข็งและมุมที่ยังอยากฝึก โดยไม่ตีตราว่าเป็นบุคลิกถาวร</small></span>
+        <ArrowRight />
+      </a>
+      <a href={`${base}paths/`}>
+        <BookOpen />
+        <span><strong>2. อ่านแนวคิดที่ตอบโจทย์</strong><small>เลือกเส้นทางเด็ก ผู้ใหญ่ การทำงาน การพัฒนาตนเอง หรือการออกแบบการสอน</small></span>
+        <ArrowRight />
+      </a>
+      <a href="https://wollab.github.io/WoL_Tarot_of_Learning/">
+        <Sparkles />
+        <span><strong>3. ตั้งคำถามสะท้อนตัวเอง</strong><small>ใช้ไพ่เป็น prompt เพื่อมองสถานการณ์เดิมด้วยคำถามใหม่</small></span>
+        <ArrowRight />
+      </a>
+      <a href="https://wollab.github.io/WizardHat_LearningOutcome/">
+        <Wand2 />
+        <span><strong>4. ทดลองออกแบบ outcome</strong><small>อ่านผลเป็นสมมติฐานจากกลไกและพฤติกรรมที่กิจกรรมเรียกร้อง แล้วนำไปทดสอบกับผู้เรียนจริง</small></span>
+        <ArrowRight />
+      </a>
+    </div>
+  </section>
+</BaseLayout>
