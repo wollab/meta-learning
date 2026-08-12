@@ -63,6 +63,20 @@ npm run build
 
 คำสั่ง build จะ sync ข้อมูล ตรวจ public snapshot เรียก Astro check และสร้าง static site ตามลำดับ การ deploy และ social publishing อยู่นอกคำสั่งนี้
 
+## GitHub publish
+
+โปรเจกต์นี้เป็น Git repo แยกของตัวเองแล้ว ใช้เครื่องมือกลางใน workspace หลัง `gh auth login` สำเร็จ:
+
+```powershell
+pwsh -NoProfile -File C:\Users\moren\OneDrive\Desktop\Work\Codex-AI\01_Agent_Ops\github-web-publish\publish-web.ps1 `
+  -ProjectRoot "C:\Users\moren\OneDrive\Desktop\Work\Codex-AI\02_Programs\04_Experimental\Global-Learning-Theories-History-Web" `
+  -CreateRemote `
+  -RepoName "meta-learning" `
+  -Visibility private `
+  -CommitMessage "Update Meta Learning prototype" `
+  -Push
+```
+
 ## Routes
 
 - `/theories/`, `/theories/[slug]/`
