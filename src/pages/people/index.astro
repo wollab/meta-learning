@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';import PageIntro from '../../components/PageIntro.astro';import {archive,byId} from '../../data/theories';import {ArrowUpRight} from 'lucide-astro';const base=import.meta.env.BASE_URL;
+---
+<BaseLayout title="ผู้คนและชุมชนทางความคิด | Meta Learning"><div class="page-shell"><PageIntro eyebrow="More than a great-person timeline" title="ผู้คนและชุมชนทางความคิด" lead="รายชื่อนี้ใช้เป็นทางเข้าหาผลงาน ไม่ได้หมายความว่าทฤษฎีเกิดจากบุคคลเดียวโดยปราศจากผู้ร่วมงาน สถาบัน ผู้เข้าร่วมวิจัย และบริบทสังคม"/><div class="people-grid">{archive.people.map(person=><article><div class="initial">{person.name.split(' ').map(x=>x[0]).slice(0,2).join('')}</div><h2>{person.name}</h2><div>{person.theoryIds.map(id=>{const item=byId.get(id);return <a href={`${base}theories/${item?.slug}/`}>{item?.titleTh}<ArrowUpRight/></a>})}</div></article>)}</div></div></BaseLayout>

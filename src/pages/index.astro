@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TheoryCard from '../components/TheoryCard.astro';
+import { archive } from '../data/theories';
+import { ArrowRight, BookOpen, Clock3, Compass, GitFork, Search, ShieldCheck, Users } from 'lucide-astro';
+
+const base = import.meta.env.BASE_URL;
+const featured = ['lt-skinner', 'lt-piaget', 'lt-vygotsky', 'lt-bandura']
+  .map((id) => archive.theories.find((item) => item.id === id))
+  .filter(Boolean);
+const questions = [
+  {
+    number: '01',
+    title: 'ทำไมการฝึกบางแบบช่วยให้จำ แต่บางแบบทำให้หมดแรง?',
+    detail: 'เทียบการเสริมแรง การเรียกคืน และการกำกับตนเอง',
+    ids: 'lt-skinner,lt-retrieval,lt-srl',
+    tone: 'turquoise',
+  },
+  {
+    number: '02',
+    title: 'เราสร้างความเข้าใจใหม่จากประสบการณ์เดิมได้อย่างไร?',
+    detail: 'ดูพัฒนาการ การเรียนรู้อย่างมีความหมาย และการสร้างชิ้นงาน',
+    ids: 'lt-piaget,lt-ausubel,lt-constructionism',
+    tone: 'yellow',
+  },
+  {
+    number: '03',
+    title: 'การเรียนรู้ร่วมกับผู้อื่นช่วยให้เราเก่งขึ้นจริงหรือ?',
+    detail: 'สำรวจการช่วยเหลือ แบบอย่าง และชุมชนนักปฏิบัติ',
+    ids: 'lt-vygotsky,lt-bandura,lt-community-practice',
+    tone: 'violet',
+  },
+];
+---
+
+<BaseLayout title="Meta Learning | มาเรียนรู้ว่าเราเรียนรู้กันอย่างไร">
+  <section class="question-hero">
+    <div class="question-copy">
+      <p class="play-note">สวัสดี นักสำรวจ!</p>
+      <h1>Meta Learning</h1>
+      <p class="hero-lead">เริ่มจากคำถามใกล้ตัว แล้วดูว่าแนวคิดต่างยุคต่างบริบทให้คำอธิบายเหมือนหรือต่างกันตรงไหน</p>
+      <div class="question-list" aria-label="เลือกคำถามเพื่อเริ่มสำรวจ">
+        {questions.map((question) => (
+          <a class={`question-row ${question.tone}`} href={`${base}compare/?ids=${question.ids}`}>
+            <span>{question.number}</span>
+            <strong>{question.title}<small>{question.detail}</small></strong>
+            <ArrowRight aria-hidden="true" />
+          </a>
+        ))}
+      </div>
+      <form class="home-search" action={`${base}theories/`} method="get">
+        <Search size={20} />
+        <label class="sr-only" for="home-query">ค้นหาแนวคิด</label>
+        <input id="home-query" name="q" type="search" placeholder="ค้นหาแนวคิด กรอบคิด หรือผู้คิดค้น..." />
+        <button type="submit">ค้นหา</button>
+      </form>
+    </div>
+    <div class="question-map">
+      <img src={`${base}images/doodles/learning-map.png`} alt="ภาพวาดแสดงวิธีเรียนรู้ผ่านการฝึก การสร้างความเข้าใจ การร่วมมือ และการคิดทบทวน" />
+      <div class="map-labels" aria-label="ตัวอย่างกลุ่มแนวคิด">
+        <a href={`${base}theories/?family=behavioral`}>พฤติกรรม</a>
+        <a href={`${base}theories/?family=cognitive`}>การรู้คิด</a>
+        <a href={`${base}theories/?family=social-cultural`}>สังคมและวัฒนธรรม</a>
+      </div>
+      <a class="text-action" href={`${base}map/`}>เปิดแผนที่ความสัมพันธ์ <ArrowRight /></a>
+    </div>
+  </section>
+
+  <section class="quick-stats" aria-label="ขนาดคลังข้อมูล">
+    <span><strong>{archive.theories.length}</strong> แนวคิดและกรอบ</span>
+    <span><strong>{archive.relationships.length}</strong> ความสัมพันธ์</span>
+    <span><strong>{archive.sources.length}</strong> แหล่งที่ถูกอ้างถึง</span>
+  </section>
+
+  <section class="play-section journey-section">
+    <div class="section-title playful-title">
+      <div><p class="eyebrow">เลือกวิธีสำรวจ</p><h2>ดูเรื่องเดียวกันได้หลายมุม</h2></div>
+      <p>เริ่มจากสิ่งที่คุณอยากเข้าใจก่อน ไม่จำเป็นต้องอ่านตามลำดับ</p>
+    </div>
+    <div class="journey-list">
+      <a href={`${base}paths/`}><Compass /><span><strong>เริ่มจากเป้าหมายของฉัน</strong><small>เด็ก ผู้ใหญ่ การทำงาน พัฒนาตนเอง และโจทย์การเรียนรู้อื่น</small></span><ArrowRight /></a>
+      <a href={`${base}timeline/`}><Clock3 /><span><strong>เดินตามเส้นเวลา</strong><small>ดูว่าความคิดแต่ละสายเกิดและเปลี่ยนอย่างไร</small></span><ArrowRight /></a>
+      <a href={`${base}compare/`}><GitFork /><span><strong>ลองเทียบคำอธิบาย</strong><small>วางแนวคิด 3 แบบบนสถานการณ์เดียวกัน</small></span><ArrowRight /></a>
+      <a href={`${base}theories/`}><BookOpen /><span><strong>เปิดคลังแนวคิด</strong><small>ค้นตามตระกูล ช่วงเวลา และชนิดของแนวคิด</small></span><ArrowRight /></a>
+      <a href={`${base}method/`}><ShieldCheck /><span><strong>อ่านสถานะหลักฐาน</strong><small>แยกอิทธิพลทางประวัติศาสตร์ออกจากหลักฐานปัจจุบัน</small></span><ArrowRight /></a>
+      <a href={`${base}people/`}><Users /><span><strong>สำรวจผู้คนและชุมชน</strong><small>ใช้รายชื่อเป็นทางเข้าหาผลงาน ไม่ลดประวัติศาสตร์เหลือคนเดียว</small></span><ArrowRight /></a>
+    </div>
+  </section>
+
+  <section class="play-section featured-section">
+    <div class="section-title playful-title">
+      <div><p class="eyebrow">จุดเริ่มต้นที่คุ้นชื่อ</p><h2>ลองเปิดดูหนึ่งแนวคิด</h2></div>
+      <a href={`${base}theories/`}>ดูทั้งหมด <ArrowRight /></a>
+    </div>
+    <div class="card-grid">{featured.map((item: any) => <TheoryCard item={item} />)}</div>
+  </section>
+</BaseLayout>

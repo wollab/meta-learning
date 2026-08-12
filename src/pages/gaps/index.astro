@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import {archive,familyLabels} from '../../data/theories';
+
+const counts=Object.entries(familyLabels).map(([id,label])=>({id,label,count:archive.theories.filter(x=>x.family===id).length})).sort((a,b)=>a.count-b.count);
+const max=Math.max(...counts.map(x=>x.count));
+const regionalIds=['lt-ubuntu','lt-nyerere-self-reliance','lt-nai-talim','lt-tagore-education','lt-among-system','lt-ibn-khaldun-pedagogy','lt-lopi','lt-sankofa-pedagogy'];
+const regionalRecords=archive.theories.filter(item=>regionalIds.includes(item.id));
+const batchSources=archive.sources.filter((source:any)=>source.addedBatch==='2026-08-12-regional-evidence');
+---
+<BaseLayout title="เรื่องที่ชวนค้นต่อ | Meta Learning">
+  <div class="page-shell">
+    <PageIntro eyebrow="Coverage is not completeness" title="สิ่งที่เพิ่มแล้ว และช่องว่างที่ยังอยู่" lead="รอบนี้เพิ่มทางเข้าจากแอฟริกา เอเชียใต้ เอเชียตะวันออกเฉียงใต้ ละตินอเมริกา และโลกอาหรับ พร้อมแยกชัดว่าอะไรเป็นประวัติความคิด อะไรมีหลักฐานปัจจุบัน และอะไรยังต้องทดสอบต่อ"/>
+    <div class="gap-layout">
+      <section><h2>สัดส่วนตามตระกูลในคลังปัจจุบัน</h2><div class="coverage-bars">{counts.map(x=><div><span>{x.label}</span><div><i style={`width:${Math.max(5,x.count/max*100)}%`}></i></div><strong>{x.count}</strong></div>)}</div></section>
+      <section><h2>ความคืบหน้ารอบภูมิภาค</h2><p><strong>{regionalRecords.length} ระเบียน</strong> และ <strong>{batchSources.length} แหล่งใหม่</strong> ถูกเพิ่มจากฐานวิจัยหลัก</p><ul class="question-list">{regionalRecords.map(item=><li><a href={`${import.meta.env.BASE_URL}theories/${item.slug}/`}>{item.titleTh}</a> · {item.origin}</li>)}</ul></section>
+    </div>
+    <section class="gap-callout"><strong>จำนวนไม่ใช่คะแนนความสำคัญ</strong><p>ระเบียนใหม่ทำให้แผนที่สมดุลขึ้น แต่ยังไม่แทนความหลากหลายภายในแต่ละภูมิภาค หลักฐานของ Ubuntu, Nai Talim, Tagore, Nyerere และ Sankofa ยังหนักไปทางปรัชญา ประวัติศาสตร์ หรือกรณีศึกษา มากกว่างานเปรียบเทียบเชิงสาเหตุ</p></section>
+    <section class="prose"><h2>คำถามที่ยังเปิด</h2><ol class="question-list"><li>จะเพิ่มเสียงจากแอฟริกาฝรั่งเศส โลกอาหรับร่วมสมัย เอเชียกลาง และหมู่เกาะแปซิฟิกโดยไม่ทำให้เป็นตัวแทนภูมิภาคทั้งก้อนได้อย่างไร</li><li>แนวคิดเชิงสัมพันธ์และชุมชนใดมีผลลัพธ์ผู้เรียนที่วัดซ้ำได้ และผลเกิดภายใต้เงื่อนไขใด</li><li>งานแปลใดช่วยตรวจคำต้นฉบับโดยไม่ย้ายศัพท์จิตวิทยาสมัยใหม่กลับไปครอบงานเก่า</li><li>relationship ใดควรยกระดับจากความมั่นใจต่ำด้วยงานประวัติศาสตร์การรับช่วงโดยตรง</li></ol></section>
+  </div>
+</BaseLayout>

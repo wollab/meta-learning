@@ -1,0 +1,7 @@
+import data from './theories.json';
+export type Theory=(typeof data.theories)[number];export const archive=data;
+export const kindLabels:Record<string,string>={philosophy:'ปรัชญา','intellectual-tradition':'ธรรมเนียมทางความคิด','learning-theory':'ทฤษฎีการเรียนรู้',model:'แบบจำลอง',framework:'กรอบออกแบบ',taxonomy:'ระบบจำแนก',pedagogy:'แนวการสอน','learning-principle':'หลักการเรียนรู้','contested-hypothesis':'ข้อเสนอที่มีข้อโต้แย้ง'};
+export const familyLabels:Record<string,string>={'philosophical-roots':'รากทางปรัชญา',behavioral:'พฤติกรรม',cognitive:'การรู้คิด',developmental:'พัฒนาการ','social-cultural':'สังคมและวัฒนธรรม',humanistic:'มนุษยนิยม',critical:'เชิงวิพากษ์','adult-learning':'ผู้ใหญ่และการเปลี่ยนแปลง','motivation-self-regulation':'แรงจูงใจและการกำกับตน','design-frameworks':'กรอบออกแบบ','networked-learning':'เครือข่าย','contested-popular-models':'แบบจำลองยอดนิยมที่ต้องระวัง'};
+export const periodLabels:Record<string,string>={'roots-before-1600':'รากความคิดก่อน ค.ศ. 1600','1600-1850':'ค.ศ. 1600-1850','1850-1913':'ค.ศ. 1850-1913','1913-1956':'ค.ศ. 1913-1956','1956-1980':'ค.ศ. 1956-1980','1980-present':'ค.ศ. 1980-ปัจจุบัน'};
+export const relationLabels:Record<string,string>={builds_on:'ต่อยอดจาก',extends:'ขยาย',reacts_against:'โต้กลับ',synthesizes:'สังเคราะห์',runs_parallel_to:'เดินคู่ขนาน',contested_by:'ถูกท้าทายโดย',applied_in:'นำไปใช้ใน'};
+export const byId=new Map(archive.theories.map(x=>[x.id,x]));export const sourceById=new Map(archive.sources.map(x=>[x.id,x]));

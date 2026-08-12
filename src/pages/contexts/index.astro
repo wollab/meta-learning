@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';import PageIntro from '../../components/PageIntro.astro';import {archive,periodLabels} from '../../data/theories';
+---
+<BaseLayout title="บริบทโลก | Meta Learning"><div class="page-shell"><PageIntro eyebrow="Context changes the questions" title="บริบทที่เปลี่ยนมุมมองต่อการเรียนรู้" lead="ห้องทดลอง โรงเรียนมวลชน อุตสาหกรรม ขบวนการสิทธิ คอมพิวเตอร์ และวัฒนธรรมการทบทวนหลักฐาน ล้วนเปลี่ยนคำถามที่นักคิดเห็นว่าสำคัญ"/><div class="context-flow">{archive.worldContexts.map((item,index)=><article><span>{String(index+1).padStart(2,'0')}</span><div><small>{periodLabels[item.period]}</small><h2>{item.title}</h2><p>{item.summary}</p></div></article>)}</div></div></BaseLayout>

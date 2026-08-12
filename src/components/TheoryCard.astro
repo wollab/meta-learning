@@ -1,0 +1,4 @@
+---
+import type {Theory} from '../data/theories';import {ArrowUpRight} from 'lucide-astro';import {familyLabels,kindLabels,periodLabels} from '../data/theories';const {item}=Astro.props as {item:Theory};const base=import.meta.env.BASE_URL;
+---
+<article class="theory-card" data-search={`${item.titleTh} ${item.titleEn} ${item.oneSentence} ${item.people.join(' ')}`.toLowerCase()} data-kind={item.kind} data-family={item.family} data-period={item.period}><div class="card-top"><span>{kindLabels[item.kind]}</span><small>{periodLabels[item.period]}</small></div><h2><a href={`${base}theories/${item.slug}/`}>{item.titleTh}<ArrowUpRight size={18}/></a></h2><p class="english">{item.titleEn}</p><p>{item.oneSentence}</p><div class="card-bottom"><span>{familyLabels[item.family]}</span><small>{item.people.slice(0,2).join(' · ')}</small></div></article>

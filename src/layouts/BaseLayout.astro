@@ -1,0 +1,93 @@
+---
+import '../styles/base.css';
+import '../styles/theory.css';
+import '../styles/playful-theme.css';
+import {
+  BookOpen,
+  Compass,
+  Clock3,
+  GitFork,
+  Menu,
+  Search,
+  Scale,
+  X,
+} from 'lucide-astro';
+
+const {
+  title,
+  description = 'Meta Learning: มาเรียนรู้ว่าเราเรียนรู้กันอย่างไร ผ่านแผนที่แนวคิด หลักฐาน และประวัติศาสตร์การเรียนรู้โลก',
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+const url = (path = '') => `${base}${path.replace(/^\//, '')}`;
+const nav = [
+  ['paths/', 'เริ่มอ่าน', Compass],
+  ['theories/', 'คลังแนวคิด', BookOpen],
+  ['timeline/', 'เส้นเวลา', Clock3],
+  ['map/', 'ความสัมพันธ์', GitFork],
+  ['compare/', 'เปรียบเทียบ', Scale],
+  ['sources/', 'แหล่งข้อมูล', Search],
+];
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#50c2c0" />
+    <link rel="icon" type="image/png" sizes="64x64" href={url('brand/imagegen/favicon-imagegen-64.png')} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <header class="site-header">
+      <a class="brand" href={url()} aria-label="กลับหน้าแรก">
+        <img class="brand-mark" src={url('brand/imagegen/logo-mark-imagegen-512.png')} width="42" height="42" alt="" />
+        <span>
+          <strong>Meta Learning</strong>
+          <small>มาเรียนรู้ว่าเราเรียนรู้กันอย่างไร</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+        <Menu />
+        <X class="close-icon" />
+      </button>
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        {nav.map(([path, label, Icon]) => (
+          <a href={url(path as string)}><Icon size={17} />{label}</a>
+        ))}
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <strong>Meta Learning</strong>
+        <p>มาเรียนรู้ว่าเราเรียนรู้กันอย่างไร ผ่านประวัติศาสตร์ แนวคิด และหลักฐานที่ตรวจย้อนกลับได้</p>
+      </div>
+      <div class="footer-links">
+        <a href={url('paths/')}>เริ่มอ่านตามเป้าหมาย</a>
+        <a href={url('people/')}>ผู้คน</a>
+        <a href={url('contexts/')}>บริบทโลก</a>
+        <a href={url('gaps/')}>เรื่องที่ชวนค้นต่อ</a>
+        <a href={url('method/')}>วิธีอ่านหลักฐาน</a>
+      </div>
+    </footer>
+    <script is:inline>
+      const button = document.querySelector('.menu-button');
+      const nav = document.querySelector('.site-nav');
+      const setMenuOpen = (open) => {
+        button?.setAttribute('aria-expanded', String(open));
+        button?.setAttribute('aria-label', open ? 'ปิดเมนู' : 'เปิดเมนู');
+        nav?.classList.toggle('open', open);
+      };
+      button?.addEventListener('click', () => setMenuOpen(button.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && button?.getAttribute('aria-expanded') === 'true') {
+          setMenuOpen(false);
+          button.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

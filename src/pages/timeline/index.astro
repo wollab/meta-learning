@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { archive, byId, periodLabels, kindLabels } from '../../data/theories';
+import { ArrowRight, ArrowUpRight, Clock3 } from 'lucide-astro';
+
+const base = import.meta.env.BASE_URL;
+const periods = ['roots-before-1600', '1600-1850', '1850-1913', '1913-1956', '1956-1980', '1980-present'];
+const tracks = [
+  {
+    id: 'behavioral',
+    title: 'พฤติกรรมและผลที่ตามมา',
+    color: 'turquoise',
+    records: ['lt-associationism', 'lt-thorndike', 'lt-pavlov', 'lt-watson', 'lt-skinner'],
+  },
+  {
+    id: 'cognitive',
+    title: 'ความคิด ความจำ และความหมาย',
+    color: 'yellow',
+    records: ['lt-locke', 'lt-gestalt', 'lt-piaget', 'lt-information-processing', 'lt-cognitive-load', 'lt-retrieval'],
+  },
+  {
+    id: 'constructive',
+    title: 'ผู้เรียนสร้างความเข้าใจ',
+    color: 'violet',
+    records: ['lt-socratic', 'lt-dewey', 'lt-piaget', 'lt-bruner', 'lt-constructionism'],
+  },
+  {
+    id: 'social',
+    title: 'การเรียนรู้ผ่านสังคมและวัฒนธรรม',
+    color: 'coral',
+    records: ['lt-confucian', 'lt-vygotsky', 'lt-bandura', 'lt-situated', 'lt-community-practice', 'lt-connectivism'],
+  },
+].map((track) => ({ ...track, records: track.records.map((id) => byId.get(id)).filter(Boolean) }));
+---
+
+<BaseLayout title="เส้นเวลาหลายสาย | Meta Learning">
+  <div class="page-shell metro-page">
+    <header class="metro-intro">
+      <div>
+        <p class="play-note">ประวัติศาสตร์ไม่ได้มีรางเดียว</p>
+        <h1>ตามดูเส้นทางของแนวคิด</h1>
+        <p>แนวคิดใหม่ไม่ได้ลบของเดิม และหลายสายเกิดคู่ขนานกันในคนละบริบท เลือกสถานีเพื่ออ่านคำอธิบายและแหล่งข้อมูลของระเบียนนั้น</p>
+      </div>
+      <img src={`${base}images/doodles/theory-timeline.png`} alt="ภาพวาดลำดับวิธีเรียนรู้จากการสนทนา การอ่าน การทดลอง การสร้าง และเครือข่ายดิจิทัล" />
+    </header>
+
+    <section class="metro-orientation" aria-label="วิธีอ่านเส้นเวลา">
+      <Clock3 />
+      <p><strong>อ่านตามช่วงเวลา</strong><span>ตำแหน่งแสดงช่วงกว้างตามหลักฐานในคลัง ไม่ได้อ้างปีเริ่มต้นที่แน่นอน</span></p>
+      <a href="#all-periods">ดูระเบียนทั้งหมด <ArrowRight /></a>
+    </section>
+
+    <div class="metro-scroll" tabindex="0" role="region" aria-label="แผนที่เส้นเวลา เลื่อนซ้ายขวาได้บนจอเล็ก">
+      <div class="metro-map">
+        <div class="metro-periods" aria-hidden="true">
+          <span>ก่อน ค.ศ. 1600</span><span>1600-1850</span><span>1850-1913</span><span>1913-1956</span><span>1956-1980</span><span>1980-ปัจจุบัน</span>
+        </div>
+        {tracks.map((track) => (
+          <section class={`metro-track ${track.color}`} aria-labelledby={`${track.id}-title`}>
+            <h2 id={`${track.id}-title`}>{track.title}</h2>
+            <div class="rail" aria-hidden="true"></div>
+            {periods.map((period, index) => (
+              <div class="track-cell" style={`--column:${index + 2}`}>
+                {track.records.filter((item: any) => item.period === period).map((item: any) => (
+                  <a class="station" href={`${base}theories/${item.slug}/`}>
+                    <span aria-hidden="true"></span>
+                    <strong>{item.titleTh}</strong>
+                    <small>{item.titleEn}</small>
+                  </a>
+                ))}
+              </div>
+            ))}
+          </section>
+        ))}
+      </div>
+    </div>
+
+    <section id="all-periods" class="period-ledger">
+      <div class="section-title playful-title">
+        <div><p class="eyebrow">คลังตามช่วงเวลา</p><h2>ทุกระเบียนในเส้นเวลา</h2></div>
+        <p>รายการเต็มช่วยให้เห็นแนวคิดที่ไม่ได้อยู่ในเส้นทางตัวอย่างด้านบน</p>
+      </div>
+      {periods.map((period, index) => {
+        const items = archive.theories.filter((item) => item.period === period);
+        return (
+          <details open={index === 0}>
+            <summary><span>{String(index + 1).padStart(2, '0')}</span><strong>{periodLabels[period]}</strong><small>{items.length} ระเบียน</small></summary>
+            <div>
+              {items.map((item) => (
+                <a href={`${base}theories/${item.slug}/`}>
+                  <small>{kindLabels[item.kind]}</small><strong>{item.titleTh}</strong><p>{item.oneSentence}</p><ArrowUpRight />
+                </a>
+              ))}
+            </div>
+          </details>
+        );
+      })}
+    </section>
+  </div>
+</BaseLayout>

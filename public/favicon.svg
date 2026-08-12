@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="ตราหลายเส้นทาง">
+  <rect width="128" height="128" rx="24" fill="#fffef8"/>
+  <g fill="none" stroke-linecap="round" stroke-width="14">
+    <path d="M70 19A46 46 0 0 1 109 58" stroke="#50c2c0"/>
+    <path d="M109 70A46 46 0 0 1 70 109" stroke="#f4b321"/>
+    <path d="M58 109A46 46 0 0 1 19 70" stroke="#6e5aa8"/>
+    <path d="M19 58A46 46 0 0 1 58 19" stroke="#2f3338"/>
+  </g>
+  <circle cx="64" cy="14" r="4" fill="#50c2c0"/>
+  <circle cx="114" cy="64" r="4" fill="#f4b321"/>
+  <circle cx="64" cy="114" r="4" fill="#6e5aa8"/>
+  <circle cx="14" cy="64" r="4" fill="#2f3338"/>
+</svg>

@@ -1,0 +1,4965 @@
+{
+  "meta": {
+    "title": "แผนที่ประวัติศาสตร์ทฤษฎีการเรียนรู้โลก",
+    "version": "1.1.0-regional-evidence",
+    "updated": "2026-08-12",
+    "canonicalStatus": "research-source-of-truth",
+    "sourceCount": 128,
+    "theoryCount": 52,
+    "relationshipCount": 48,
+    "editorialNote": "คลังสาธารณะแยกชนิดแนวคิดและสถานะหลักฐาน"
+  },
+  "recordKinds": [
+    "philosophy",
+    "intellectual-tradition",
+    "learning-theory",
+    "model",
+    "framework",
+    "taxonomy",
+    "pedagogy",
+    "learning-principle",
+    "contested-hypothesis"
+  ],
+  "relationshipTypes": [
+    "builds_on",
+    "extends",
+    "reacts_against",
+    "synthesizes",
+    "runs_parallel_to",
+    "contested_by",
+    "applied_in"
+  ],
+  "sources": [
+    {
+      "id": "src-unesco-reimagining-futures",
+      "title": "Reimagining our futures together",
+      "creator": "UNESCO",
+      "publisher": "UNESCO",
+      "year": 2021,
+      "role": "historical-context",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000379707",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use UNESCO bibliographic metadata and short attributed paraphrase.",
+      "locator": "Chapter 1, p. 19, quotation and discussion of Nyerere's Education for Self-Reliance.",
+      "limitations": "Later policy synthesis used for reception and relevance, not an evaluation of Tanzania's programme."
+    },
+    {
+      "id": "src-analects",
+      "title": "The Analects of Confucius",
+      "creator": "MIT Internet Classics Archive",
+      "publisher": "MIT Internet Classics Archive",
+      "year": null,
+      "role": "primary-work",
+      "url": "https://classics.mit.edu/Confucius/analects.html",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-confucius",
+      "title": "Confucius",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2020,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/confucius/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-plato-dialogues",
+      "title": "The Dialogues of Plato",
+      "creator": "Project Gutenberg",
+      "publisher": "Project Gutenberg",
+      "year": null,
+      "role": "primary-work",
+      "url": "https://www.gutenberg.org/ebooks/1656",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-socrates",
+      "title": "Socrates",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2022,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-aristotle-memory",
+      "title": "On Memory and Reminiscence",
+      "creator": "MIT Internet Classics Archive",
+      "publisher": "MIT Internet Classics Archive",
+      "year": null,
+      "role": "primary-work",
+      "url": "https://classics.mit.edu/Aristotle/memory.html",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-associationism",
+      "title": "APA Dictionary: associationism",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/associationism",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-buddha",
+      "title": "Buddha",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2024,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/buddha/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-buddhist-mind",
+      "title": "Mind in Indian Buddhist Philosophy",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2021,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/mind-indian-buddhism/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-al-ghazali",
+      "title": "Al-Ghazali",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2022,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/al-ghazali/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-al-ghazali",
+      "title": "Al-Ghazali",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/al-Ghazali",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-comenius-didactic",
+      "title": "The Great Didactic of John Amos Comenius",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 1907,
+      "role": "primary-work",
+      "url": "https://archive.org/details/greatdidacticofj00come",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-comenius",
+      "title": "John Amos Comenius",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/John-Amos-Comenius",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-locke-essay",
+      "title": "An Essay Concerning Human Understanding",
+      "creator": "Project Gutenberg",
+      "publisher": "Project Gutenberg",
+      "year": null,
+      "role": "primary-work",
+      "url": "https://www.gutenberg.org/ebooks/10615",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-locke",
+      "title": "John Locke",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2020,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/locke/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-rousseau-emile",
+      "title": "Emile",
+      "creator": "Project Gutenberg",
+      "publisher": "Project Gutenberg",
+      "year": null,
+      "role": "primary-work",
+      "url": "https://www.gutenberg.org/ebooks/5427",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-rousseau",
+      "title": "Jean Jacques Rousseau",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2023,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/rousseau/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-herbart-science-education",
+      "title": "The Science of Education",
+      "creator": "Open Library",
+      "publisher": "Open Library",
+      "year": 1895,
+      "role": "primary-work-catalog",
+      "url": "https://openlibrary.org/books/OL7139776M/The_science_of_education",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-herbart",
+      "title": "Johann Friedrich Herbart",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Johann-Friedrich-Herbart",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-dewey-democracy",
+      "title": "Democracy and Education",
+      "creator": "Project Gutenberg",
+      "publisher": "Project Gutenberg",
+      "year": 1916,
+      "role": "primary-work",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sep-dewey",
+      "title": "John Dewey",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "year": 2024,
+      "role": "scholarly-overview",
+      "url": "https://plato.stanford.edu/entries/dewey/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-montessori-method",
+      "title": "The Montessori Method",
+      "creator": "Project Gutenberg",
+      "publisher": "Project Gutenberg",
+      "year": 1912,
+      "role": "primary-work",
+      "url": "https://www.gutenberg.org/ebooks/39863",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-ami-montessori",
+      "title": "Montessori Education",
+      "creator": "Association Montessori Internationale",
+      "publisher": "Association Montessori Internationale",
+      "year": 2025,
+      "role": "practice-guidance",
+      "url": "https://montessori-ami.org/montessori-education",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-thorndike-animal-intelligence",
+      "title": "Animal Intelligence",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 1911,
+      "role": "primary-work",
+      "url": "https://archive.org/details/animalintelligen00thor",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-thorndike",
+      "title": "Edward L. Thorndike",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Edward-L-Thorndike",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-pavlov-lecture",
+      "title": "Nobel Lecture: The Nobel Prize in Physiology or Medicine 1904",
+      "creator": "Nobel Prize",
+      "publisher": "Nobel Prize",
+      "year": 1904,
+      "role": "primary-work",
+      "url": "https://www.nobelprize.org/prizes/medicine/1904/pavlov/lecture/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-classical-conditioning",
+      "title": "APA Dictionary: classical conditioning",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/classical-conditioning",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-watson-manifesto",
+      "title": "Psychology as the Behaviorist Views It",
+      "creator": "Classics in the History of Psychology",
+      "publisher": "Classics in the History of Psychology",
+      "year": 1913,
+      "role": "primary-work",
+      "url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-behaviorism",
+      "title": "APA Dictionary: behaviorism",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/behaviorism",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-skinner-science-human-behavior",
+      "title": "Science and Human Behavior",
+      "creator": "B. F. Skinner Foundation",
+      "publisher": "B. F. Skinner Foundation",
+      "year": 1953,
+      "role": "primary-work-catalog",
+      "url": "https://www.bfskinner.org/publications/books/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-operant-conditioning",
+      "title": "APA Dictionary: operant conditioning",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/operant-conditioning",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-tolman-cognitive-maps",
+      "title": "Cognitive Maps in Rats and Men",
+      "creator": "Classics in the History of Psychology",
+      "publisher": "Classics in the History of Psychology",
+      "year": 1948,
+      "role": "primary-work",
+      "url": "https://psychclassics.yorku.ca/Tolman/Maps/maps.htm",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-tolman",
+      "title": "Edward C. Tolman",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Edward-C-Tolman",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-kohler-apes",
+      "title": "The Mentality of Apes",
+      "creator": "Biodiversity Heritage Library",
+      "publisher": "Biodiversity Heritage Library",
+      "year": 1925,
+      "role": "primary-work",
+      "url": "https://www.biodiversitylibrary.org/item/339020",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-gestalt",
+      "title": "Gestalt psychology",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "scholarly-overview",
+      "url": "https://www.britannica.com/science/Gestalt-psychology",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-piaget-foundation",
+      "title": "Jean Piaget: Archives and works",
+      "creator": "Fondation Jean Piaget",
+      "publisher": "Fondation Jean Piaget",
+      "year": 2025,
+      "role": "primary-work",
+      "url": "https://www.fondationjeanpiaget.ch/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-piaget",
+      "title": "Jean Piaget",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "scholarly-overview",
+      "url": "https://www.britannica.com/biography/Jean-Piaget",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-vygotsky-mind-society",
+      "title": "Mind in Society",
+      "creator": "Harvard University Press",
+      "publisher": "Harvard University Press",
+      "year": 1978,
+      "role": "primary-work",
+      "url": "https://www.hup.harvard.edu/books/9780674576292",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-vygotsky",
+      "title": "L. S. Vygotsky",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/L-S-Vygotsky",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-bruner-discovery",
+      "title": "The Act of Discovery",
+      "creator": "CiNii Research",
+      "publisher": "CiNii Research",
+      "year": 1961,
+      "role": "primary-work-catalog",
+      "url": "https://cir.nii.ac.jp/crid/1573950399875006848?lang=en",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-kirschner-minimal-guidance",
+      "title": "Why Minimal Guidance During Instruction Does Not Work",
+      "creator": "Educational Psychologist",
+      "publisher": "Educational Psychologist",
+      "year": 2006,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1207/s15326985ep4102_1",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-ausubel-organizer",
+      "title": "The Use of Advance Organizers in the Learning and Retention of Meaningful Verbal Material",
+      "creator": "Journal of Educational Psychology",
+      "publisher": "Journal of Educational Psychology",
+      "year": 1960,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1037/h0046669",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-ausubel",
+      "title": "David Ausubel",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/David-Ausubel",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-atkinson-shiffrin",
+      "title": "Human Memory: A Proposed System and Its Control Processes",
+      "creator": "Psychology of Learning and Motivation",
+      "publisher": "Psychology of Learning and Motivation",
+      "year": 1968,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1016/S0079-7421(08)60422-3",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-information-processing",
+      "title": "APA Dictionary: information-processing approach",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/information-processing-approach",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-bartlett-remembering",
+      "title": "Remembering: A Study in Experimental and Social Psychology",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 1932,
+      "role": "primary-work",
+      "url": "https://archive.org/details/rememberingstudy00bart",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-rumelhart-schemata",
+      "title": "Schemata: The Building Blocks of Cognition",
+      "creator": "Center for Human Information Processing",
+      "publisher": "Center for Human Information Processing",
+      "year": 1980,
+      "role": "primary-work",
+      "url": "https://apps.dtic.mil/sti/citations/ADA075396",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sweller-cognitive-load",
+      "title": "Cognitive Load During Problem Solving",
+      "creator": "Cognitive Science",
+      "publisher": "Cognitive Science",
+      "year": 1988,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1207/s15516709cog1202_4",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-springer-cognitive-load",
+      "title": "Cognitive Load Theory",
+      "creator": "Springer",
+      "publisher": "Springer",
+      "year": 2011,
+      "role": "scholarly-overview",
+      "url": "https://doi.org/10.1007/978-1-4419-8126-4",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-mayer-multimedia-book",
+      "title": "Multimedia Learning",
+      "creator": "Cambridge University Press",
+      "publisher": "Cambridge University Press",
+      "year": 2021,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1017/9781316941355",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-mayer-multimedia-principle",
+      "title": "Multimedia Learning: Are We Asking the Right Questions?",
+      "creator": "Educational Psychologist",
+      "publisher": "Educational Psychologist",
+      "year": 1997,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1207/s15326985ep3201_1",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-bandura-bobo",
+      "title": "Transmission of Aggression Through Imitation of Aggressive Models",
+      "creator": "Journal of Abnormal and Social Psychology",
+      "publisher": "Journal of Abnormal and Social Psychology",
+      "year": 1961,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1037/h0045925",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-apa-social-learning",
+      "title": "APA Dictionary: social learning theory",
+      "creator": "American Psychological Association",
+      "publisher": "American Psychological Association",
+      "year": 2018,
+      "role": "scholarly-overview",
+      "url": "https://dictionary.apa.org/social-learning-theory",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-lave-wenger-situated",
+      "title": "Situated Learning",
+      "creator": "Cambridge University Press",
+      "publisher": "Cambridge University Press",
+      "year": 1991,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1017/CBO9780511815355",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-wenger-intro",
+      "title": "Introduction to communities of practice",
+      "creator": "Wenger-Trayner",
+      "publisher": "Wenger-Trayner",
+      "year": 2015,
+      "role": "scholarly-overview",
+      "url": "https://www.wenger-trayner.com/introduction-to-communities-of-practice/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-wenger-communities",
+      "title": "Communities of Practice: Learning, Meaning, and Identity",
+      "creator": "Cambridge University Press",
+      "publisher": "Cambridge University Press",
+      "year": 1998,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1017/CBO9780511803932",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-wenger-trayner-landscape",
+      "title": "Learning in Landscapes of Practice",
+      "creator": "Routledge",
+      "publisher": "Routledge",
+      "year": 2014,
+      "role": "scholarly-overview",
+      "url": "https://www.routledge.com/Learning-in-Landscapes-of-Practice-Boundaries-identity-and-knowledgeability/Wenger-Trayner-Fenton-OCreevy-Hutchinson-Kubiak-Wenger-Trayner/p/book/9781138022195",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-kolb-experiential",
+      "title": "Experiential Learning",
+      "creator": "Prentice-Hall / Google Books",
+      "publisher": "Prentice-Hall / Google Books",
+      "year": 1984,
+      "role": "primary-work-catalog",
+      "url": "https://books.google.com/books/about/Experiential_Learning.html?id=zXruAAAAMAAJ",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-dewey-experience-education",
+      "title": "Experience and Education",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 1938,
+      "role": "historical-context",
+      "url": "https://archive.org/details/experienceeducat00dewe",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-rogers-freedom-learn",
+      "title": "Freedom to Learn",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 1969,
+      "role": "primary-work",
+      "url": "https://archive.org/details/freedomtolearnvi00roge",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-rogers",
+      "title": "Carl Rogers",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Carl-Rogers",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-maslow-motivation",
+      "title": "A Theory of Human Motivation",
+      "creator": "Psychological Review",
+      "publisher": "Psychological Review",
+      "year": 1943,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1037/h0054346",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-maslow",
+      "title": "Abraham Maslow",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Abraham-H-Maslow",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-knowles-adult-learner",
+      "title": "The Adult Learner",
+      "creator": "Routledge / Google Books",
+      "publisher": "Routledge / Google Books",
+      "year": 2020,
+      "role": "primary-work-catalog",
+      "url": "https://books.google.com/books/about/The_Adult_Learner.html?id=CKlHzQEACAAJ",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-hartree-andragogy",
+      "title": "Malcolm Knowles’ Theory of Andragogy: A Critique",
+      "creator": "International Journal of Lifelong Education",
+      "publisher": "International Journal of Lifelong Education",
+      "year": 1984,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1080/0260137840030304",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-mezirow-perspective",
+      "title": "A Critical Theory of Adult Learning and Education",
+      "creator": "Adult Education Quarterly",
+      "publisher": "Adult Education Quarterly",
+      "year": 1981,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1177/074171368103200101",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-taylor-transformative-review",
+      "title": "The Theory and Practice of Transformative Learning: A Critical Review",
+      "creator": "ERIC",
+      "publisher": "ERIC",
+      "year": 1998,
+      "role": "critical-review",
+      "url": "https://eric.ed.gov/?id=ED423422",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-freire-oppressed",
+      "title": "Pedagogy of the Oppressed",
+      "creator": "Bloomsbury Academic",
+      "publisher": "Bloomsbury Academic",
+      "year": 2018,
+      "role": "primary-work",
+      "url": "https://www.bloomsbury.com/us/pedagogy-of-the-oppressed-9781501314155/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-britannica-freire",
+      "title": "Paulo Freire",
+      "creator": "Encyclopaedia Britannica",
+      "publisher": "Encyclopaedia Britannica",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.britannica.com/biography/Paulo-Freire",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-hooks-transgress",
+      "title": "Teaching to Transgress",
+      "creator": "Routledge",
+      "publisher": "Routledge",
+      "year": 1994,
+      "role": "primary-work",
+      "url": "https://www.routledge.com/Teaching-to-Transgress-Education-as-the-Practice-of-Freedom/hooks/p/book/9780415908085",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-bell-hooks-institute",
+      "title": "Get to Know bell hooks",
+      "creator": "Berea College bell hooks center",
+      "publisher": "Berea College bell hooks center",
+      "year": 2025,
+      "role": "historical-context",
+      "url": "https://www.berea.edu/centers/the-bell-hooks-center/about-bell",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-papert-constructionism",
+      "title": "Situating Constructionism",
+      "creator": "MIT OpenCourseWare",
+      "publisher": "MIT OpenCourseWare",
+      "year": 1991,
+      "role": "primary-work-catalog",
+      "url": "https://ocw.mit.edu/courses/mas-962-the-nature-of-constructionist-learning-spring-2003/pages/readings/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-mit-mindstorms",
+      "title": "Mindstorms",
+      "creator": "MIT Press",
+      "publisher": "MIT Press",
+      "year": 2020,
+      "role": "primary-work",
+      "url": "https://mitpress.mit.edu/9781541675124/mindstorms/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-siemens-connectivism",
+      "title": "Connectivism: A Learning Theory for the Digital Age",
+      "creator": "Pressbooks open reprint",
+      "publisher": "Pressbooks open reprint",
+      "year": 2005,
+      "role": "primary-work-reprint",
+      "url": "https://pressbooks.pub/lidtfoundations/chapter/connectivism-a-learning-theory-for-the-digital-age/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-kop-hill-connectivism",
+      "title": "Connectivism: Learning Theory of the Future or Vestige of the Past?",
+      "creator": "International Review of Research in Open and Distributed Learning",
+      "publisher": "International Review of Research in Open and Distributed Learning",
+      "year": 2008,
+      "role": "critical-review",
+      "url": "https://doi.org/10.19173/irrodl.v9i3.523",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-deci-ryan-2000",
+      "title": "The What and Why of Goal Pursuits",
+      "creator": "Psychological Inquiry",
+      "publisher": "Psychological Inquiry",
+      "year": 2000,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1207/S15327965PLI1104_01",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-sdt-official",
+      "title": "Self-Determination Theory",
+      "creator": "Center for Self-Determination Theory",
+      "publisher": "Center for Self-Determination Theory",
+      "year": 2025,
+      "role": "scholarly-overview",
+      "url": "https://selfdeterminationtheory.org/the-theory/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-zimmerman-srl",
+      "title": "Becoming a Self-Regulated Learner",
+      "creator": "Theory Into Practice",
+      "publisher": "Theory Into Practice",
+      "year": 2002,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1207/S15430421TIP4102_2",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-eef-metacognition",
+      "title": "Metacognition and Self-Regulated Learning",
+      "creator": "Education Endowment Foundation",
+      "publisher": "Education Endowment Foundation",
+      "year": 2025,
+      "role": "current-evidence",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-bloom-taxonomy-book",
+      "title": "Taxonomy of Educational Objectives: Handbook I",
+      "creator": "WorldCat",
+      "publisher": "WorldCat",
+      "year": 1956,
+      "role": "primary-work",
+      "url": "https://search.worldcat.org/title/Taxonomy-of-educational-objectives/oclc/1150305",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-vanderbilt-bloom",
+      "title": "Bloom’s Taxonomy",
+      "creator": "Vanderbilt University Center for Teaching",
+      "publisher": "Vanderbilt University Center for Teaching",
+      "year": 2025,
+      "role": "practice-guidance",
+      "url": "https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-cast-udl",
+      "title": "Universal Design for Learning Guidelines 3.0",
+      "creator": "CAST",
+      "publisher": "CAST",
+      "year": 2024,
+      "role": "primary-work",
+      "url": "https://udlguidelines.cast.org/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-udl-review",
+      "title": "The effectiveness of universal design for learning: a meta-analysis of literature between 2013 and 2016",
+      "creator": "International Journal of Inclusive Education",
+      "publisher": "International Journal of Inclusive Education",
+      "year": 2017,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1080/13603116.2017.1325074",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-pashler-learning-styles",
+      "title": "Learning Styles: Concepts and Evidence",
+      "creator": "Psychological Science in the Public Interest",
+      "publisher": "Psychological Science in the Public Interest",
+      "year": 2008,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1111/j.1539-6053.2009.01038.x",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-coffield-learning-styles",
+      "title": "Learning Styles and Pedagogy in Post-16 Learning",
+      "creator": "Learning and Skills Research Centre",
+      "publisher": "Learning and Skills Research Centre",
+      "year": 2004,
+      "role": "critical-review",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10092004/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-karpicke-blunt",
+      "title": "Retrieval Practice Produces More Learning Than Elaborative Studying With Concept Mapping",
+      "creator": "Science",
+      "publisher": "Science",
+      "year": 2011,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1126/science.1199327",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-ies-retrieval-review",
+      "title": "WWC Quick Review of Retrieval Practice",
+      "creator": "What Works Clearinghouse",
+      "publisher": "What Works Clearinghouse",
+      "year": 2011,
+      "role": "current-evidence",
+      "url": "https://ies.ed.gov/ncee/wwc/Study/67306",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-gardner-frames",
+      "title": "Frames of Mind",
+      "creator": "Basic Books",
+      "publisher": "Basic Books",
+      "year": 2011,
+      "role": "primary-work",
+      "url": "https://www.basicbooks.com/titles/howard-e-gardner/frames-of-mind/9780465024346/",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-waterhouse-mi",
+      "title": "Multiple Intelligences, the Mozart Effect, and Emotional Intelligence: A Critical Review",
+      "creator": "Educational Psychologist",
+      "publisher": "Educational Psychologist",
+      "year": 2006,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1207/S15326985EP4104_1",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult the original before quotation."
+    },
+    {
+      "id": "src-ubuntu-letseka",
+      "title": "In Defence of Ubuntu",
+      "creator": "Moeketsi Letseka",
+      "publisher": "Studies in Philosophy and Education",
+      "year": 2012,
+      "role": "scholarly-overview",
+      "url": "https://doi.org/10.1007/s11217-011-9267-2",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult the article before quotation.",
+      "locator": "Abstract and pp. 47-60, especially the account of relational personhood and educational implications.",
+      "limitations": "Philosophical defence rather than an intervention study; Ubuntu has plural and contested formulations.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-ubuntu-metasynthesis",
+      "title": "Ubuntu as a Humanising Pedagogy in Nursing Education: A Meta-Synthesis",
+      "creator": "Vhothusa Edward Matahela",
+      "publisher": "Nursing Forum",
+      "year": 2025,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1155/nuf/6184745",
+      "language": "en",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult full text before detailed quotation.",
+      "locator": "Methods, thematic synthesis, and discussion across the 17-page article.",
+      "limitations": "Qualitative meta-synthesis in nursing education; it does not establish general causal effects across schooling.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-nyerere-esr",
+      "title": "Education for Self-Reliance",
+      "creator": "Julius K. Nyerere",
+      "publisher": "Government Printer, Dar es Salaam; ERIC document reproduction",
+      "year": 1967,
+      "role": "primary-work",
+      "url": "https://files.eric.ed.gov/fulltext/ED041820.pdf",
+      "language": "en",
+      "accessStatus": "reviewed-document",
+      "rightsNote": "Use short paraphrase with page locator; verify the reproduced edition before quotation.",
+      "locator": "The reproduced policy essay section titled Education for Self-Reliance; discussion of community, productive work, and schooling aims.",
+      "limitations": "Normative national policy text, not evidence that every implementation achieved its stated outcomes.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-gandhi-nai-talim",
+      "title": "Gandhi on Education: Selected Writings on Basic Education and Nai Talim",
+      "creator": "M. K. Gandhi and documentary compilers",
+      "publisher": "ERIC document reproduction",
+      "year": 1977,
+      "role": "primary-work-reprint",
+      "url": "https://files.eric.ed.gov/fulltext/ED142482.pdf",
+      "language": "en",
+      "accessStatus": "reviewed-document",
+      "rightsNote": "Treat as a documentary compilation; verify the original publication when quoting Gandhi directly.",
+      "locator": "Sections describing Nai Talim/new education, craft-centred work, self-support, and ages 7-14.",
+      "limitations": "Compilation and historical advocacy; does not itself test comparative learning outcomes.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-gandhi-nai-talim-review",
+      "title": "Nai Talim and the relevance of Gandhian educational ideas",
+      "creator": "Scholarly review authors",
+      "publisher": "ERIC full-text journal record",
+      "year": 2020,
+      "role": "critical-review",
+      "url": "https://files.eric.ed.gov/fulltext/EJ1259034.pdf",
+      "language": "en",
+      "accessStatus": "reviewed-document",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult the article for exact claims.",
+      "locator": "Abstract, conceptual review, and conclusion discussing contemporary relevance and implementation.",
+      "limitations": "Conceptual/literature review with heterogeneous historical sources; no pooled causal estimate.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-tagore-visva-history",
+      "title": "History of Visva-Bharati",
+      "creator": "Visva-Bharati",
+      "publisher": "Visva-Bharati University",
+      "year": 2026,
+      "role": "historical-context",
+      "url": "https://www.visvabharati.ac.in/History.html",
+      "language": "en",
+      "accessStatus": "reviewed-page",
+      "rightsNote": "Use institutional history as context and verify primary writings before direct quotation.",
+      "locator": "History section on the 1901 school, open-air classes, arts, nature, and shared socio-cultural life.",
+      "limitations": "Institutional self-history; it documents aims and practices more directly than independent outcome evidence.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-tagore-curriculum",
+      "title": "Educational Thought and Practices of Rabindranath Tagore",
+      "creator": "Department of Education, Visva-Bharati",
+      "publisher": "Visva-Bharati University",
+      "year": 2017,
+      "role": "scholarly-overview",
+      "url": "https://www.visvabharati.ac.in/file/MAEducationRevisedCurri201719.pdf",
+      "language": "en",
+      "accessStatus": "reviewed-document",
+      "rightsNote": "Use curriculum metadata and topic map; consult listed primary writings for quotation.",
+      "locator": "pp. 25-26, EDN-342 units on life, nature, society, internationalism, and educational experiments.",
+      "limitations": "University curriculum outline, useful for scope but not a systematic effectiveness review.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-dewantara-works",
+      "title": "Karya Ki Hadjar Dewantara, Bagian Pertama: Pendidikan",
+      "creator": "Ki Hadjar Dewantara",
+      "publisher": "Majelis Luhur Persatuan Tamansiswa",
+      "year": 1977,
+      "role": "primary-work",
+      "url": "",
+      "language": "id",
+      "accessStatus": "bibliographic-only",
+      "rightsNote": "Bibliographic record only; consult a physical or library copy before quotation.",
+      "locator": "Bagian Pertama: Pendidikan; sections on Sistem Among, kemerdekaan, and the educator's three positions.",
+      "limitations": "No verified open full text in this batch; exact page locators remain edition-dependent.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-dewantara-among-study",
+      "title": "Sistem Among pada Masa Kini: Kajian Konsep dan Praktik Pendidikan",
+      "creator": "Muhammad Nur Wangid",
+      "publisher": "Jurnal Kependidikan",
+      "year": 2009,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.21831/jk.v39i2.200",
+      "language": "id",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult the article before quotation.",
+      "locator": "Abstract and study design: documentary analysis plus observations/interviews in Tamansiswa settings.",
+      "limitations": "Qualitative, context-specific study; reports implementation constraints and cannot establish broad causal effectiveness.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-ibnkhaldun-muqaddimah",
+      "title": "The Muqaddimah: An Introduction to History",
+      "creator": "Ibn Khaldun; translated by Franz Rosenthal",
+      "publisher": "Princeton University Press",
+      "year": 2015,
+      "role": "primary-work-reprint",
+      "url": "https://press.princeton.edu/books/paperback/9780691166285/the-muqaddimah",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata; consult the edition for exact quotation and page references.",
+      "locator": "Book Six, sections on instruction, gradual progression, habit/malaka, and harms of severity.",
+      "limitations": "Fourteenth-century historical analysis and prescription, not a modern experimental learning theory.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-ibnkhaldun-language",
+      "title": "Medieval Muslim thinkers on foreign language pedagogy: The case of Ibn Khaldun",
+      "creator": "Mohammed A. Al-Harbi",
+      "publisher": "Lingua",
+      "year": 2017,
+      "role": "scholarly-overview",
+      "url": "https://doi.org/10.1016/j.lingua.2017.05.001",
+      "language": "en",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult full text for detailed interpretation.",
+      "locator": "Abstract and pp. 62-71; content analysis of Book Six passages on language instruction.",
+      "limitations": "Historical content analysis; similarities to current pedagogy do not prove direct influence or effectiveness.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-lopi-framework",
+      "title": "Learning by Observing and Pitching In to Family and Community Endeavors: An Orientation",
+      "creator": "Barbara Rogoff and colleagues",
+      "publisher": "Human Development",
+      "year": 2014,
+      "role": "primary-work",
+      "url": "https://doi.org/10.1159/000356757",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text before quotation.",
+      "locator": "Whole conceptual article, especially the seven facets of the LOPI prism.",
+      "limitations": "A descriptive cultural model built from particular communities; avoid treating Indigenous-heritage communities as uniform.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-lopi-initiative",
+      "title": "Children's Initiative in Contributions to Family Work in Indigenous-Heritage and Cosmopolitan Communities in Mexico",
+      "creator": "Lucia Alcala and colleagues",
+      "publisher": "Human Development",
+      "year": 2014,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1159/000356763",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and cautious paraphrase; consult full text for sample details.",
+      "locator": "Methods and results comparing children's initiative and family-work participation across Mexican communities.",
+      "limitations": "Small, culturally situated comparative samples; not evidence for a universal developmental sequence.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-sankofa-case",
+      "title": "Sankofa pedagogy: redefining rural educational success through school-community cultural synergy in Africa",
+      "creator": "Moses Ackah Anlimachie, Elspeth McInnes, and Kevin Teise",
+      "publisher": "Rural Society",
+      "year": 2026,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1080/10371656.2026.2651583",
+      "language": "en",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Use bibliographic metadata and short paraphrase; consult full text before detailed quotation.",
+      "locator": "Abstract, research questions, methods, and discussion of one Ghanaian rural basic school.",
+      "limitations": "Single qualitative case; the authors describe the approach as developing and insufficiently tested.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-indigenous-schooling-review",
+      "title": "Culturally Responsive Schooling for Indigenous Youth: A Review of the Literature",
+      "creator": "Angelina E. Castagno and Bryan McKinley Jones Brayboy",
+      "publisher": "Review of Educational Research",
+      "year": 2008,
+      "role": "critical-review",
+      "url": "https://doi.org/10.3102/0034654308323036",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for scope and coding.",
+      "locator": "Review findings and implications, pp. 941-993.",
+      "limitations": "Broad Indigenous-education review, not specific validation of Sankofa or Ghanaian implementation.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-montessori-systematic-2023",
+      "title": "Montessori education's impact on academic and nonacademic outcomes: A systematic review",
+      "creator": "Justus J. Randolph and colleagues",
+      "publisher": "Campbell Systematic Reviews",
+      "year": 2023,
+      "role": "current-evidence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10406168/",
+      "language": "en",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Open-access review; paraphrase results and retain study-design caveats.",
+      "locator": "Methods, results tables, risk-of-bias discussion, and authors' conclusions.",
+      "limitations": "Heterogeneous programmes and outcomes; more than half of included studies were from the United States.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-discovery-meta-2011",
+      "title": "Does Discovery-Based Instruction Enhance Learning?",
+      "creator": "Louis Alfieri and colleagues",
+      "publisher": "Journal of Educational Psychology",
+      "year": 2011,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1037/a0021017",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for moderator estimates.",
+      "locator": "Meta-analysis results separating unassisted from enhanced/guided discovery.",
+      "limitations": "Interventions and comparison conditions vary; 'discovery' is not one uniform treatment.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-retrieval-classroom-review-2019",
+      "title": "Retrieval Practice in Classroom Settings: A Review of Applied Research",
+      "creator": "Bruna F. T. Moreira and colleagues",
+      "publisher": "Frontiers in Education",
+      "year": 2019,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.3389/feduc.2019.00005",
+      "language": "en",
+      "accessStatus": "reviewed-fulltext",
+      "rightsNote": "Open-access review; paraphrase with section or table locator.",
+      "locator": "Table 1 and Discussion, especially sections on control conditions, age, feedback, and classroom recommendation.",
+      "limitations": "Most positive comparisons used rereading or no-activity controls; stronger active controls produced less consistent advantages.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-retrieval-meta-2021",
+      "title": "Testing (quizzing) boosts classroom learning: A systematic and meta-analytic review",
+      "creator": "Pooja K. Agarwal, Ludmila D. Nunes, and Janell R. Blunt",
+      "publisher": "Psychological Bulletin",
+      "year": 2021,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1037/bul0000309",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for effect sizes and moderators.",
+      "locator": "Meta-analytic results, moderator analyses, and general discussion, pp. 399-435.",
+      "limitations": "Classroom studies remain heterogeneous and publication/design quality affects interpretation.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-testing-meta-2017",
+      "title": "Rethinking the Use of Tests: A Meta-Analysis of Practice Testing",
+      "creator": "Olusola O. Adesope and colleagues",
+      "publisher": "Review of Educational Research",
+      "year": 2017,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.3102/0034654316689306",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for model choices.",
+      "locator": "Meta-analysis and moderator sections on format, feedback, and retention.",
+      "limitations": "Combines laboratory and applied designs with varied test formats and outcome timing.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-sdt-meta-2024",
+      "title": "A systematic review and meta-analysis of self-determination-theory-based interventions in the education context",
+      "creator": "Yurou Wang and colleagues",
+      "publisher": "Learning and Motivation",
+      "year": 2024,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1016/j.lmot.2024.102015",
+      "language": "en",
+      "accessStatus": "reviewed-abstract",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for effect-size details.",
+      "locator": "Systematic review of 36 interventions; results for intrinsic motivation, autonomy, and competence.",
+      "limitations": "Interventions differ by actor and setting; outcomes do not establish that every autonomy-support practice works equally.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-srl-longterm-review-2022",
+      "title": "Exploring Long-Term Impacts of Self-Regulated Learning Interventions in K-12 Contexts: A Systematic Review",
+      "creator": "Erin Cousins, Linda Bol, and Tian Luo",
+      "publisher": "Current Issues in Education",
+      "year": 2022,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.14507/cie.vol23iss1.2013",
+      "language": "en",
+      "accessStatus": "reviewed-fulltext",
+      "rightsNote": "Open-access review; paraphrase with explicit scope.",
+      "locator": "Abstract, review of 17 K-12 interventions, results and discussion of durability.",
+      "limitations": "Only 17 comprehensive interventions; SRL measures and durability findings were mixed across instruments.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-udl-systematic-2016",
+      "title": "Universal Design for Learning (UDL): A Content Analysis of Peer-Reviewed Journal Papers from 2012 to 2015",
+      "creator": "Ahmed Al-Azawei, Fabio Serenelli, and Karsten Lundqvist",
+      "publisher": "Journal of the Scholarship of Teaching and Learning",
+      "year": 2016,
+      "role": "critical-review",
+      "url": "https://doi.org/10.14434/josotl.v16i3.19295",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for included-study details.",
+      "locator": "Content-analysis methods, coding results, and conclusion across pp. 39-56.",
+      "limitations": "Maps peer-reviewed papers from 2012-2015 rather than pooling causal effects; UDL components were operationalized inconsistently.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-cop-systematic-2009",
+      "title": "Evolution of Wenger's concept of community of practice",
+      "creator": "Linda C. Li and colleagues",
+      "publisher": "Implementation Science",
+      "year": 2009,
+      "role": "critical-review",
+      "url": "https://doi.org/10.1186/1748-5908-4-11",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and cautious paraphrase; consult full text for review boundaries.",
+      "locator": "Systematic review methods and synthesis of how community of practice was conceptualized and evaluated.",
+      "limitations": "Health-sector implementation literature; definitions and outcome measures varied considerably.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-video-meta-2021",
+      "title": "Video Improves Learning in Higher Education: A Systematic Review",
+      "creator": "Michael Noetel and colleagues",
+      "publisher": "Review of Educational Research",
+      "year": 2021,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.3102/0034654321990713",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for moderators and outcome definitions.",
+      "locator": "Meta-analysis, moderator results, and implications for replacing versus supplementing instruction.",
+      "limitations": "Higher-education video interventions are not equivalent to the full Cognitive Theory of Multimedia Learning.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-maslow-critical-history-2019",
+      "title": "Who Built Maslow's Pyramid? A History of the Creation of Management Studies' Most Famous Symbol",
+      "creator": "Todd Bridgman, Stephen Cummings, and John Ballard",
+      "publisher": "Academy of Management Learning & Education",
+      "year": 2019,
+      "role": "critical-review",
+      "url": "https://doi.org/10.5465/amle.2017.0351",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and paraphrase; consult full text for historiographic claims.",
+      "locator": "Historical reconstruction of how the pyramid representation emerged after Maslow's original article.",
+      "limitations": "History of representation and reception, not a comprehensive meta-analysis of need-satisfaction effects.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    },
+    {
+      "id": "src-learning-styles-replication-2019",
+      "title": "Another Nail in the Coffin for Learning Styles? Disparities among Undergraduate Anatomy Students' Study Strategies, Class Performance, and Reported VARK Attributes",
+      "creator": "Polly R. Husmann and Valerie Dean O'Loughlin",
+      "publisher": "Anatomical Sciences Education",
+      "year": 2019,
+      "role": "current-evidence",
+      "url": "https://doi.org/10.1002/ase.1777",
+      "language": "en",
+      "accessStatus": "reviewed-metadata",
+      "rightsNote": "Use bibliographic metadata and cautious paraphrase; consult full text for design and analyses.",
+      "locator": "Methods, results, and discussion comparing reported VARK attributes, study strategies, and course performance.",
+      "limitations": "Observational study in one anatomy context; it challenges matching claims but is not a universal test of all preference constructs.",
+      "addedBatch": "2026-08-12-regional-evidence"
+    }
+  ],
+  "theories": [
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การอภิปรายจริยธรรม",
+        "การฝึกสะท้อนตน"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-confucian",
+      "slug": "confucian-learning",
+      "titleTh": "ธรรมเนียมการเรียนรู้แบบขงจื๊อ",
+      "titleEn": "Confucian learning tradition",
+      "kind": "intellectual-tradition",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "จีนโบราณ",
+      "people": [
+        "Confucius"
+      ],
+      "oneSentence": "การเรียนคือการฝึกตนผ่านการศึกษา แบบอย่าง พิธี และความสัมพันธ์ทางจริยธรรม",
+      "learnerView": "มนุษย์พัฒนาได้ด้วยการฝึกตนและอยู่ในความสัมพันธ์",
+      "mechanism": "ทบทวน ฝึกปฏิบัติ สนทนา และเลียนแบบผู้มีคุณธรรม",
+      "teacherRole": "เป็นแบบอย่าง ตั้งคำถาม และจัดลำดับการฝึก",
+      "historicalInfluence": "มีอิทธิพลต่อการสอบ การศึกษา และแนวคิดเรื่องครูในเอเชียตะวันออก",
+      "currentEvidence": "เป็นประเพณีทางจริยศึกษา ไม่ใช่ทฤษฎีทดลองสมัยใหม่",
+      "critiques": "มีหลายสำนักและเปลี่ยนตามยุค การเรียกว่าเน้นท่องจำอย่างเดียวเป็นการลดทอน",
+      "sourceIds": [
+        "src-analects",
+        "src-sep-confucius"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "seminar",
+        "case discussion"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-socratic",
+      "slug": "socratic-inquiry",
+      "titleTh": "การสืบค้นแบบโสเครตีส",
+      "titleEn": "Socratic inquiry",
+      "kind": "pedagogy",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "เอเธนส์โบราณ",
+      "people": [
+        "Socrates",
+        "Plato"
+      ],
+      "oneSentence": "การถามต่อเนื่องช่วยเปิดสมมติฐาน ความไม่สอดคล้อง และขอบเขตของสิ่งที่ผู้เรียนคิดว่ารู้",
+      "learnerView": "ผู้เรียนเป็นคู่สนทนาที่ต้องตรวจเหตุผลของตน",
+      "mechanism": "คำถาม การให้เหตุผล และการตรวจข้อโต้แย้ง",
+      "teacherRole": "ชวนตรวจความหมายและเหตุผลมากกว่าบอกคำตอบทันที",
+      "historicalInfluence": "มีอิทธิพลต่อการสนทนาเชิงปรัชญา กฎหมาย และการสอนแบบอภิปราย",
+      "currentEvidence": "คุณภาพขึ้นกับการออกแบบคำถาม ความปลอดภัย และความรู้พื้นฐาน ไม่ใช่ผลที่เกิดจากการถามทุกแบบ",
+      "critiques": "แหล่งสำคัญมาจากงานของเพลโต ไม่ใช่ข้อความที่โสเครตีสเขียนเอง และการซักแบบกดดันอาจทำให้ผู้เรียนเงียบ",
+      "sourceIds": [
+        "src-plato-dialogues",
+        "src-sep-socrates"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การเชื่อมตัวอย่างกับแนวคิด",
+        "การทบทวนแบบสัมพันธ์"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-associationism",
+      "slug": "aristotelian-association",
+      "titleTh": "รากแนวคิดการเชื่อมโยงความคิด",
+      "titleEn": "Associationism",
+      "kind": "philosophy",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "กรีกและยุโรป",
+      "people": [
+        "Aristotle"
+      ],
+      "oneSentence": "ความคิดและความจำอาจเชื่อมกันผ่านความใกล้เคียง ความคล้าย และความต่าง",
+      "learnerView": "ผู้เรียนสร้างสายเชื่อมระหว่างประสบการณ์และความคิด",
+      "mechanism": "การเกิดและเรียกคืนความเชื่อมโยง",
+      "teacherRole": "จัดประสบการณ์และตัวอย่างที่ช่วยให้เกิดความเชื่อมโยง",
+      "historicalInfluence": "กลายเป็นรากสำคัญของประสบการณ์นิยมและทฤษฎีการวางเงื่อนไข",
+      "currentEvidence": "แนวคิด association ยังสำคัญในวิทยาศาสตร์การเรียนรู้ แต่กลไกสมัยใหม่ซับซ้อนกว่ากฎดั้งเดิม",
+      "critiques": "ไม่ควรอ้างว่า Aristotle เสนอ behaviorism หรือกลไกประสาทสมัยใหม่",
+      "sourceIds": [
+        "src-aristotle-memory",
+        "src-apa-associationism"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การฝึกความใส่ใจ",
+        "การสะท้อนจริยธรรม"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-buddhist-training",
+      "slug": "buddhist-training",
+      "titleTh": "ธรรมเนียมพุทธว่าด้วยการฝึกตนและความรู้",
+      "titleEn": "Buddhist traditions of mental cultivation",
+      "kind": "intellectual-tradition",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "เอเชียใต้และหลายภูมิภาคเอเชีย",
+      "people": [
+        "Buddha",
+        "Buddhist scholars"
+      ],
+      "oneSentence": "การเรียนรู้เชื่อมกับการฝึกความใส่ใจ จริยธรรม การพิจารณาประสบการณ์ และชุมชนปฏิบัติ",
+      "learnerView": "มนุษย์เปลี่ยนนิสัยและความเข้าใจได้ผ่านการฝึก",
+      "mechanism": "การปฏิบัติซ้ำ การสังเกตประสบการณ์ การสนทนา และวินัย",
+      "teacherRole": "เป็นผู้ชี้ทางและสมาชิกของชุมชนฝึก มากกว่าผู้ถ่ายข้อมูลอย่างเดียว",
+      "historicalInfluence": "มีประเพณีตำรา อภิปราย สมาธิ และสถาบันการศึกษาหลากหลายทั่วเอเชีย",
+      "currentEvidence": "งานร่วมสมัยศึกษาบางวิธีปฏิบัติได้ แต่ไม่ควรถือว่าผลการทดลองเรื่อง mindfulness ยืนยันคำสอนทั้งระบบ",
+      "critiques": "พุทธศาสนามีหลายสายและเป้าหมายไม่เท่ากับผลสัมฤทธิ์ทางการศึกษาสมัยใหม่",
+      "sourceIds": [
+        "src-sep-buddha",
+        "src-sep-buddhist-mind"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การอภิปรายจริยธรรมความรู้",
+        "การศึกษาความสัมพันธ์ครูศิษย์"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-islamic-adab",
+      "slug": "islamic-adab",
+      "titleTh": "ธรรมเนียมอิสลามเรื่องความรู้และอาดาบ",
+      "titleEn": "Islamic traditions of knowledge and adab",
+      "kind": "intellectual-tradition",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "โลกอิสลามหลายภูมิภาค",
+      "people": [
+        "Al-Ghazali",
+        "Islamic scholars"
+      ],
+      "oneSentence": "การแสวงหาความรู้สัมพันธ์กับจริยธรรม การฝึกตน ครู ศิษย์ และชุมชนวิชาการ",
+      "learnerView": "ผู้เรียนมีหน้าที่พัฒนาทั้งความรู้และอุปนิสัย",
+      "mechanism": "ศึกษา ตีความ อภิปราย ท่องจำ ฝึกปฏิบัติ และรับรองสายความรู้",
+      "teacherRole": "ทำหน้าที่เป็นผู้ชี้แนะทางวิชาการและจริยธรรม",
+      "historicalInfluence": "สถาบันและเครือข่ายนักวิชาการอิสลามถ่ายทอดวิชาหลากหลายข้ามภูมิภาค",
+      "currentEvidence": "เป็นประเพณีทางปัญญาหลายสาย ไม่ใช่ learning theory เดี่ยวที่ทดสอบแบบเดียวกัน",
+      "critiques": "ห้ามเหมารวมโลกอิสลามหรืออ่าน adab เป็นเพียงมารยาทในห้องเรียน",
+      "sourceIds": [
+        "src-sep-al-ghazali",
+        "src-britannica-al-ghazali"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การจัดลำดับเนื้อหา",
+        "สื่อภาพ"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-comenius",
+      "slug": "comenius-didactics",
+      "titleTh": "โครงการการสอนแบบเป็นระบบของโคเมนิอุส",
+      "titleEn": "Comenian didactics",
+      "kind": "pedagogy",
+      "family": "philosophical-roots",
+      "period": "1600-1850",
+      "origin": "ยุโรปกลาง",
+      "people": [
+        "John Amos Comenius"
+      ],
+      "oneSentence": "การสอนควรจัดลำดับ ใช้ประสาทสัมผัส และเปิดโอกาสการศึกษาให้กว้างกว่าวงชนชั้นนำ",
+      "learnerView": "เด็กเรียนได้เมื่อเนื้อหาเหมาะกับพัฒนาการและเชื่อมกับสิ่งที่รับรู้",
+      "mechanism": "การจัดลำดับจากง่ายไปยากและใช้ภาพกับประสบการณ์",
+      "teacherRole": "ออกแบบสื่อ ลำดับ และสภาพแวดล้อมอย่างเป็นระบบ",
+      "historicalInfluence": "มีอิทธิพลต่อแบบเรียนภาพ การแบ่งชั้น และความคิดการศึกษาสำหรับทุกคน",
+      "currentEvidence": "เป็นประวัติศาสตร์ pedagogy มากกว่าทฤษฎีที่มีฐานทดลองร่วมสมัย",
+      "critiques": "แนวคิด “ธรรมชาติ” ของเด็กในศตวรรษที่ 17 ไม่ควรถูกนำมาใช้ตรง ๆ โดยไม่อ่านบริบท",
+      "sourceIds": [
+        "src-comenius-didactic",
+        "src-britannica-comenius"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การออกแบบประสบการณ์",
+        "การฝึกนิสัย"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-locke",
+      "slug": "locke-empiricism",
+      "titleTh": "ประสบการณ์นิยมของล็อก",
+      "titleEn": "Lockean empiricism",
+      "kind": "philosophy",
+      "family": "philosophical-roots",
+      "period": "1600-1850",
+      "origin": "อังกฤษ",
+      "people": [
+        "John Locke"
+      ],
+      "oneSentence": "ความรู้จำนวนมากมาจากประสบการณ์และการสะท้อน มากกว่าความคิดที่ติดตัวมาแต่กำเนิด",
+      "learnerView": "ผู้เรียนมีความสามารถรับและจัดประสบการณ์ แต่ไม่ใช่ภาชนะว่างแบบง่าย ๆ",
+      "mechanism": "ประสบการณ์ ความรู้สึก การสะท้อน และการเชื่อมความคิด",
+      "teacherRole": "จัดประสบการณ์และสร้างนิสัยอย่างระมัดระวัง",
+      "historicalInfluence": "มีอิทธิพลต่อจิตวิทยา associationist และภาษา “tabula rasa” ในการศึกษา",
+      "currentEvidence": "เป็นปรัชญาความรู้ ไม่ใช่หลักฐานว่าผู้เรียนไม่มีความแตกต่างหรือโครงสร้างติดตัว",
+      "critiques": "คำว่า blank slate มักถูกใช้เกินสิ่งที่ Locke อธิบายจริง",
+      "sourceIds": [
+        "src-locke-essay",
+        "src-sep-locke"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การเรียนจากประสบการณ์",
+        "การคำนึงถึงวัย"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-rousseau",
+      "slug": "rousseau-natural-education",
+      "titleTh": "การศึกษาตามธรรมชาติของรุสโซ",
+      "titleEn": "Rousseauian natural education",
+      "kind": "philosophy",
+      "family": "philosophical-roots",
+      "period": "1600-1850",
+      "origin": "เจนีวาและฝรั่งเศส",
+      "people": [
+        "Jean-Jacques Rousseau"
+      ],
+      "oneSentence": "เด็กควรได้รับการศึกษาที่คำนึงถึงวัย ประสบการณ์ตรง และการปกป้องจากแรงกดดันทางสังคมบางแบบ",
+      "learnerView": "เด็กมีจังหวะพัฒนาและความสนใจที่ไม่ควรถูกย่อให้เป็นผู้ใหญ่ขนาดเล็ก",
+      "mechanism": "ประสบการณ์ ผลตามธรรมชาติ และการจัดสิ่งแวดล้อม",
+      "teacherRole": "จัดเงื่อนไขโดยไม่สั่งตรงทุกขั้น",
+      "historicalInfluence": "มีอิทธิพลต่อ child-centered และ progressive education",
+      "currentEvidence": "เป็นปรัชญาและวรรณกรรมการศึกษา ไม่ใช่งานทดลอง และ Emile มีข้อจำกัดด้านเพศกับชนชั้นชัดเจน",
+      "critiques": "อุดมคติ “ธรรมชาติ” อาจซ่อนอำนาจของผู้ใหญ่ที่จัดฉากให้เด็ก",
+      "sourceIds": [
+        "src-rousseau-emile",
+        "src-sep-rousseau"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การกระตุ้นความรู้เดิม",
+        "การจัดลำดับบทเรียน"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-herbart",
+      "slug": "herbartian-instruction",
+      "titleTh": "การสอนแบบเฮอร์บาร์ต",
+      "titleEn": "Herbartian instruction",
+      "kind": "model",
+      "family": "design-frameworks",
+      "period": "1850-1913",
+      "origin": "เยอรมนี",
+      "people": [
+        "Johann Friedrich Herbart"
+      ],
+      "oneSentence": "การสอนควรเชื่อมความคิดใหม่กับกลุ่มความคิดเดิมและจัดลำดับขั้นอย่างมีแบบแผน",
+      "learnerView": "ผู้เรียนมีโครงความคิดเดิมที่มีผลต่อการรับเนื้อหาใหม่",
+      "mechanism": "apperception การเชื่อมความคิด และลำดับการสอน",
+      "teacherRole": "วางลำดับ อธิบาย เชื่อม และช่วยให้ผู้เรียนนำไปใช้",
+      "historicalInfluence": "มีอิทธิพลต่อ teacher education และ lesson planning ในศตวรรษที่ 19",
+      "currentEvidence": "เป็นแบบจำลองประวัติศาสตร์ที่แนวคิดบางส่วนคล้าย prior knowledge แต่ไม่เท่ากับทฤษฎี cognitive สมัยใหม่",
+      "critiques": "สูตรห้าขั้นของผู้สืบทอดไม่ควรถูกอ้างว่าเป็นคำของ Herbart ทั้งหมด",
+      "sourceIds": [
+        "src-herbart-science-education",
+        "src-britannica-herbart"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "problem inquiry",
+        "project learning",
+        "reflection"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-dewey",
+      "slug": "dewey-pragmatism",
+      "titleTh": "ปฏิบัตินิยมและการเรียนผ่านประสบการณ์ของดิวอี",
+      "titleEn": "Deweyan pragmatism",
+      "kind": "philosophy",
+      "family": "philosophical-roots",
+      "period": "1850-1913",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "John Dewey"
+      ],
+      "oneSentence": "การเรียนเกิดจากการลงมือแก้ปัญหา สะท้อนผล และเชื่อมประสบการณ์กับชีวิตประชาธิปไตย",
+      "learnerView": "ผู้เรียนเป็นผู้กระทำที่สร้างความหมายในสภาพแวดล้อมสังคม",
+      "mechanism": "inquiry ประสบการณ์ต่อเนื่อง และ reflection",
+      "teacherRole": "ออกแบบปัญหา เชื่อมความสนใจกับเนื้อหา และร่วมสร้างชุมชน",
+      "historicalInfluence": "เป็นฐานสำคัญของ progressive, experiential และ project-based education",
+      "currentEvidence": "หลักฐานสนับสนุนต้องประเมินวิธีสอนเฉพาะ ไม่ใช่ถือว่าคำว่า experiential รับรองผลทุกกิจกรรม",
+      "critiques": "learning by doing ที่ไม่มีการสะท้อน เป้าหมาย หรือคำแนะนำไม่ใช่ข้อเสนอทั้งหมดของ Dewey",
+      "sourceIds": [
+        "src-dewey-democracy",
+        "src-sep-dewey"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "prepared environment",
+        "mixed-age classroom"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-montessori",
+      "slug": "montessori-method",
+      "titleTh": "วิธีมอนเตสซอรี",
+      "titleEn": "Montessori method",
+      "kind": "pedagogy",
+      "family": "developmental",
+      "period": "1850-1913",
+      "origin": "อิตาลี",
+      "people": [
+        "Maria Montessori"
+      ],
+      "oneSentence": "สภาพแวดล้อมและสื่อที่เตรียมอย่างเป็นระบบเปิดให้เด็กเลือกงาน ทำซ้ำ และพัฒนาความเป็นอิสระ",
+      "learnerView": "เด็กมีแรงขับพัฒนาและเรียนผ่านการเคลื่อนไหวกับสื่อ",
+      "mechanism": "การเลือก งานที่มีโครงสร้าง การแก้ข้อผิดพลาดด้วยสื่อ และช่วงทำงานต่อเนื่อง",
+      "teacherRole": "สังเกต แนะนำสื่อ และรักษาสภาพแวดล้อมมากกว่าสั่งทั้งชั้น",
+      "historicalInfluence": "มีเครือข่ายโรงเรียนทั่วโลกและมีอิทธิพลต่อ early childhood education",
+      "currentEvidence": "งานวิจัยมีผลเชิงบวกบางด้านแต่ความต่างของ fidelity และการคัดเลือกครอบครัวทำให้สรุปทั่วไปต้องระวัง",
+      "critiques": "ห้ามใช้ชื่อ Montessori กับห้องหรือของเล่นที่ไม่มีระบบฝึกครูและการใช้สื่อตามหลัก",
+      "sourceIds": [
+        "src-montessori-method",
+        "src-ami-montessori",
+        "src-montessori-systematic-2023"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "practice with feedback",
+        "skill sequencing"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-thorndike",
+      "slug": "thorndike-connectionism",
+      "titleTh": "การเชื่อมโยงแบบธอร์นไดก์",
+      "titleEn": "Thorndikean connectionism",
+      "kind": "learning-theory",
+      "family": "behavioral",
+      "period": "1850-1913",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Edward Thorndike"
+      ],
+      "oneSentence": "พฤติกรรมที่ตามด้วยผลน่าพึงพอใจมีแนวโน้มถูกเลือกซ้ำ และการฝึกสร้างความเชื่อมโยงระหว่างสถานการณ์กับการตอบสนอง",
+      "learnerView": "ผู้เรียนและสัตว์ปรับพฤติกรรมจากผลที่ตามมา",
+      "mechanism": "trial and error, law of effect และการฝึก",
+      "teacherRole": "จัดงานฝึกและผลตอบกลับ",
+      "historicalInfluence": "มีอิทธิพลต่อ educational measurement, behaviorism และการฝึกทักษะ",
+      "currentEvidence": "กฎดั้งเดิมถูกแก้ไขในงานของ Thorndike เองและทฤษฎีร่วมสมัยซับซ้อนกว่า stimulus-response",
+      "critiques": "งานสัตว์และแนวคิดการวัดความสามารถในยุคนั้นมีข้อจำกัดด้านการขยายผลและบริบท eugenics",
+      "sourceIds": [
+        "src-thorndike-animal-intelligence",
+        "src-britannica-thorndike"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "การเข้าใจ cue และความวิตกกังวล",
+        "exposure ที่มีจริยธรรม"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-pavlov",
+      "slug": "classical-conditioning",
+      "titleTh": "การวางเงื่อนไขแบบคลาสสิก",
+      "titleEn": "Classical conditioning",
+      "kind": "learning-theory",
+      "family": "behavioral",
+      "period": "1850-1913",
+      "origin": "รัสเซีย",
+      "people": [
+        "Ivan Pavlov"
+      ],
+      "oneSentence": "สิ่งเร้าที่เดิมเป็นกลางสามารถกระตุ้นการตอบสนองได้เมื่อถูกจับคู่กับสิ่งเร้าที่มีความหมาย",
+      "learnerView": "สิ่งมีชีวิตเรียนความสัมพันธ์เชิงทำนายระหว่างเหตุการณ์",
+      "mechanism": "acquisition, extinction, generalization และ discrimination",
+      "teacherRole": "จัดลำดับสิ่งเร้าและลดเงื่อนไขที่สร้างความกลัวโดยไม่ตั้งใจ",
+      "historicalInfluence": "เป็นฐานของงาน conditioning การเรียนรู้สัตว์ และการรักษาพฤติกรรมบางแบบ",
+      "currentEvidence": "ปรากฏการณ์ได้รับหลักฐานมาก แต่โมเดลปัจจุบันไม่ใช่การจับคู่แบบกลไกง่าย ๆ เท่านั้น",
+      "critiques": "ไม่ควรอธิบายการเรียนรู้ที่ซับซ้อนทั้งหมดด้วย classical conditioning",
+      "sourceIds": [
+        "src-pavlov-lecture",
+        "src-apa-classical-conditioning"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "behavior observation",
+        "environment design"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-watson",
+      "slug": "watson-behaviorism",
+      "titleTh": "พฤติกรรมนิยมของวัตสัน",
+      "titleEn": "Watsonian behaviorism",
+      "kind": "learning-theory",
+      "family": "behavioral",
+      "period": "1913-1956",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "John B. Watson"
+      ],
+      "oneSentence": "จิตวิทยาควรศึกษาพฤติกรรมที่สังเกตได้และความสัมพันธ์ระหว่างสิ่งเร้ากับการตอบสนอง",
+      "learnerView": "ผู้เรียนถูกศึกษาในฐานะสิ่งมีชีวิตที่ปรับพฤติกรรมต่อสิ่งแวดล้อม",
+      "mechanism": "conditioning และการควบคุมสิ่งเร้า",
+      "teacherRole": "จัดสิ่งแวดล้อมและวัดการตอบสนอง",
+      "historicalInfluence": "ประกาศปี 1913 ช่วยทำให้ behaviorism เป็นขบวนการวิชาการสำคัญ",
+      "currentEvidence": "แนวทางมีอิทธิพลทางประวัติศาสตร์ แต่การตัดกระบวนการภายในออกทั้งหมดไม่สอดคล้องกับ cognitive science ปัจจุบัน",
+      "critiques": "การทดลอง Little Albert มีปัญหาจริยธรรม วิธีวิจัย และการเล่าซ้ำเกินหลักฐาน",
+      "sourceIds": [
+        "src-watson-manifesto",
+        "src-apa-behaviorism"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "feedback",
+        "shaping",
+        "mastery sequence"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-skinner",
+      "slug": "operant-conditioning",
+      "titleTh": "การวางเงื่อนไขแบบการกระทำ",
+      "titleEn": "Operant conditioning",
+      "kind": "learning-theory",
+      "family": "behavioral",
+      "period": "1913-1956",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "B. F. Skinner"
+      ],
+      "oneSentence": "ความถี่ของพฤติกรรมเปลี่ยนตามผลที่ตามมา การเสริมแรง และบริบทที่บอกว่าผลนั้นจะเกิดเมื่อใด",
+      "learnerView": "ผู้เรียนแสดงพฤติกรรมที่ถูกคัดเลือกและสร้างรูปแบบใหม่ผ่าน shaping",
+      "mechanism": "reinforcement, punishment, extinction, shaping และ stimulus control",
+      "teacherRole": "ออกแบบผลตอบกลับและขั้นฝึกที่ชัด",
+      "historicalInfluence": "มีอิทธิพลต่อ programmed instruction, behavior analysis และการจัดการพฤติกรรม",
+      "currentEvidence": "หลักการ operant มีฐานทดลองกว้าง แต่ผลขึ้นกับนิยามพฤติกรรม ตารางเสริมแรง และบริบท",
+      "critiques": "positive reinforcement ไม่ได้แปลว่ารางวัลทุกชนิดดี และ punishment มีต้นทุนกับผลข้างเคียง",
+      "sourceIds": [
+        "src-skinner-science-human-behavior",
+        "src-apa-operant-conditioning"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "exploration",
+        "spatial learning"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-tolman",
+      "slug": "purposive-behaviorism",
+      "titleTh": "พฤติกรรมนิยมแบบมีจุดหมายของทอลแมน",
+      "titleEn": "Purposive behaviorism",
+      "kind": "learning-theory",
+      "family": "behavioral",
+      "period": "1913-1956",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Edward Tolman"
+      ],
+      "oneSentence": "พฤติกรรมมีเป้าหมายและสิ่งมีชีวิตเรียนโครงสร้างของสภาพแวดล้อมได้แม้ยังไม่แสดงผลจากรางวัลทันที",
+      "learnerView": "ผู้เรียนสร้างความคาดหมายและ cognitive map",
+      "mechanism": "latent learning, expectancy และ cognitive maps",
+      "teacherRole": "จัดพื้นที่ให้สำรวจและเห็นโครงสร้าง",
+      "historicalInfluence": "เป็นสะพานระหว่าง behaviorism กับแนวคิด cognitive",
+      "currentEvidence": "งาน cognitive map มีอิทธิพลมาก แต่คำและกลไกถูกพัฒนาต่อใน neuroscience กับ cognitive science",
+      "critiques": "ไม่ควรตีความแผนที่ความคิดเป็นภาพแผนที่อยู่ในสมองแบบตรงตัว",
+      "sourceIds": [
+        "src-tolman-cognitive-maps",
+        "src-britannica-tolman"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "problem restructuring",
+        "visual organization"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-gestalt",
+      "slug": "gestalt-insight",
+      "titleTh": "การเรียนรู้แบบหยั่งเห็นของเกสตัลท์",
+      "titleEn": "Gestalt insight learning",
+      "kind": "learning-theory",
+      "family": "cognitive",
+      "period": "1913-1956",
+      "origin": "เยอรมนีและยุโรป",
+      "people": [
+        "Wolfgang Köhler",
+        "Max Wertheimer"
+      ],
+      "oneSentence": "การแก้ปัญหาอาจเกิดจากการจัดโครงสร้างสถานการณ์ใหม่และเห็นความสัมพันธ์ขององค์รวม ไม่ใช่เพียงสะสมการตอบสนอง",
+      "learnerView": "ผู้เรียนรับรู้รูปแบบและจัดระเบียบสนามปัญหา",
+      "mechanism": "restructuring, insight และหลักการรับรู้แบบองค์รวม",
+      "teacherRole": "ออกแบบปัญหาให้เห็นความสัมพันธ์และทดลองมุมมองใหม่",
+      "historicalInfluence": "ท้าทาย associationism แบบแยกส่วนและมีอิทธิพลต่อ perception กับ problem solving",
+      "currentEvidence": "ปรากฏการณ์ insight มีงานต่อยอด แต่คำอธิบายไม่ใช่กลไกเดียวของการแก้ปัญหา",
+      "critiques": "คำว่า aha ไม่ได้ยืนยันว่าผู้เรียนเข้าใจลึกหรือถ่ายโอนได้",
+      "sourceIds": [
+        "src-kohler-apes",
+        "src-britannica-gestalt"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "hands-on reasoning",
+        "development-sensitive tasks"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-piaget",
+      "slug": "piaget-constructivism",
+      "titleTh": "ทฤษฎีพัฒนาการทางปัญญาของเพียเจต์",
+      "titleEn": "Piagetian cognitive development",
+      "kind": "learning-theory",
+      "family": "developmental",
+      "period": "1913-1956",
+      "origin": "สวิตเซอร์แลนด์",
+      "people": [
+        "Jean Piaget"
+      ],
+      "oneSentence": "เด็กสร้างและปรับโครงสร้างความคิดผ่านการกระทำกับโลก โดยความสามารถบางแบบเปลี่ยนเป็นลำดับพัฒนาการ",
+      "learnerView": "เด็กเป็นผู้สร้างความรู้ ไม่ใช่ผู้ใหญ่ที่รู้ไม่ครบ",
+      "mechanism": "assimilation, accommodation และ equilibration",
+      "teacherRole": "จัดประสบการณ์และคำถามที่เหมาะกับความคิดปัจจุบันของเด็ก",
+      "historicalInfluence": "มีอิทธิพลต่อ constructivism, developmental psychology และ child-centered education",
+      "currentEvidence": "งานต่อมาพบความสามารถบางอย่างเร็วกว่าที่ Piaget รายงาน และพัฒนาการไม่เป็นขั้นแข็งตัวเท่าฉบับสรุปนิยม",
+      "critiques": "อย่าใช้ stage เป็นป้ายจำกัดว่าเด็กวัยหนึ่ง “ทำไม่ได้” โดยไม่ดูงาน เนื้อหา และการช่วยเหลือ",
+      "sourceIds": [
+        "src-piaget-foundation",
+        "src-britannica-piaget"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "guided participation",
+        "collaborative dialogue"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-vygotsky",
+      "slug": "vygotsky-sociocultural",
+      "titleTh": "แนวคิดสังคมวัฒนธรรมของวีก็อตสกี",
+      "titleEn": "Vygotskian sociocultural theory",
+      "kind": "learning-theory",
+      "family": "social-cultural",
+      "period": "1913-1956",
+      "origin": "สหภาพโซเวียต",
+      "people": [
+        "Lev Vygotsky"
+      ],
+      "oneSentence": "การพัฒนาความคิดเกิดผ่านกิจกรรมร่วม ภาษา เครื่องมือทางวัฒนธรรม และการช่วยเหลือจากผู้อื่น",
+      "learnerView": "ผู้เรียนพัฒนาความสามารถผ่านการมีส่วนร่วมกับคนและเครื่องมือ",
+      "mechanism": "mediation, internalization และ zone of proximal development",
+      "teacherRole": "จัดการช่วยเหลือและกิจกรรมร่วมที่เคลื่อนจากร่วมทำไปสู่ทำได้เอง",
+      "historicalInfluence": "มีอิทธิพลต่อ sociocultural learning, scaffolding และ collaborative learning",
+      "currentEvidence": "กรอบมีอิทธิพลสูง แต่ ZPD วัดยากและ scaffolding เป็นคำที่ Bruner กับเพื่อนร่วมงานใช้ภายหลัง",
+      "critiques": "อย่าใช้ ZPD เป็นช่วงคะแนนตายตัวหรือเรียกการช่วยทุกชนิดว่า scaffolding",
+      "sourceIds": [
+        "src-vygotsky-mind-society",
+        "src-britannica-vygotsky"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "guided inquiry",
+        "spiral curriculum"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-bruner",
+      "slug": "discovery-learning",
+      "titleTh": "การเรียนรู้ด้วยการค้นพบของบรูเนอร์",
+      "titleEn": "Discovery learning",
+      "kind": "pedagogy",
+      "family": "cognitive",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Jerome Bruner"
+      ],
+      "oneSentence": "ผู้เรียนเข้าใจโครงสร้างวิชาได้ดีขึ้นเมื่อมีโอกาสตั้งสมมติฐาน สำรวจ และจัดหมวดภายใต้การออกแบบที่เหมาะสม",
+      "learnerView": "ผู้เรียนสร้างความหมายและค้นรูปแบบ",
+      "mechanism": "guided discovery, representation และ spiral curriculum",
+      "teacherRole": "จัดปัญหา ตัวอย่าง และคำใบ้ ไม่ใช่ถอนการสอนทั้งหมด",
+      "historicalInfluence": "มีอิทธิพลต่อ inquiry, curriculum design และ constructivist pedagogy",
+      "currentEvidence": "guided discovery มีหลักฐานดีกว่า minimal guidance โดยเฉพาะผู้เริ่มต้น",
+      "critiques": "ห้ามตีความ discovery learning ว่าครูต้องปล่อยให้ผู้เรียนค้นทุกอย่างเอง",
+      "sourceIds": [
+        "src-bruner-discovery",
+        "src-kirschner-minimal-guidance",
+        "src-discovery-meta-2011"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "advance organizer",
+        "concept linkage"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-ausubel",
+      "slug": "meaningful-reception",
+      "titleTh": "การเรียนรู้อย่างมีความหมายของออซูเบล",
+      "titleEn": "Meaningful reception learning",
+      "kind": "learning-theory",
+      "family": "cognitive",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "David Ausubel"
+      ],
+      "oneSentence": "ความรู้ใหม่เรียนได้อย่างมีความหมายเมื่อเชื่อมกับแนวคิดที่ผู้เรียนมีอยู่และได้รับการจัดโครงสร้างให้มองเห็นความสัมพันธ์",
+      "learnerView": "ผู้เรียนมีโครงความรู้เดิมที่กำหนดว่าความหมายใหม่จะยึดกับอะไร",
+      "mechanism": "subsumption, advance organizer และ prior knowledge",
+      "teacherRole": "อธิบายโครงสร้างใหญ่และเชื่อมความรู้เดิมก่อนรายละเอียด",
+      "historicalInfluence": "มีอิทธิพลต่อ advance organizers และการเน้น prior knowledge",
+      "currentEvidence": "ผลของ organizer ขึ้นกับคุณภาพ เนื้อหา และความรู้เดิม ไม่ใช่หัวข้อเกริ่นนำทุกแบบ",
+      "critiques": "graphic organizer ไม่ใช่ advance organizer โดยอัตโนมัติ",
+      "sourceIds": [
+        "src-ausubel-organizer",
+        "src-britannica-ausubel"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "chunking",
+        "retrieval",
+        "attention design"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-information-processing",
+      "slug": "information-processing",
+      "titleTh": "แบบจำลองการประมวลผลสารสนเทศ",
+      "titleEn": "Information-processing models",
+      "kind": "model",
+      "family": "cognitive",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกาและสหราชอาณาจักร",
+      "people": [
+        "Richard Atkinson",
+        "Richard Shiffrin"
+      ],
+      "oneSentence": "การเรียนเกี่ยวข้องกับการใส่ใจ เข้ารหัส เก็บ และเรียกคืนข้อมูลผ่านระบบความจำที่มีข้อจำกัดต่างกัน",
+      "learnerView": "ผู้เรียนเลือก ประมวล และเรียกใช้ข้อมูล ไม่ใช่รับสิ่งเร้าอย่างเดียว",
+      "mechanism": "attention, working memory, long-term memory และ retrieval",
+      "teacherRole": "ลดภาระที่ไม่จำเป็น ช่วยเข้ารหัส และออกแบบการทบทวน",
+      "historicalInfluence": "เป็นแกนของ cognitive psychology และการออกแบบการสอนร่วมสมัย",
+      "currentEvidence": "แบบจำลองหลายคลังเป็นจุดตั้งต้น ไม่ใช่ภาพสมองตามตัว และมีโมเดลความจำทำงานหลายแบบ",
+      "critiques": "อย่าใช้การเปรียบสมองเป็นคอมพิวเตอร์เป็นคำอธิบายเชิงชีววิทยาตรง ๆ",
+      "sourceIds": [
+        "src-atkinson-shiffrin",
+        "src-apa-information-processing"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "activate prior knowledge",
+        "compare cases"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-schema",
+      "slug": "schema-theory",
+      "titleTh": "ทฤษฎีสคีมา",
+      "titleEn": "Schema theory",
+      "kind": "learning-theory",
+      "family": "cognitive",
+      "period": "1956-1980",
+      "origin": "สหราชอาณาจักรและสหรัฐอเมริกา",
+      "people": [
+        "Frederic Bartlett",
+        "David Rumelhart"
+      ],
+      "oneSentence": "ความรู้เดิมถูกจัดเป็นโครงสร้างที่ช่วยตีความ เติมช่องว่าง และจำข้อมูลใหม่ แต่ก็ทำให้ความทรงจำบิดตามความคาดหวังได้",
+      "learnerView": "ผู้เรียนใช้โครงความรู้เดิมอย่าง सक्रियในการทำความเข้าใจ",
+      "mechanism": "activation, assimilation, reconstruction และ inference",
+      "teacherRole": "กระตุ้นและตรวจความรู้เดิม พร้อมชี้ความต่างที่สำคัญ",
+      "historicalInfluence": "มีอิทธิพลต่อ reading comprehension, expertise และ instructional design",
+      "currentEvidence": "หลักการ prior knowledge มีฐานกว้าง แต่ schema เป็น construct หลายระดับและวัดไม่ตรงง่าย",
+      "critiques": "อย่าเหมารวมความรู้เดิมว่าถูกต้องหรือคิดว่าการใช้ template แปลว่าผู้เรียนสร้าง schema แล้ว",
+      "sourceIds": [
+        "src-bartlett-remembering",
+        "src-rumelhart-schemata"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "worked examples",
+        "fading guidance"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-cognitive-load",
+      "slug": "cognitive-load-theory",
+      "titleTh": "ทฤษฎีภาระทางปัญญา",
+      "titleEn": "Cognitive Load Theory",
+      "kind": "learning-theory",
+      "family": "cognitive",
+      "period": "1980-present",
+      "origin": "ออสเตรเลียและนานาชาติ",
+      "people": [
+        "John Sweller"
+      ],
+      "oneSentence": "ความจำทำงานมีข้อจำกัด จึงต้องออกแบบการสอนให้ผู้เริ่มต้นใช้ทรัพยากรกับสิ่งสำคัญและสร้าง schema ในความจำระยะยาว",
+      "learnerView": "ผู้เรียนมีข้อจำกัดความจำทำงานที่เปลี่ยนตามความเชี่ยวชาญและความรู้เดิม",
+      "mechanism": "intrinsic/extraneous load, schema acquisition และ expertise reversal",
+      "teacherRole": "จัดตัวอย่าง ลดข้อมูลรบกวน และปรับการช่วยตามระดับผู้เรียน",
+      "historicalInfluence": "มีอิทธิพลสูงต่อ worked examples และ multimedia instruction",
+      "currentEvidence": "มีหลักฐานสนับสนุนผลเฉพาะหลายแบบ แต่การแบ่งชนิด load และการวัดภาระยังมีข้อถกเถียง",
+      "critiques": "อย่าตีความว่าเนื้อหาต้องง่ายเสมอหรือว่าการลดความยากทุกชนิดช่วยเรียน",
+      "sourceIds": [
+        "src-sweller-cognitive-load",
+        "src-springer-cognitive-load"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "coherence",
+        "signaling",
+        "segmenting"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-multimedia",
+      "slug": "multimedia-learning",
+      "titleTh": "ทฤษฎีการเรียนรู้ด้วยสื่อผสม",
+      "titleEn": "Cognitive Theory of Multimedia Learning",
+      "kind": "learning-theory",
+      "family": "cognitive",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Richard Mayer"
+      ],
+      "oneSentence": "ผู้เรียนสร้างความเข้าใจจากคำและภาพผ่านช่องทางที่มีข้อจำกัด เมื่อเลือก จัด และเชื่อมข้อมูลอย่างมีความหมาย",
+      "learnerView": "ผู้เรียนประมวลคำและภาพอย่างกระตือรือร้นแต่มีความจุจำกัด",
+      "mechanism": "dual channels, limited capacity และ active processing",
+      "teacherRole": "ตัดสิ่งเกิน ชี้โครงสร้าง และประสานคำกับภาพ",
+      "historicalInfluence": "มีอิทธิพลต่อ e-learning, presentation และ instructional media",
+      "currentEvidence": "หลักการหลายข้อมีงานทดลองจำนวนมาก แต่ผลขึ้นกับผู้เรียน เนื้อหา และการออกแบบจริง",
+      "critiques": "ภาพมากขึ้นหรือ animation มากขึ้นไม่ได้แปลว่าเรียนดีขึ้น",
+      "sourceIds": [
+        "src-mayer-multimedia-book",
+        "src-mayer-multimedia-principle",
+        "src-video-meta-2021"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "worked modeling",
+        "peer modeling",
+        "self-efficacy support"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-bandura",
+      "slug": "social-cognitive-theory",
+      "titleTh": "ทฤษฎีการรู้คิดทางสังคม",
+      "titleEn": "Social Cognitive Theory",
+      "kind": "learning-theory",
+      "family": "social-cultural",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกาและแคนาดา",
+      "people": [
+        "Albert Bandura"
+      ],
+      "oneSentence": "คนเรียนจากการสังเกตแบบอย่าง ผลที่เกิดกับผู้อื่น และความเชื่อว่าตนทำได้ โดยบุคคล พฤติกรรม และสิ่งแวดล้อมมีอิทธิพลกัน",
+      "learnerView": "ผู้เรียนสังเกต เลือกแบบอย่าง กำกับตน และคาดการณ์ผล",
+      "mechanism": "modeling, vicarious reinforcement, self-efficacy และ reciprocal determinism",
+      "teacherRole": "แสดงแบบอย่าง ทำกระบวนการคิดให้เห็น และสร้างโอกาสสำเร็จทีละขั้น",
+      "historicalInfluence": "ขยาย social learning ให้รวม cognition และ self-regulation",
+      "currentEvidence": "มีหลักฐานกว้างต่อ observational learning และ self-efficacy แต่ความสัมพันธ์ self-report กับผลลัพธ์อาจไม่ใช่เหตุเดียว",
+      "critiques": "การให้ดูตัวอย่างอย่างเดียวไม่พอ ต้องมีความใส่ใจ โอกาสฝึก และ feedback",
+      "sourceIds": [
+        "src-bandura-bobo",
+        "src-apa-social-learning"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "apprenticeship",
+        "workplace participation"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-situated",
+      "slug": "situated-learning",
+      "titleTh": "การเรียนรู้ตามสถานการณ์",
+      "titleEn": "Situated learning",
+      "kind": "learning-theory",
+      "family": "social-cultural",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและสหราชอาณาจักร",
+      "people": [
+        "Jean Lave",
+        "Etienne Wenger"
+      ],
+      "oneSentence": "การเรียนเป็นการเข้าร่วมกิจกรรมและวัฒนธรรมของการปฏิบัติ ไม่ใช่เพียงย้ายความรู้เข้าไปในตัวบุคคล",
+      "learnerView": "ผู้เรียนค่อย ๆ เปลี่ยนสถานะจากผู้มาใหม่ผ่านการมีส่วนร่วม",
+      "mechanism": "legitimate peripheral participation และ participation in practice",
+      "teacherRole": "เปิดให้ผู้เรียนเข้าถึงงาน เครื่องมือ ภาษา และสมาชิกที่มีประสบการณ์",
+      "historicalInfluence": "มีอิทธิพลต่อ apprenticeship, workplace learning และ learning sciences",
+      "currentEvidence": "กรอบอธิบายการมีส่วนร่วมได้ดี แต่ไม่ได้ให้สูตรสอนและอาจมองข้ามความขัดแย้งหรือการกีดกัน",
+      "critiques": "การวางโจทย์ “จริง” ในห้องไม่ทำให้เกิด community of practice โดยอัตโนมัติ",
+      "sourceIds": [
+        "src-lave-wenger-situated",
+        "src-wenger-intro"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "professional learning community",
+        "peer knowledge exchange"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-community-practice",
+      "slug": "communities-of-practice",
+      "titleTh": "ชุมชนนักปฏิบัติ",
+      "titleEn": "Communities of Practice",
+      "kind": "framework",
+      "family": "social-cultural",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและสหราชอาณาจักร",
+      "people": [
+        "Etienne Wenger"
+      ],
+      "oneSentence": "คนเรียนและสร้างอัตลักษณ์ผ่านการมีส่วนร่วมระยะยาวในกลุ่มที่มีงาน เครื่องมือ ภาษา และปัญหาร่วม",
+      "learnerView": "ผู้เรียนเป็นสมาชิกที่เจรจาความหมายและความเป็นสมาชิก",
+      "mechanism": "mutual engagement, joint enterprise และ shared repertoire",
+      "teacherRole": "สนับสนุนพื้นที่แลกเปลี่ยนและการเข้าถึงการปฏิบัติจริง",
+      "historicalInfluence": "ถูกใช้กว้างในองค์กร วิชาชีพ และ knowledge management",
+      "currentEvidence": "ใช้เป็นกรอบวิเคราะห์ได้มากกว่าทฤษฎีผลสัมฤทธิ์ และคำว่า community ถูกใช้กว้างจนเสียความเฉพาะ",
+      "critiques": "กลุ่มแชตหรือผู้เข้าร่วมอบรมไม่ได้เป็น community of practice โดยอัตโนมัติ",
+      "sourceIds": [
+        "src-wenger-communities",
+        "src-wenger-trayner-landscape",
+        "src-cop-systematic-2009"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "reflection cycle",
+        "field learning"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-experiential",
+      "slug": "kolb-experiential-cycle",
+      "titleTh": "วงจรการเรียนรู้จากประสบการณ์ของโคลบ์",
+      "titleEn": "Kolb Experiential Learning Cycle",
+      "kind": "model",
+      "family": "design-frameworks",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "David Kolb",
+        "John Dewey",
+        "Kurt Lewin"
+      ],
+      "oneSentence": "แบบจำลองอธิบายการเรียนเป็นวงจรของประสบการณ์ การสะท้อน การสร้างแนวคิด และการทดลอง",
+      "learnerView": "ผู้เรียนเปลี่ยนประสบการณ์ให้เป็นความรู้ผ่านหลายวิธี",
+      "mechanism": "experience, reflection, conceptualization และ experimentation",
+      "teacherRole": "ออกแบบโอกาสให้ผ่านและเชื่อมหลายช่วงของวงจร",
+      "historicalInfluence": "แพร่หลายในฝึกอบรม วิชาชีพ และ reflective practice",
+      "currentEvidence": "วงจรมีคุณค่าเป็นภาษาวางแผน แต่ลำดับไม่จำเป็นต้องตายตัว และ learning styles ที่ต่อจากโมเดลมีข้อวิจารณ์",
+      "critiques": "อย่าบังคับทุกกิจกรรมให้หมุนครบสี่ช่องหรือจัดคนเป็นประเภทคงที่",
+      "sourceIds": [
+        "src-kolb-experiential",
+        "src-dewey-experience-education"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "learner choice",
+        "reflective dialogue"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-rogers",
+      "slug": "humanistic-learning",
+      "titleTh": "การเรียนรู้แบบมนุษยนิยมของโรเจอร์ส",
+      "titleEn": "Rogersian humanistic learning",
+      "kind": "philosophy",
+      "family": "humanistic",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Carl Rogers"
+      ],
+      "oneSentence": "การเรียนรู้ที่มีความหมายเกิดเมื่อผู้เรียนรู้สึกปลอดภัย เห็นความเกี่ยวข้องกับตน และมีส่วนรับผิดชอบต่อทิศทางเรียน",
+      "learnerView": "ผู้เรียนเป็นบุคคลที่มีประสบการณ์ ความต้องการ และศักยภาพในการกำกับตน",
+      "mechanism": "personal relevance, autonomy, empathy และ reflective experience",
+      "teacherRole": "เป็น facilitator ที่จริงใจ ยอมรับ และฟังอย่างเข้าใจ",
+      "historicalInfluence": "มีอิทธิพลต่อ learner-centered education และ facilitation",
+      "currentEvidence": "แนวคิดสัมพันธ์กับงานแรงจูงใจและ climate แต่ข้อเสนอทั้งหมดไม่ใช่ทฤษฎีเชิงทำนายที่ทดสอบเป็นชุดเดียว",
+      "critiques": "ความอบอุ่นไม่แทนความรู้เนื้อหา โครงสร้าง และ feedback",
+      "sourceIds": [
+        "src-rogers-freedom-learn",
+        "src-britannica-rogers"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "wellbeing check",
+        "barrier removal"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-maslow",
+      "slug": "maslow-hierarchy",
+      "titleTh": "ลำดับขั้นความต้องการของมาสโลว์",
+      "titleEn": "Maslow’s hierarchy of needs",
+      "kind": "model",
+      "family": "humanistic",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Abraham Maslow"
+      ],
+      "oneSentence": "แบบจำลองเสนอว่าความต้องการหลายระดับมีผลต่อแรงจูงใจ แต่คนไม่จำเป็นต้องผ่านขั้นเป็นลำดับตายตัว",
+      "learnerView": "ผู้เรียนมีความต้องการทางกาย สังคม คุณค่า และการเติบโตที่สัมพันธ์กับการเรียน",
+      "mechanism": "needs and motivation ไม่ใช่กลไกการเรียนรู้โดยตรง",
+      "teacherRole": "ลดอุปสรรคพื้นฐานและสร้างความปลอดภัยโดยไม่วินิจฉัยผู้เรียนจากพีระมิด",
+      "historicalInfluence": "มีอิทธิพลสูงในบริหาร การศึกษา และภาพอินโฟกราฟิก",
+      "currentEvidence": "หลักฐานไม่รองรับลำดับขั้นสากลแบบแข็ง และภาพพีระมิดไม่ใช่รูปที่ Maslow ตีพิมพ์ในบทความปี 1943",
+      "critiques": "ห้ามใช้ขั้นความต้องการเป็นเหตุผลเลื่อนการเรียนของคนจนหรือเหมารวมวัฒนธรรม",
+      "sourceIds": [
+        "src-maslow-motivation",
+        "src-britannica-maslow",
+        "src-maslow-critical-history-2019"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "adult learning design",
+        "problem-centered training"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-andragogy",
+      "slug": "andragogy",
+      "titleTh": "แอนดราโกจีของโนลส์",
+      "titleEn": "Knowles’ Andragogy",
+      "kind": "framework",
+      "family": "adult-learning",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Malcolm Knowles"
+      ],
+      "oneSentence": "กรอบเสนอว่าผู้ใหญ่มีประสบการณ์ เป้าหมาย และความต้องการนำความรู้ไปใช้ ซึ่งควรมีผลต่อการออกแบบการเรียน",
+      "learnerView": "ผู้เรียนผู้ใหญ่มีประสบการณ์และความต้องการกำกับตนต่างกัน แต่ไม่เป็นแบบเดียวกันทั้งหมด",
+      "mechanism": "readiness, experience, self-direction และ problem orientation",
+      "teacherRole": "ร่วมวางเป้าหมาย เชื่อมประสบการณ์ และทำให้การใช้ประโยชน์ชัด",
+      "historicalInfluence": "มีอิทธิพลสูงต่อ adult education และ workplace training",
+      "currentEvidence": "เป็นชุดสมมติฐาน/หลักออกแบบมากกว่าทฤษฎีที่ยืนยันว่าผู้ใหญ่ทุกคนเรียนต่างจากเด็ก",
+      "critiques": "อายุไม่รับประกัน self-direction และเด็กก็มีประสบการณ์กับ agency ได้",
+      "sourceIds": [
+        "src-knowles-adult-learner",
+        "src-hartree-andragogy"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "critical reflection",
+        "perspective dialogue"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-transformative",
+      "slug": "transformative-learning",
+      "titleTh": "การเรียนรู้เพื่อการเปลี่ยนกรอบความหมาย",
+      "titleEn": "Transformative Learning",
+      "kind": "learning-theory",
+      "family": "adult-learning",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Jack Mezirow"
+      ],
+      "oneSentence": "ผู้ใหญ่เปลี่ยนกรอบอ้างอิงได้เมื่อประสบการณ์ท้าทายสมมติฐานและนำไปสู่การสะท้อนกับการสนทนาเชิงวิพากษ์",
+      "learnerView": "ผู้เรียนเป็นผู้ตีความประสบการณ์ผ่านกรอบความหมายที่เปลี่ยนได้",
+      "mechanism": "disorienting dilemma, critical reflection, discourse และ action",
+      "teacherRole": "สร้างพื้นที่ตรวจสมมติฐานโดยไม่บังคับให้ยอมรับมุมมองของผู้สอน",
+      "historicalInfluence": "มีอิทธิพลต่อ adult learning, professional education และ social change education",
+      "currentEvidence": "มีงานกรณีจำนวนมากแต่คำว่า transformation กว้าง วัดยาก และรุ่นแรกถูกวิจารณ์ว่าเน้นเหตุผลรายบุคคลเกินไป",
+      "critiques": "ประสบการณ์รุนแรงไม่ควรถูกสร้างขึ้นเพื่อหวังผลเปลี่ยนแปลงโดยไม่ดูความปลอดภัย",
+      "sourceIds": [
+        "src-mezirow-perspective",
+        "src-taylor-transformative-review"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "problem-posing education",
+        "community literacy"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-freire",
+      "slug": "critical-pedagogy",
+      "titleTh": "ครุศาสตร์เชิงวิพากษ์ของเฟรเร",
+      "titleEn": "Freirean critical pedagogy",
+      "kind": "pedagogy",
+      "family": "critical",
+      "period": "1956-1980",
+      "origin": "บราซิลและลาตินอเมริกา",
+      "people": [
+        "Paulo Freire"
+      ],
+      "oneSentence": "การเรียนรู้ควรช่วยให้ผู้คนอ่านทั้งคำและโลก ตั้งชื่อประสบการณ์ และลงมือเปลี่ยนเงื่อนไขที่กดทับตน",
+      "learnerView": "ผู้เรียนเป็นผู้ร่วมสร้างความรู้และประวัติศาสตร์ ไม่ใช่ภาชนะรับฝากข้อมูล",
+      "mechanism": "dialogue, problem-posing, conscientization และ praxis",
+      "teacherRole": "ร่วมตั้งปัญหา ฟังประสบการณ์ และตรวจอำนาจของตน",
+      "historicalInfluence": "มีอิทธิพลต่อ literacy, popular education และ social justice education ทั่วโลก",
+      "currentEvidence": "เป็นปรัชญาและ pedagogy ทางการเมืองมากกว่าทฤษฎีผลสัมฤทธิ์แบบเดียว",
+      "critiques": "dialogue ไม่ได้ทำให้อำนาจหายไป และผู้สอนไม่ควรใช้ “การปลดปล่อย” เพื่อกำหนดข้อสรุปแทนผู้เรียน",
+      "sourceIds": [
+        "src-freire-oppressed",
+        "src-britannica-freire"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "inclusive discussion",
+        "positionality reflection"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-feminist-pedagogy",
+      "slug": "feminist-pedagogy",
+      "titleTh": "ครุศาสตร์สตรีนิยม",
+      "titleEn": "Feminist pedagogy",
+      "kind": "intellectual-tradition",
+      "family": "critical",
+      "period": "1980-present",
+      "origin": "หลายภูมิภาค",
+      "people": [
+        "bell hooks",
+        "Feminist educators"
+      ],
+      "oneSentence": "การเรียนรู้ต้องตรวจว่าเสียง ความรู้ ร่างกาย และประสบการณ์ของใครถูกนับหรือถูกทำให้เงียบ",
+      "learnerView": "ผู้เรียนมีตำแหน่งทางสังคมและประสบการณ์ที่สัมพันธ์กับอำนาจในห้องเรียน",
+      "mechanism": "voice, positionality, dialogue, care และ critique",
+      "teacherRole": "เปิดพื้นที่หลายเสียง ตรวจอำนาจ และรับผิดชอบต่อความปลอดภัยกับความขัดแย้ง",
+      "historicalInfluence": "เปลี่ยนการอภิปรายเรื่อง authority, inclusion และ knowledge production",
+      "currentEvidence": "มีหลายสาย ไม่ใช่ทฤษฎีเดี่ยว และผลขึ้นกับวิธีจัดพื้นที่จริง",
+      "critiques": "การเชิญให้เล่าประสบการณ์ส่วนตัวอาจกดดันหรือทำให้ผู้เรียนเสี่ยง หากไม่มีสิทธิเลือกเงียบ",
+      "sourceIds": [
+        "src-hooks-transgress",
+        "src-bell-hooks-institute"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "coding projects",
+        "maker learning",
+        "debugging"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-constructionism",
+      "slug": "constructionism",
+      "titleTh": "คอนสตรักชันนิซึม",
+      "titleEn": "Constructionism",
+      "kind": "learning-theory",
+      "family": "design-frameworks",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและนานาชาติ",
+      "people": [
+        "Seymour Papert",
+        "Idit Harel"
+      ],
+      "oneSentence": "คนเรียนได้ดีเมื่อกำลังสร้างสิ่งที่แบ่งปัน ตรวจสอบ และแก้ไขได้ในโลก ไม่ว่าจะเป็นโปรแกรม หุ่นยนต์ เรื่องเล่า หรือแบบจำลอง",
+      "learnerView": "ผู้เรียนเป็นนักสร้างและนักออกแบบที่ใช้วัตถุช่วยคิด",
+      "mechanism": "learning by making, debugging, microworlds และ public artifacts",
+      "teacherRole": "สร้างเครื่องมือ เวลา ชุมชน และคำถามที่ช่วยให้ผู้เรียนออกแบบและแก้ปัญหา",
+      "historicalInfluence": "มีอิทธิพลต่อ computing education, maker education และ creative learning",
+      "currentEvidence": "การทำชิ้นงานช่วยเรียนเมื่อเชื่อมเป้าหมาย ความรู้ และ feedback ไม่ใช่เพียงมีวัสดุหรือเทคโนโลยี",
+      "critiques": "อย่าสับสน constructionism กับ constructivism หรือคิดว่า maker activity ทุกชิ้นสร้างความเข้าใจ",
+      "sourceIds": [
+        "src-papert-constructionism",
+        "src-mit-mindstorms"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "network literacy",
+        "open online learning"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-connectivism",
+      "slug": "connectivism",
+      "titleTh": "คอนเน็กทิวิซึม",
+      "titleEn": "Connectivism",
+      "kind": "contested-hypothesis",
+      "family": "networked-learning",
+      "period": "1980-present",
+      "origin": "แคนาดาและเครือข่ายออนไลน์",
+      "people": [
+        "George Siemens",
+        "Stephen Downes"
+      ],
+      "oneSentence": "ในโลกเครือข่าย ความสามารถสร้าง รักษา และเลือกการเชื่อมต่อกับแหล่งความรู้อาจสำคัญพอ ๆ กับสิ่งที่บุคคลจำได้",
+      "learnerView": "ผู้เรียนเป็นโหนดที่สร้างเส้นทางผ่านคน ข้อมูล และเทคโนโลยี",
+      "mechanism": "network formation, currency of knowledge และ pattern recognition",
+      "teacherRole": "ช่วยสร้างเครือข่าย ความรู้เท่าทันแหล่ง และการอัปเดตความรู้",
+      "historicalInfluence": "มีอิทธิพลต่อ MOOCs และคำอธิบายการเรียนรู้ดิจิทัล",
+      "currentEvidence": "สถานะว่าเป็น learning theory ใหม่ถูกโต้แย้ง และหลักฐานเชิงทำนายยังจำกัด",
+      "critiques": "การเข้าถึงเครือข่ายไม่รับประกันความรู้ที่เชื่อถือได้หรือความเข้าใจ",
+      "sourceIds": [
+        "src-siemens-connectivism",
+        "src-kop-hill-connectivism"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "autonomy-supportive teaching",
+        "competence feedback"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-sdt",
+      "slug": "self-determination-theory",
+      "titleTh": "ทฤษฎีการกำหนดตนเอง",
+      "titleEn": "Self-Determination Theory",
+      "kind": "learning-theory",
+      "family": "motivation-self-regulation",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและนานาชาติ",
+      "people": [
+        "Edward Deci",
+        "Richard Ryan"
+      ],
+      "oneSentence": "แรงจูงใจและความเป็นอยู่ดีขึ้นเมื่อบริบทสนับสนุน autonomy, competence และ relatedness โดยไม่ละทิ้งโครงสร้าง",
+      "learnerView": "ผู้เรียนมีความต้องการพื้นฐานและสามารถ internalize เป้าหมายได้",
+      "mechanism": "basic psychological needs, internalization และ autonomy support",
+      "teacherRole": "ให้เหตุผล ทางเลือกที่มีความหมาย โครงสร้าง และ feedback ที่สนับสนุนความสามารถ",
+      "historicalInfluence": "มีอิทธิพลต่อ motivation research, education, work และ health",
+      "currentEvidence": "มีฐานงานวิจัยกว้าง แต่การวัดและการใช้ข้ามวัฒนธรรมต้องดูบริบทและนิยาม autonomy ให้ถูก",
+      "critiques": "autonomy ไม่เท่ากับปล่อยอิสระไร้โครงสร้าง และรางวัลไม่ได้ทำลายแรงจูงใจทุกกรณี",
+      "sourceIds": [
+        "src-deci-ryan-2000",
+        "src-sdt-official",
+        "src-sdt-meta-2024"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "planning-monitoring-evaluating",
+        "learning journal"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-srl",
+      "slug": "self-regulated-learning",
+      "titleTh": "การเรียนรู้แบบกำกับตนเอง",
+      "titleEn": "Self-Regulated Learning",
+      "kind": "model",
+      "family": "motivation-self-regulation",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและนานาชาติ",
+      "people": [
+        "Barry Zimmerman",
+        "Paul Pintrich"
+      ],
+      "oneSentence": "ผู้เรียนวางแผน ติดตาม ควบคุม และประเมินความคิด แรงจูงใจ และการกระทำของตนระหว่างทำงาน",
+      "learnerView": "ผู้เรียนพัฒนากลยุทธ์และการรับรู้ตนผ่านวงจรของการเตรียม ทำ และสะท้อน",
+      "mechanism": "goal setting, monitoring, strategy use, feedback และ reflection",
+      "teacherRole": "สอนกลยุทธ์ ทำกระบวนการคิดให้เห็น และค่อยลด scaffolding",
+      "historicalInfluence": "เป็นกรอบสำคัญของ metacognition, study skills และ online learning",
+      "currentEvidence": "มีหลักฐานสนับสนุนการสอนกลยุทธ์แบบชัดและฝังในวิชา แต่การขอให้ “รับผิดชอบตนเอง” อย่างเดียวไม่พอ",
+      "critiques": "อย่าตำหนิผู้เรียนว่าไม่มีวินัยโดยไม่ดูงาน ความรู้เดิม เวลา และทรัพยากร",
+      "sourceIds": [
+        "src-zimmerman-srl",
+        "src-eef-metacognition",
+        "src-srl-longterm-review-2022"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "learning objectives",
+        "assessment alignment"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-bloom",
+      "slug": "blooms-taxonomy",
+      "titleTh": "อนุกรมวิธานของบลูม",
+      "titleEn": "Bloom’s Taxonomy",
+      "kind": "taxonomy",
+      "family": "design-frameworks",
+      "period": "1956-1980",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Benjamin Bloom",
+        "Lorin Anderson",
+        "David Krathwohl"
+      ],
+      "oneSentence": "ระบบจำแนกจุดมุ่งหมายการเรียนรู้ช่วยให้ผู้สอนเห็นชนิดความคิดที่ต้องการ แต่ไม่ได้บอกลำดับการสอนหรือกลไกสมอง",
+      "learnerView": "ผู้เรียนแสดงงานทางปัญญาหลายแบบที่สามารถใช้เขียนเป้าหมายและประเมิน",
+      "mechanism": "classification ไม่ใช่ learning mechanism",
+      "teacherRole": "ใช้จัด alignment ระหว่างเป้าหมาย กิจกรรม และการประเมิน",
+      "historicalInfluence": "แพร่หลายมากใน curriculum และ assessment design",
+      "currentEvidence": "เป็น taxonomy ไม่ใช่ learning theory และหลักฐานไม่รองรับการวางรูปพีระมิดว่าทุกงานต้องไต่จากล่างขึ้นบน",
+      "critiques": "คำกริยาอย่างเดียวไม่รับประกันระดับความคิด เพราะความยากขึ้นกับเนื้อหาและความรู้เดิม",
+      "sourceIds": [
+        "src-bloom-taxonomy-book",
+        "src-vanderbilt-bloom"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "accessible materials",
+        "flexible demonstration of learning"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-udl",
+      "slug": "universal-design-for-learning",
+      "titleTh": "การออกแบบเพื่อการเรียนรู้ที่เป็นสากล",
+      "titleEn": "Universal Design for Learning",
+      "kind": "framework",
+      "family": "design-frameworks",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและนานาชาติ",
+      "people": [
+        "CAST researchers"
+      ],
+      "oneSentence": "กรอบ UDL ชวนออกแบบเป้าหมาย สื่อ การมีส่วนร่วม และการแสดงความรู้ให้ยืดหยุ่นตั้งแต่ต้นเพื่อรองรับความแปรผันของผู้เรียน",
+      "learnerView": "ผู้เรียนมีความแปรผันตามงาน บริบท และการเข้าถึง ไม่ใช่แบ่งเป็นประเภทตายตัว",
+      "mechanism": "multiple means of engagement, representation, action and expression",
+      "teacherRole": "คาดการณ์อุปสรรคและให้ทางเลือกที่ยังรักษาเป้าหมายการเรียน",
+      "historicalInfluence": "มีอิทธิพลต่อ inclusive education และ accessibility design",
+      "currentEvidence": "มีงานสนับสนุนองค์ประกอบหลายส่วน แต่ evidence ของ package UDL ทั้งระบบยังพัฒนาและนิยามการใช้ต่างกัน",
+      "critiques": "ทางเลือกมากโดยไม่มีโครงสร้างอาจเพิ่มภาระ และ UDL ไม่แทน accommodation รายบุคคลทั้งหมด",
+      "sourceIds": [
+        "src-cast-udl",
+        "src-udl-review",
+        "src-udl-systematic-2016"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "multimodal instruction by content",
+        "learner preference conversation"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-learning-styles",
+      "slug": "learning-styles-meshing",
+      "titleTh": "สมมติฐานจับคู่รูปแบบการสอนกับ learning styles",
+      "titleEn": "Learning-styles meshing hypothesis",
+      "kind": "contested-hypothesis",
+      "family": "contested-popular-models",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและสหราชอาณาจักร",
+      "people": [
+        "Various model authors"
+      ],
+      "oneSentence": "ข้อเสนอว่าผู้เรียนเรียนได้ดีกว่าเมื่อวิธีสอนถูกจับคู่กับประเภท visual, auditory หรือ kinesthetic ไม่มีหลักฐานที่จำเป็นรองรับ",
+      "learnerView": "ผู้เรียนมีความชอบและความสามารถต่างกัน แต่ไม่ได้พิสูจน์ว่าต้องรับการสอนตามประเภทเดียว",
+      "mechanism": "meshing hypothesis ต้องมีผล interaction ระหว่าง style กับวิธีสอน",
+      "teacherRole": "ใช้สื่อหลายแบบตามเนื้อหาและการเข้าถึง ไม่ควรติดป้ายผู้เรียน",
+      "historicalInfluence": "ได้รับความนิยมสูงใน training และโรงเรียนแม้หลักฐานไม่รองรับ prescription",
+      "currentEvidence": "งานทบทวนไม่พบฐานเพียงพอสำหรับการจับคู่การสอนกับ style และแบบจำลองมีจำนวนมากไม่สอดคล้องกัน",
+      "critiques": "ห้ามบอกผู้เรียนว่าเป็นคนภาพหรือคนเสียงจนจำกัดโอกาสฝึกทักษะอื่น",
+      "sourceIds": [
+        "src-pashler-learning-styles",
+        "src-coffield-learning-styles",
+        "src-learning-styles-replication-2019"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "low-stakes quiz",
+        "free recall",
+        "flashcards with spacing"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-retrieval",
+      "slug": "retrieval-practice",
+      "titleTh": "หลักการฝึกเรียกคืน",
+      "titleEn": "Retrieval practice",
+      "kind": "learning-principle",
+      "family": "cognitive",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกาและนานาชาติ",
+      "people": [
+        "Henry Roediger",
+        "Jeffrey Karpicke"
+      ],
+      "oneSentence": "การพยายามเรียกข้อมูลจากความจำช่วยให้จำระยะยาวและใช้ความรู้ได้ดีกว่าการอ่านซ้ำอย่างเดียวในหลายเงื่อนไข",
+      "learnerView": "ผู้เรียนทำให้เส้นทางเรียกคืนแข็งแรงขึ้นผ่านการทดสอบที่มีความหมาย",
+      "mechanism": "effortful retrieval, feedback, spacing และ test-enhanced learning",
+      "teacherRole": "ใช้คำถามเดิมพันต่ำ ให้ feedback และเว้นระยะ",
+      "historicalInfluence": "เป็นหลักการที่มีงานทดลองและทบทวนจำนวนมากในวิทยาศาสตร์การเรียนรู้",
+      "currentEvidence": "มีหลักฐานค่อนข้างแข็งต่อความจำ แต่ผลต่อ transfer ขึ้นกับชนิดคำถาม ความรู้ และ feedback",
+      "critiques": "ไม่ควรเปลี่ยนเป็นการสอบแรงกดดันสูงหรือท่องข้อเท็จจริงโดยไม่มีความเข้าใจ",
+      "sourceIds": [
+        "src-karpicke-blunt",
+        "src-ies-retrieval-review",
+        "src-retrieval-classroom-review-2019",
+        "src-retrieval-meta-2021",
+        "src-testing-meta-2017"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [],
+      "historicalContext": "",
+      "motivation": "ไม่ได้เสนอเป็นทฤษฎีแรงจูงใจโดยตรง",
+      "applications": [
+        "varied forms of expression",
+        "broader talent recognition"
+      ],
+      "misuseWarning": "อย่าแปลงคำอธิบายกว้าง ๆ ให้เป็นสูตรสอนที่ใช้ได้กับทุกคนโดยไม่มีหลักฐานเฉพาะบริบท",
+      "id": "lt-multiple-intelligences",
+      "slug": "multiple-intelligences",
+      "titleTh": "ทฤษฎีพหุปัญญา",
+      "titleEn": "Multiple Intelligences",
+      "kind": "contested-hypothesis",
+      "family": "contested-popular-models",
+      "period": "1980-present",
+      "origin": "สหรัฐอเมริกา",
+      "people": [
+        "Howard Gardner"
+      ],
+      "oneSentence": "กรอบเสนอความสามารถมนุษย์หลายด้านที่ไม่ควรถูกลดเหลือคะแนนเชาวน์เดียว แต่ไม่ได้ยืนยันว่าต้องสอนแต่ละคนตาม intelligence ประจำตัว",
+      "learnerView": "ผู้เรียนมีจุดแข็งและผลงานหลายมิติที่วัฒนธรรมให้คุณค่าแตกต่างกัน",
+      "mechanism": "proposed intelligences ไม่ใช่ learning mechanism ที่แยกอิสระชัดเจน",
+      "teacherRole": "เปิดช่องทางให้ผู้เรียนคิดและแสดงผลงานหลายแบบโดยไม่ติดป้าย",
+      "historicalInfluence": "มีอิทธิพลต่อการยอมรับความสามารถหลากหลายในโรงเรียน",
+      "currentEvidence": "โครงสร้าง intelligence แยกชุดและฐานประสาทไม่ได้รับการยืนยันตามข้อเสนอเข้ม และมักถูกผสมกับ learning styles",
+      "critiques": "ห้ามจัดเด็กเป็นประเภท intelligence หรือใช้เป็นเหตุผลละเว้นการพัฒนาทักษะด้านอื่น",
+      "sourceIds": [
+        "src-gardner-frames",
+        "src-waterhouse-mi"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Ubuntu pedagogy",
+        "Ubuntugogy"
+      ],
+      "historicalContext": "แนวคิด Ubuntu มีถ้อยคำและสายสืบหลายแบบในแอฟริกาตอนใต้ และถูกนำมาอภิปรายการศึกษาอย่างเด่นชัดในช่วงหลังอาณานิคม",
+      "motivation": "ความเป็นมนุษย์และแรงจูงใจเกิดในความสัมพันธ์ การยอมรับ และความรับผิดชอบต่อกัน",
+      "applications": [
+        "วงสนทนาและการเรียนแบบเกื้อกูล",
+        "การศึกษาวิชาชีพที่เน้นศักดิ์ศรี",
+        "การสร้างชุมชนการเรียนรู้"
+      ],
+      "misuseWarning": "อย่าทำให้ Ubuntu เป็นคำขวัญเดียวแทนความหลากหลายของปรัชญาและสังคมแอฟริกา หรืออ้างผลลัพธ์ทั่วไปจากกรณีศึกษาเฉพาะวิชาชีพ",
+      "id": "lt-ubuntu",
+      "slug": "ubuntu-relational-education",
+      "titleTh": "Ubuntu กับการศึกษาเชิงสัมพันธ์",
+      "titleEn": "Ubuntu and relational education",
+      "kind": "intellectual-tradition",
+      "family": "philosophical-roots",
+      "period": "1980-present",
+      "origin": "แอฟริกาตอนใต้",
+      "people": [
+        "African philosophers and education scholars"
+      ],
+      "oneSentence": "การเรียนรู้ถูกมองเป็นการก่อรูปความเป็นมนุษย์ผ่านความสัมพันธ์ การพึ่งพากัน และความรับผิดชอบต่อชุมชน",
+      "learnerView": "บุคคลเติบโตผ่านความสัมพันธ์ ไม่ใช่หน่วยโดดเดี่ยวที่รับความรู้เพียงลำพัง",
+      "mechanism": "การมีส่วนร่วม การรับฟัง การดูแล การแลกเปลี่ยน และการสร้างความหมายร่วม",
+      "teacherRole": "สร้างพื้นที่ที่ศักดิ์ศรี เสียง และความรับผิดชอบร่วมกันมองเห็นได้",
+      "historicalInfluence": "มีอิทธิพลต่อวาทกรรมการศึกษาที่เน้นมนุษยธรรม การคืนดี และการลดอาณานิคมทางความรู้ในแอฟริกาตอนใต้",
+      "currentEvidence": "มีงานเชิงคุณภาพและ meta-synthesis ในบางสาขา เช่น nursing education แต่ยังไม่ใช่ฐานหลักฐานเชิงสาเหตุข้ามบริบท",
+      "critiques": "นิยามไม่เป็นหนึ่งเดียว เสี่ยงถูกทำให้โรแมนติก และอาจกลบความขัดแย้ง อำนาจ หรือความต่างภายในชุมชน",
+      "sourceIds": [
+        "src-ubuntu-letseka",
+        "src-ubuntu-metasynthesis"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Education for Self-Reliance",
+        "Elimu ya Kujitegemea"
+      ],
+      "historicalContext": "ข้อเสนอเกิดหลังเอกราชของแทนซาเนีย ท่ามกลางการสร้างรัฐ การพัฒนาชนบท และการวิจารณ์โรงเรียนแบบอาณานิคม",
+      "motivation": "การเรียนควรผูกกับศักดิ์ศรี การรับผิดชอบต่อส่วนรวม และความสามารถร่วมสร้างชีวิตของชุมชน",
+      "applications": [
+        "โครงการโรงเรียนกับชุมชน",
+        "งานผลิตที่เชื่อมหลักสูตร",
+        "การศึกษาพลเมืองและการพัฒนาชนบท"
+      ],
+      "misuseWarning": "อย่าใช้คำว่า self-reliance เป็นเหตุผลลดทรัพยากรการศึกษา หรือสรุปว่านโยบายระดับชาติบรรลุเป้าหมายทั้งหมดตามคำประกาศ",
+      "id": "lt-nyerere-self-reliance",
+      "slug": "nyerere-education-self-reliance",
+      "titleTh": "การศึกษาเพื่อการพึ่งตนเองของ Nyerere",
+      "titleEn": "Nyerere's Education for Self-Reliance",
+      "kind": "philosophy",
+      "family": "critical",
+      "period": "1956-1980",
+      "origin": "แทนซาเนีย",
+      "people": [
+        "Julius K. Nyerere"
+      ],
+      "oneSentence": "การศึกษาควรรับใช้ความเสมอภาค ชุมชน และงานที่มีความหมาย แทนการผลิตคนเพื่อไต่สถานะในระบบที่สืบจากอาณานิคม",
+      "learnerView": "ผู้เรียนเป็นสมาชิกชุมชนและผู้ร่วมพัฒนา ไม่ใช่ผู้รอรับวุฒิเพื่อออกจากชุมชน",
+      "mechanism": "เชื่อมความรู้กับงานจริง การร่วมมือ การตัดสินใจ และปัญหาของสังคม",
+      "teacherRole": "เชื่อมโรงเรียนกับชีวิตส่วนรวมและออกแบบงานที่มีคุณค่าทางการเรียน ไม่ใช่ใช้แรงงานแทนการสอน",
+      "historicalInfluence": "เป็นหมุดหมายสำคัญของปรัชญาการศึกษาหลังอาณานิคมและการถกเถียงเรื่อง education for development",
+      "currentEvidence": "หลักฐานในชุดนี้ยืนยันข้อเสนอและการรับช่วงทางนโยบาย มากกว่าประสิทธิผลเชิงสาเหตุของการนำไปใช้ทั้งระบบ",
+      "critiques": "การปฏิบัติจริงเผชิญข้อจำกัดทางเศรษฐกิจ ทรัพยากร และแรงดึงของระบบสอบกับตลาดแรงงาน",
+      "sourceIds": [
+        "src-nyerere-esr",
+        "src-unesco-reimagining-futures"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Basic Education",
+        "New Education"
+      ],
+      "historicalContext": "Nai Talim พัฒนาขึ้นในขบวนการเอกราชอินเดีย เพื่อตอบโต้การศึกษาแบบอาณานิคมและการแยกงานมือออกจากความรู้",
+      "motivation": "การเรียนเกิดจากงานที่มีความหมาย ความพึ่งตนเอง ความร่วมมือ และการพัฒนาคนทั้งด้านกาย ใจ และจริยธรรม",
+      "applications": [
+        "craft-centred curriculum",
+        "การเรียนผ่านงานผลิต",
+        "การเชื่อมโรงเรียนกับชุมชน"
+      ],
+      "misuseWarning": "อย่าลด Nai Talim เป็นวิชางานฝีมือหรือใช้แรงงานเด็ก และอย่าอ้างประสิทธิผลโดยไม่แยกระหว่างอุดมคติกับการดำเนินงานจริง",
+      "id": "lt-nai-talim",
+      "slug": "gandhi-nai-talim",
+      "titleTh": "Nai Talim หรือการศึกษาพื้นฐานแบบคานธี",
+      "titleEn": "Gandhi's Nai Talim (Basic Education)",
+      "kind": "pedagogy",
+      "family": "critical",
+      "period": "1913-1956",
+      "origin": "อินเดีย",
+      "people": [
+        "M. K. Gandhi"
+      ],
+      "oneSentence": "ความรู้ งานฝีมือ ชีวิตชุมชน และการพัฒนาจริยธรรมถูกออกแบบให้เรียนร่วมกันแทนการแยกวิชาการออกจากชีวิต",
+      "learnerView": "ผู้เรียนเป็นผู้ลงมือทำและสมาชิกชุมชนที่พัฒนาความคิดผ่านงานจริง",
+      "mechanism": "เรียนผ่านงานที่มีคุณค่า การบูรณาการวิชา การร่วมมือ และการสะท้อนความหมายของงาน",
+      "teacherRole": "ออกแบบงานที่ไม่แยกหัว มือ และหัวใจ พร้อมคุ้มครองไม่ให้งานกลายเป็นการเอาเปรียบ",
+      "historicalInfluence": "มีอิทธิพลต่อการถกเถียงการศึกษาพื้นฐาน การพึ่งตนเอง และการลดอาณานิคมทางหลักสูตรในอินเดียและนอกอินเดีย",
+      "currentEvidence": "แหล่งที่เพิ่มในรอบนี้เป็นเอกสารประวัติศาสตร์และการทบทวนเชิงแนวคิด ยังไม่มี meta-analysis ที่แยกองค์ประกอบของ Nai Talim โดยตรง",
+      "critiques": "ความเป็นไปได้ทางเศรษฐกิจ บทบาทงานฝีมือ ระบบวรรณะ เพศ และความสัมพันธ์กับการศึกษาสมัยใหม่ยังเป็นประเด็นถกเถียง",
+      "sourceIds": [
+        "src-gandhi-nai-talim",
+        "src-gandhi-nai-talim-review"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Santiniketan education",
+        "Visva-Bharati educational experiment"
+      ],
+      "historicalContext": "Tagore สร้าง Santiniketan และต่อมา Visva-Bharati ภายใต้การวิจารณ์โรงเรียนอาณานิคมและความพยายามเชื่อมอินเดียกับโลก",
+      "motivation": "ความอยากรู้ เสรีภาพ ความงาม ธรรมชาติ และการพบวัฒนธรรมอื่นเป็นแรงขับของการเติบโต",
+      "applications": [
+        "open-air learning",
+        "ศิลปะในชีวิตประจำวัน",
+        "การเรียนข้ามวัฒนธรรม",
+        "rural reconstruction"
+      ],
+      "misuseWarning": "อย่าเปลี่ยนภาพการเรียนใต้ต้นไม้เป็นสูตรสำเร็จ หรือสรุปผลจากเรื่องเล่าของสถาบันโดยไม่มีข้อมูลเปรียบเทียบ",
+      "id": "lt-tagore-education",
+      "slug": "tagore-santiniketan-education",
+      "titleTh": "ปรัชญาการศึกษาแบบ Tagore และ Santiniketan",
+      "titleEn": "Tagore's educational philosophy at Santiniketan",
+      "kind": "philosophy",
+      "family": "humanistic",
+      "period": "1850-1913",
+      "origin": "เบงกอล อินเดีย",
+      "people": [
+        "Rabindranath Tagore"
+      ],
+      "oneSentence": "การศึกษาควรเชื่อมชีวิต ธรรมชาติ ศิลปะ เสรีภาพ และการพบโลก มากกว่าจำกัดผู้เรียนไว้ในห้องเรียนและการสอบ",
+      "learnerView": "ผู้เรียนเป็นมนุษย์ทั้งคนที่มีจินตนาการ ความสัมพันธ์กับธรรมชาติ และความสามารถสร้างวัฒนธรรม",
+      "mechanism": "ประสบการณ์ตรง ศิลปะ บทสนทนา ชีวิตร่วมกัน และการเชื่อมท้องถิ่นกับสากล",
+      "teacherRole": "ร่วมสร้างสภาพแวดล้อมและวัฒนธรรมการเรียนที่เปิดพื้นที่ให้ค้นพบและสร้างสรรค์",
+      "historicalInfluence": "Santiniketan เป็นการทดลองสถาบันที่มีอิทธิพลต่อวาทกรรม holistic, arts, environmental และ international education",
+      "currentEvidence": "แหล่งปัจจุบันใน batch นี้บันทึกแนวคิดและประวัติสถาบัน ยังไม่ใช่ systematic review ของผลลัพธ์ผู้เรียน",
+      "critiques": "ภาพอุดมคติอาจกลบเงื่อนไขชนชั้น ทรัพยากร และความต่างระหว่างยุคของ Tagore กับสถาบันภายหลัง",
+      "sourceIds": [
+        "src-tagore-visva-history",
+        "src-tagore-curriculum"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Sistem Among",
+        "Tut Wuri Handayani"
+      ],
+      "historicalContext": "ระบบ Among เกิดในขบวนการ Tamansiswa ตั้งแต่ทศวรรษ 1920 ภายใต้การต่อรองกับการศึกษาอาณานิคมในหมู่เกาะอินโดนีเซีย",
+      "motivation": "เสรีภาพที่มีการดูแล การเติบโตตามศักยภาพ และความสัมพันธ์ระหว่างครอบครัว โรงเรียน และชุมชน",
+      "applications": [
+        "การเป็นแบบอย่าง",
+        "การสร้างแรงใจจากภายในกลุ่ม",
+        "การหนุนหลังให้ผู้เรียนเป็นอิสระ",
+        "Tri Pusat Pendidikan"
+      ],
+      "misuseWarning": "อย่าแปล Tut Wuri Handayani ว่าครูต้องถอยออกเสมอ และอย่าอ้างผลทั่วไปจากงานเชิงคุณภาพใน Tamansiswa ไม่กี่แห่ง",
+      "id": "lt-among-system",
+      "slug": "ki-hadjar-dewantara-among-system",
+      "titleTh": "ระบบ Among ของ Ki Hadjar Dewantara",
+      "titleEn": "Ki Hadjar Dewantara's Among system",
+      "kind": "pedagogy",
+      "family": "social-cultural",
+      "period": "1913-1956",
+      "origin": "อินโดนีเซีย",
+      "people": [
+        "Ki Hadjar Dewantara"
+      ],
+      "oneSentence": "ผู้สอนสลับบทบาทเป็นแบบอย่าง ผู้ร่วมปลุกพลัง และผู้หนุนหลัง เพื่อให้ผู้เรียนเติบโตอย่างเป็นอิสระในสายสัมพันธ์ของบ้าน โรงเรียน และชุมชน",
+      "learnerView": "ผู้เรียนมีธรรมชาติและศักยภาพที่ต้องได้รับทั้งเสรีภาพ การดูแล และบริบททางวัฒนธรรม",
+      "mechanism": "แบบอย่าง การมีส่วนร่วม การให้กำลังใจ และการค่อยลดการกำกับตามความพร้อม",
+      "teacherRole": "นำจากข้างหน้า ร่วมสร้างพลังจากท่ามกลาง และหนุนหลังโดยไม่ทอดทิ้ง",
+      "historicalInfluence": "เป็นรากสำคัญของปรัชญาการศึกษาอินโดนีเซียและคำขวัญ Tut Wuri Handayani",
+      "currentEvidence": "มีงานวิเคราะห์เอกสารร่วมกับข้อมูลเชิงคุณภาพจาก Tamansiswa ซึ่งพบทั้งความต่อเนื่องของแนวคิดและข้อจำกัดในการนำไปใช้",
+      "critiques": "หลักฐานผลลัพธ์ยังจำกัดและคำอธิบายร่วมสมัยมักเลือกเฉพาะคำขวัญโดยไม่เห็นระบบทั้งหมด",
+      "sourceIds": [
+        "src-dewantara-works",
+        "src-dewantara-among-study"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Tadarruj",
+        "Malaka in learning"
+      ],
+      "historicalContext": "Ibn Khaldun เขียน Muqaddimah ในศตวรรษที่ 14 โดยวิเคราะห์วิทยาการ การสอน ภาษา อาชีพ และสังคมในโลกอิสลามและแอฟริกาเหนือ",
+      "motivation": "การเรียนพัฒนาความสามารถหรือ malaka ผ่านการฝึกอย่างค่อยเป็นค่อยไปในบริบทสังคม",
+      "applications": [
+        "การสอนแบบไล่ระดับ",
+        "ไม่สอนหลายศาสตร์พร้อมกันแก่ผู้เริ่มต้น",
+        "การฝึกภาษาในสภาพแวดล้อมใช้จริง"
+      ],
+      "misuseWarning": "อย่าเรียก Ibn Khaldun ว่าผู้ค้นพบทฤษฎีสมัยใหม่ก่อนเวลา หรืออ้างอิทธิพลตรงต่อแนวคิดร่วมสมัยโดยไม่มีประวัติการรับช่วง",
+      "id": "lt-ibn-khaldun-pedagogy",
+      "slug": "ibn-khaldun-pedagogy",
+      "titleTh": "ข้อคิดการเรียนและการสอนของ Ibn Khaldun",
+      "titleEn": "Ibn Khaldun's pedagogy of gradual mastery",
+      "kind": "philosophy",
+      "family": "philosophical-roots",
+      "period": "roots-before-1600",
+      "origin": "แอฟริกาเหนือและโลกอาหรับ",
+      "people": [
+        "Ibn Khaldun"
+      ],
+      "oneSentence": "ความชำนาญเกิดจากการฝึกและการสอนที่ค่อยเพิ่มความซับซ้อน โดยหลีกเลี่ยงความรุนแรงและภาระที่เกินผู้เริ่มต้น",
+      "learnerView": "ผู้เรียนค่อยสร้างความสามารถผ่านนิสัยการปฏิบัติ ภาษา และสภาพสังคม",
+      "mechanism": "การไล่ระดับ การทำซ้ำอย่างมีความหมาย การใช้ภาษา และการก่อรูป malaka",
+      "teacherRole": "จัดลำดับจากภาพรวมสู่รายละเอียดและหลีกเลี่ยงการลงโทษที่ทำลายความกล้าและความไว้ใจ",
+      "historicalInfluence": "เป็นหลักฐานสำคัญว่าการคิดเรื่องการสอนอย่างเป็นระบบมีอยู่ในประวัติศาสตร์อาหรับ-อิสลามและแอฟริกาเหนือ",
+      "currentEvidence": "งานร่วมสมัยในชุดนี้เป็น content analysis ทางประวัติศาสตร์ ไม่ใช่การทดลองว่าคำแนะนำทุกข้อมีผลในห้องเรียนปัจจุบัน",
+      "critiques": "การจับคู่คำของเขากับ scaffolding หรือ constructivism สมัยใหม่อาจเป็นการอ่านย้อนหลังเกินหลักฐาน",
+      "sourceIds": [
+        "src-ibnkhaldun-muqaddimah",
+        "src-ibnkhaldun-language"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "LOPI",
+        "intent community participation"
+      ],
+      "historicalContext": "โมเดลนี้สังเคราะห์งานกับชุมชน Indigenous-heritage ในอเมริกา โดยวิจารณ์การใช้รูปแบบโรงเรียนตะวันตกเป็นบรรทัดฐานเดียวของการเรียน",
+      "motivation": "เด็กมีแรงจูงใจจากการมีส่วนในกิจกรรมจริง การเป็นสมาชิกที่มีคุณค่า และการเห็นผลงานของตนต่อครอบครัวหรือชุมชน",
+      "applications": [
+        "การเข้าร่วมงานครอบครัวอย่างรับผิดชอบ",
+        "การสังเกตอย่างตั้งใจ",
+        "การให้ผู้เริ่มต้นมีส่วนในกิจกรรมจริง"
+      ],
+      "misuseWarning": "อย่าใช้ LOPI เป็นภาพเหมารวมของ Indigenous learning หรือย้ายกิจกรรมชุมชนเข้าสู่โรงเรียนโดยตัดความสัมพันธ์และจุดหมายเดิมออก",
+      "id": "lt-lopi",
+      "slug": "learning-observing-pitching-in",
+      "titleTh": "การเรียนโดยสังเกตและร่วมลงมือในชุมชน",
+      "titleEn": "Learning by Observing and Pitching In (LOPI)",
+      "kind": "model",
+      "family": "social-cultural",
+      "period": "1980-present",
+      "origin": "เม็กซิโก กัวเตมาลา และชุมชน Indigenous-heritage ในทวีปอเมริกา",
+      "people": [
+        "Barbara Rogoff",
+        "LOPI research collaborators"
+      ],
+      "oneSentence": "เด็กเรียนจากการสังเกตอย่างตั้งใจและค่อยรับผิดชอบงานจริงที่มีจุดหมายของครอบครัวหรือชุมชน",
+      "learnerView": "ผู้เรียนเป็นผู้มีส่วนร่วมที่มีความริเริ่มและค่อยเพิ่มความรับผิดชอบในกิจกรรมร่วม",
+      "mechanism": "การสังเกตพร้อมมีส่วนร่วม การประสานงานแบบไม่แยกจากงานจริง และ feedback ที่ฝังในผลของกิจกรรม",
+      "teacherRole": "เปิดการเข้าถึงงานจริง จัดความเสี่ยง และช่วยผู้เรียนรับบทบาทเพิ่มขึ้นโดยไม่แยกการสอนออกจากกิจกรรมทั้งหมด",
+      "historicalInfluence": "ช่วยขยายจิตวิทยาวัฒนธรรมและทำให้รูปแบบการเรียนที่ไม่แยกเด็กออกจากกิจกรรมชุมชนมองเห็นได้",
+      "currentEvidence": "มีงานเปรียบเทียบเชิงพฤติกรรมและชาติพันธุ์วรรณนาในชุมชนเฉพาะ สนับสนุนองค์ประกอบบางส่วนแต่ไม่ใช่กฎสากล",
+      "critiques": "หมวด Indigenous-heritage กับ cosmopolitan ไม่ใช่ตัวตนคงที่ และความต่างอาจเกี่ยวกับประวัติ เศรษฐกิจ และโอกาสเข้าร่วมงาน",
+      "sourceIds": [
+        "src-lopi-framework",
+        "src-lopi-initiative"
+      ]
+    },
+    {
+      "evidenceStatus": "public-ready",
+      "aliases": [
+        "Sankofa education",
+        "Sankofa culturally responsive pedagogy"
+      ],
+      "historicalContext": "Sankofa เป็นแนวคิด Akan เรื่องการหวนกลับไปเอาสิ่งมีคุณค่าจากอดีต และถูกพัฒนาเป็นกรอบการศึกษาที่เชื่อมทุนวัฒนธรรมชุมชนกับโรงเรียน",
+      "motivation": "การเห็นภาษา ความรู้ และความสัมพันธ์ของชุมชนได้รับการยอมรับช่วยสร้างความหมาย ความเป็นเจ้าของ และความหวังต่ออนาคต",
+      "applications": [
+        "community-school co-design",
+        "ภาษาและเรื่องเล่าท้องถิ่นในหลักสูตร",
+        "place-based learning"
+      ],
+      "misuseWarning": "อย่าใช้คำว่า Sankofa เป็นตราประทับว่าเนื้อหาท้องถิ่นทุกอย่างดีโดยอัตโนมัติ หรือสรุปผลทั่วไปจากกรณีศึกษาโรงเรียนเดียว",
+      "id": "lt-sankofa-pedagogy",
+      "slug": "sankofa-pedagogy",
+      "titleTh": "Sankofa pedagogy และการเชื่อมโรงเรียนกับทุนวัฒนธรรมชุมชน",
+      "titleEn": "Sankofa pedagogy",
+      "kind": "framework",
+      "family": "critical",
+      "period": "1980-present",
+      "origin": "กานาและบริบทแอฟริการ่วมสมัย",
+      "people": [
+        "Akan knowledge holders",
+        "Contemporary Ghanaian education researchers"
+      ],
+      "oneSentence": "โรงเรียนร่วมกับชุมชนหวนค้นภาษา ความรู้ และทุนวัฒนธรรมที่ถูกทำให้ชายขอบ เพื่อนำมาสร้างการเรียนที่ตอบทั้งชีวิตท้องถิ่นและโลกปัจจุบัน",
+      "learnerView": "ผู้เรียนมีทุนวัฒนธรรมและความสัมพันธ์จากบ้านที่ควรเป็นทรัพยากร ไม่ใช่ข้อบกพร่อง",
+      "mechanism": "การออกแบบร่วม การยืนยันอัตลักษณ์ การใช้ภาษาและความรู้ท้องถิ่น และการเชื่อมบทเรียนกับสถานที่",
+      "teacherRole": "ทำงานกับผู้รู้ ครอบครัว และผู้เรียนเพื่อเลือกความรู้ ตรวจอำนาจ และเชื่อมหลายระบบความรู้",
+      "historicalInfluence": "เป็นทิศทางร่วมสมัยของ culturally responsive และ decolonising education ในกานา",
+      "currentEvidence": "มีกรณีศึกษาเชิงคุณภาพที่แสดงกระบวนการและเงื่อนไข แต่ผู้วิจัยยังระบุว่าสาขานี้พัฒนาอยู่และหลักฐานเชิงผลลัพธ์ยังบาง",
+      "critiques": "ต้องตรวจว่าใครมีสิทธิเลือกความรู้ของชุมชน ป้องกันการทำวัฒนธรรมให้หยุดนิ่ง และไม่ลดปัญหาเชิงโครงสร้างเป็นกิจกรรมห้องเรียน",
+      "sourceIds": [
+        "src-sankofa-case",
+        "src-indigenous-schooling-review"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "person-001",
+      "name": "Confucius",
+      "theoryIds": [
+        "lt-confucian"
+      ]
+    },
+    {
+      "id": "person-002",
+      "name": "Socrates",
+      "theoryIds": [
+        "lt-socratic"
+      ]
+    },
+    {
+      "id": "person-003",
+      "name": "Plato",
+      "theoryIds": [
+        "lt-socratic"
+      ]
+    },
+    {
+      "id": "person-004",
+      "name": "Aristotle",
+      "theoryIds": [
+        "lt-associationism"
+      ]
+    },
+    {
+      "id": "person-005",
+      "name": "Buddha",
+      "theoryIds": [
+        "lt-buddhist-training"
+      ]
+    },
+    {
+      "id": "person-006",
+      "name": "Buddhist scholars",
+      "theoryIds": [
+        "lt-buddhist-training"
+      ]
+    },
+    {
+      "id": "person-007",
+      "name": "Al-Ghazali",
+      "theoryIds": [
+        "lt-islamic-adab"
+      ]
+    },
+    {
+      "id": "person-008",
+      "name": "Islamic scholars",
+      "theoryIds": [
+        "lt-islamic-adab"
+      ]
+    },
+    {
+      "id": "person-009",
+      "name": "John Amos Comenius",
+      "theoryIds": [
+        "lt-comenius"
+      ]
+    },
+    {
+      "id": "person-010",
+      "name": "John Locke",
+      "theoryIds": [
+        "lt-locke"
+      ]
+    },
+    {
+      "id": "person-011",
+      "name": "Jean-Jacques Rousseau",
+      "theoryIds": [
+        "lt-rousseau"
+      ]
+    },
+    {
+      "id": "person-012",
+      "name": "Johann Friedrich Herbart",
+      "theoryIds": [
+        "lt-herbart"
+      ]
+    },
+    {
+      "id": "person-013",
+      "name": "John Dewey",
+      "theoryIds": [
+        "lt-dewey",
+        "lt-experiential"
+      ]
+    },
+    {
+      "id": "person-014",
+      "name": "Maria Montessori",
+      "theoryIds": [
+        "lt-montessori"
+      ]
+    },
+    {
+      "id": "person-015",
+      "name": "Edward Thorndike",
+      "theoryIds": [
+        "lt-thorndike"
+      ]
+    },
+    {
+      "id": "person-016",
+      "name": "Ivan Pavlov",
+      "theoryIds": [
+        "lt-pavlov"
+      ]
+    },
+    {
+      "id": "person-017",
+      "name": "John B. Watson",
+      "theoryIds": [
+        "lt-watson"
+      ]
+    },
+    {
+      "id": "person-018",
+      "name": "B. F. Skinner",
+      "theoryIds": [
+        "lt-skinner"
+      ]
+    },
+    {
+      "id": "person-019",
+      "name": "Edward Tolman",
+      "theoryIds": [
+        "lt-tolman"
+      ]
+    },
+    {
+      "id": "person-020",
+      "name": "Wolfgang Köhler",
+      "theoryIds": [
+        "lt-gestalt"
+      ]
+    },
+    {
+      "id": "person-021",
+      "name": "Max Wertheimer",
+      "theoryIds": [
+        "lt-gestalt"
+      ]
+    },
+    {
+      "id": "person-022",
+      "name": "Jean Piaget",
+      "theoryIds": [
+        "lt-piaget"
+      ]
+    },
+    {
+      "id": "person-023",
+      "name": "Lev Vygotsky",
+      "theoryIds": [
+        "lt-vygotsky"
+      ]
+    },
+    {
+      "id": "person-024",
+      "name": "Jerome Bruner",
+      "theoryIds": [
+        "lt-bruner"
+      ]
+    },
+    {
+      "id": "person-025",
+      "name": "David Ausubel",
+      "theoryIds": [
+        "lt-ausubel"
+      ]
+    },
+    {
+      "id": "person-026",
+      "name": "Richard Atkinson",
+      "theoryIds": [
+        "lt-information-processing"
+      ]
+    },
+    {
+      "id": "person-027",
+      "name": "Richard Shiffrin",
+      "theoryIds": [
+        "lt-information-processing"
+      ]
+    },
+    {
+      "id": "person-028",
+      "name": "Frederic Bartlett",
+      "theoryIds": [
+        "lt-schema"
+      ]
+    },
+    {
+      "id": "person-029",
+      "name": "David Rumelhart",
+      "theoryIds": [
+        "lt-schema"
+      ]
+    },
+    {
+      "id": "person-030",
+      "name": "John Sweller",
+      "theoryIds": [
+        "lt-cognitive-load"
+      ]
+    },
+    {
+      "id": "person-031",
+      "name": "Richard Mayer",
+      "theoryIds": [
+        "lt-multimedia"
+      ]
+    },
+    {
+      "id": "person-032",
+      "name": "Albert Bandura",
+      "theoryIds": [
+        "lt-bandura"
+      ]
+    },
+    {
+      "id": "person-033",
+      "name": "Jean Lave",
+      "theoryIds": [
+        "lt-situated"
+      ]
+    },
+    {
+      "id": "person-034",
+      "name": "Etienne Wenger",
+      "theoryIds": [
+        "lt-situated",
+        "lt-community-practice"
+      ]
+    },
+    {
+      "id": "person-035",
+      "name": "David Kolb",
+      "theoryIds": [
+        "lt-experiential"
+      ]
+    },
+    {
+      "id": "person-036",
+      "name": "Kurt Lewin",
+      "theoryIds": [
+        "lt-experiential"
+      ]
+    },
+    {
+      "id": "person-037",
+      "name": "Carl Rogers",
+      "theoryIds": [
+        "lt-rogers"
+      ]
+    },
+    {
+      "id": "person-038",
+      "name": "Abraham Maslow",
+      "theoryIds": [
+        "lt-maslow"
+      ]
+    },
+    {
+      "id": "person-039",
+      "name": "Malcolm Knowles",
+      "theoryIds": [
+        "lt-andragogy"
+      ]
+    },
+    {
+      "id": "person-040",
+      "name": "Jack Mezirow",
+      "theoryIds": [
+        "lt-transformative"
+      ]
+    },
+    {
+      "id": "person-041",
+      "name": "Paulo Freire",
+      "theoryIds": [
+        "lt-freire"
+      ]
+    },
+    {
+      "id": "person-042",
+      "name": "bell hooks",
+      "theoryIds": [
+        "lt-feminist-pedagogy"
+      ]
+    },
+    {
+      "id": "person-043",
+      "name": "Feminist educators",
+      "theoryIds": [
+        "lt-feminist-pedagogy"
+      ]
+    },
+    {
+      "id": "person-044",
+      "name": "Seymour Papert",
+      "theoryIds": [
+        "lt-constructionism"
+      ]
+    },
+    {
+      "id": "person-045",
+      "name": "Idit Harel",
+      "theoryIds": [
+        "lt-constructionism"
+      ]
+    },
+    {
+      "id": "person-046",
+      "name": "George Siemens",
+      "theoryIds": [
+        "lt-connectivism"
+      ]
+    },
+    {
+      "id": "person-047",
+      "name": "Stephen Downes",
+      "theoryIds": [
+        "lt-connectivism"
+      ]
+    },
+    {
+      "id": "person-048",
+      "name": "Edward Deci",
+      "theoryIds": [
+        "lt-sdt"
+      ]
+    },
+    {
+      "id": "person-049",
+      "name": "Richard Ryan",
+      "theoryIds": [
+        "lt-sdt"
+      ]
+    },
+    {
+      "id": "person-050",
+      "name": "Barry Zimmerman",
+      "theoryIds": [
+        "lt-srl"
+      ]
+    },
+    {
+      "id": "person-051",
+      "name": "Paul Pintrich",
+      "theoryIds": [
+        "lt-srl"
+      ]
+    },
+    {
+      "id": "person-052",
+      "name": "Benjamin Bloom",
+      "theoryIds": [
+        "lt-bloom"
+      ]
+    },
+    {
+      "id": "person-053",
+      "name": "Lorin Anderson",
+      "theoryIds": [
+        "lt-bloom"
+      ]
+    },
+    {
+      "id": "person-054",
+      "name": "David Krathwohl",
+      "theoryIds": [
+        "lt-bloom"
+      ]
+    },
+    {
+      "id": "person-055",
+      "name": "CAST researchers",
+      "theoryIds": [
+        "lt-udl"
+      ]
+    },
+    {
+      "id": "person-056",
+      "name": "Various model authors",
+      "theoryIds": [
+        "lt-learning-styles"
+      ]
+    },
+    {
+      "id": "person-057",
+      "name": "Henry Roediger",
+      "theoryIds": [
+        "lt-retrieval"
+      ]
+    },
+    {
+      "id": "person-058",
+      "name": "Jeffrey Karpicke",
+      "theoryIds": [
+        "lt-retrieval"
+      ]
+    },
+    {
+      "id": "person-059",
+      "name": "Howard Gardner",
+      "theoryIds": [
+        "lt-multiple-intelligences"
+      ]
+    },
+    {
+      "id": "person-060",
+      "name": "Julius K. Nyerere",
+      "theoryIds": [
+        "lt-nyerere-self-reliance"
+      ]
+    },
+    {
+      "id": "person-061",
+      "name": "M. K. Gandhi",
+      "theoryIds": [
+        "lt-nai-talim"
+      ]
+    },
+    {
+      "id": "person-062",
+      "name": "Rabindranath Tagore",
+      "theoryIds": [
+        "lt-tagore-education"
+      ]
+    },
+    {
+      "id": "person-063",
+      "name": "Ki Hadjar Dewantara",
+      "theoryIds": [
+        "lt-among-system"
+      ]
+    },
+    {
+      "id": "person-064",
+      "name": "Ibn Khaldun",
+      "theoryIds": [
+        "lt-ibn-khaldun-pedagogy"
+      ]
+    },
+    {
+      "id": "person-065",
+      "name": "Barbara Rogoff",
+      "theoryIds": [
+        "lt-lopi"
+      ]
+    },
+    {
+      "id": "person-066",
+      "name": "Moses Ackah Anlimachie",
+      "theoryIds": [
+        "lt-sankofa-pedagogy"
+      ]
+    },
+    {
+      "id": "person-067",
+      "name": "Moeketsi Letseka",
+      "theoryIds": [
+        "lt-ubuntu"
+      ]
+    }
+  ],
+  "keyWorks": [
+    {
+      "id": "work-analects",
+      "title": "The Analects of Confucius",
+      "year": null,
+      "sourceId": "src-analects",
+      "theoryIds": [
+        "lt-confucian"
+      ]
+    },
+    {
+      "id": "work-plato-dialogues",
+      "title": "The Dialogues of Plato",
+      "year": null,
+      "sourceId": "src-plato-dialogues",
+      "theoryIds": [
+        "lt-socratic"
+      ]
+    },
+    {
+      "id": "work-aristotle-memory",
+      "title": "On Memory and Reminiscence",
+      "year": null,
+      "sourceId": "src-aristotle-memory",
+      "theoryIds": [
+        "lt-associationism"
+      ]
+    },
+    {
+      "id": "work-comenius-didactic",
+      "title": "The Great Didactic of John Amos Comenius",
+      "year": 1907,
+      "sourceId": "src-comenius-didactic",
+      "theoryIds": [
+        "lt-comenius"
+      ]
+    },
+    {
+      "id": "work-locke-essay",
+      "title": "An Essay Concerning Human Understanding",
+      "year": null,
+      "sourceId": "src-locke-essay",
+      "theoryIds": [
+        "lt-locke"
+      ]
+    },
+    {
+      "id": "work-rousseau-emile",
+      "title": "Emile",
+      "year": null,
+      "sourceId": "src-rousseau-emile",
+      "theoryIds": [
+        "lt-rousseau"
+      ]
+    },
+    {
+      "id": "work-dewey-democracy",
+      "title": "Democracy and Education",
+      "year": 1916,
+      "sourceId": "src-dewey-democracy",
+      "theoryIds": [
+        "lt-dewey"
+      ]
+    },
+    {
+      "id": "work-montessori-method",
+      "title": "The Montessori Method",
+      "year": 1912,
+      "sourceId": "src-montessori-method",
+      "theoryIds": [
+        "lt-montessori"
+      ]
+    },
+    {
+      "id": "work-thorndike-animal-intelligence",
+      "title": "Animal Intelligence",
+      "year": 1911,
+      "sourceId": "src-thorndike-animal-intelligence",
+      "theoryIds": [
+        "lt-thorndike"
+      ]
+    },
+    {
+      "id": "work-pavlov-lecture",
+      "title": "Nobel Lecture: The Nobel Prize in Physiology or Medicine 1904",
+      "year": 1904,
+      "sourceId": "src-pavlov-lecture",
+      "theoryIds": [
+        "lt-pavlov"
+      ]
+    },
+    {
+      "id": "work-watson-manifesto",
+      "title": "Psychology as the Behaviorist Views It",
+      "year": 1913,
+      "sourceId": "src-watson-manifesto",
+      "theoryIds": [
+        "lt-watson"
+      ]
+    },
+    {
+      "id": "work-tolman-cognitive-maps",
+      "title": "Cognitive Maps in Rats and Men",
+      "year": 1948,
+      "sourceId": "src-tolman-cognitive-maps",
+      "theoryIds": [
+        "lt-tolman"
+      ]
+    },
+    {
+      "id": "work-kohler-apes",
+      "title": "The Mentality of Apes",
+      "year": 1925,
+      "sourceId": "src-kohler-apes",
+      "theoryIds": [
+        "lt-gestalt"
+      ]
+    },
+    {
+      "id": "work-piaget-foundation",
+      "title": "Jean Piaget: Archives and works",
+      "year": 2025,
+      "sourceId": "src-piaget-foundation",
+      "theoryIds": [
+        "lt-piaget"
+      ]
+    },
+    {
+      "id": "work-vygotsky-mind-society",
+      "title": "Mind in Society",
+      "year": 1978,
+      "sourceId": "src-vygotsky-mind-society",
+      "theoryIds": [
+        "lt-vygotsky"
+      ]
+    },
+    {
+      "id": "work-ausubel-organizer",
+      "title": "The Use of Advance Organizers in the Learning and Retention of Meaningful Verbal Material",
+      "year": 1960,
+      "sourceId": "src-ausubel-organizer",
+      "theoryIds": [
+        "lt-ausubel"
+      ]
+    },
+    {
+      "id": "work-atkinson-shiffrin",
+      "title": "Human Memory: A Proposed System and Its Control Processes",
+      "year": 1968,
+      "sourceId": "src-atkinson-shiffrin",
+      "theoryIds": [
+        "lt-information-processing"
+      ]
+    },
+    {
+      "id": "work-bartlett-remembering",
+      "title": "Remembering: A Study in Experimental and Social Psychology",
+      "year": 1932,
+      "sourceId": "src-bartlett-remembering",
+      "theoryIds": [
+        "lt-schema"
+      ]
+    },
+    {
+      "id": "work-rumelhart-schemata",
+      "title": "Schemata: The Building Blocks of Cognition",
+      "year": 1980,
+      "sourceId": "src-rumelhart-schemata",
+      "theoryIds": [
+        "lt-schema"
+      ]
+    },
+    {
+      "id": "work-sweller-cognitive-load",
+      "title": "Cognitive Load During Problem Solving",
+      "year": 1988,
+      "sourceId": "src-sweller-cognitive-load",
+      "theoryIds": [
+        "lt-cognitive-load"
+      ]
+    },
+    {
+      "id": "work-mayer-multimedia-book",
+      "title": "Multimedia Learning",
+      "year": 2021,
+      "sourceId": "src-mayer-multimedia-book",
+      "theoryIds": [
+        "lt-multimedia"
+      ]
+    },
+    {
+      "id": "work-mayer-multimedia-principle",
+      "title": "Multimedia Learning: Are We Asking the Right Questions?",
+      "year": 1997,
+      "sourceId": "src-mayer-multimedia-principle",
+      "theoryIds": [
+        "lt-multimedia"
+      ]
+    },
+    {
+      "id": "work-bandura-bobo",
+      "title": "Transmission of Aggression Through Imitation of Aggressive Models",
+      "year": 1961,
+      "sourceId": "src-bandura-bobo",
+      "theoryIds": [
+        "lt-bandura"
+      ]
+    },
+    {
+      "id": "work-lave-wenger-situated",
+      "title": "Situated Learning",
+      "year": 1991,
+      "sourceId": "src-lave-wenger-situated",
+      "theoryIds": [
+        "lt-situated"
+      ]
+    },
+    {
+      "id": "work-wenger-communities",
+      "title": "Communities of Practice: Learning, Meaning, and Identity",
+      "year": 1998,
+      "sourceId": "src-wenger-communities",
+      "theoryIds": [
+        "lt-community-practice"
+      ]
+    },
+    {
+      "id": "work-rogers-freedom-learn",
+      "title": "Freedom to Learn",
+      "year": 1969,
+      "sourceId": "src-rogers-freedom-learn",
+      "theoryIds": [
+        "lt-rogers"
+      ]
+    },
+    {
+      "id": "work-maslow-motivation",
+      "title": "A Theory of Human Motivation",
+      "year": 1943,
+      "sourceId": "src-maslow-motivation",
+      "theoryIds": [
+        "lt-maslow"
+      ]
+    },
+    {
+      "id": "work-mezirow-perspective",
+      "title": "A Critical Theory of Adult Learning and Education",
+      "year": 1981,
+      "sourceId": "src-mezirow-perspective",
+      "theoryIds": [
+        "lt-transformative"
+      ]
+    },
+    {
+      "id": "work-freire-oppressed",
+      "title": "Pedagogy of the Oppressed",
+      "year": 2018,
+      "sourceId": "src-freire-oppressed",
+      "theoryIds": [
+        "lt-freire"
+      ]
+    },
+    {
+      "id": "work-hooks-transgress",
+      "title": "Teaching to Transgress",
+      "year": 1994,
+      "sourceId": "src-hooks-transgress",
+      "theoryIds": [
+        "lt-feminist-pedagogy"
+      ]
+    },
+    {
+      "id": "work-mit-mindstorms",
+      "title": "Mindstorms",
+      "year": 2020,
+      "sourceId": "src-mit-mindstorms",
+      "theoryIds": [
+        "lt-constructionism"
+      ]
+    },
+    {
+      "id": "work-deci-ryan-2000",
+      "title": "The What and Why of Goal Pursuits",
+      "year": 2000,
+      "sourceId": "src-deci-ryan-2000",
+      "theoryIds": [
+        "lt-sdt"
+      ]
+    },
+    {
+      "id": "work-zimmerman-srl",
+      "title": "Becoming a Self-Regulated Learner",
+      "year": 2002,
+      "sourceId": "src-zimmerman-srl",
+      "theoryIds": [
+        "lt-srl"
+      ]
+    },
+    {
+      "id": "work-bloom-taxonomy-book",
+      "title": "Taxonomy of Educational Objectives: Handbook I",
+      "year": 1956,
+      "sourceId": "src-bloom-taxonomy-book",
+      "theoryIds": [
+        "lt-bloom"
+      ]
+    },
+    {
+      "id": "work-cast-udl",
+      "title": "Universal Design for Learning Guidelines 3.0",
+      "year": 2024,
+      "sourceId": "src-cast-udl",
+      "theoryIds": [
+        "lt-udl"
+      ]
+    },
+    {
+      "id": "work-karpicke-blunt",
+      "title": "Retrieval Practice Produces More Learning Than Elaborative Studying With Concept Mapping",
+      "year": 2011,
+      "sourceId": "src-karpicke-blunt",
+      "theoryIds": [
+        "lt-retrieval"
+      ]
+    },
+    {
+      "id": "work-gardner-frames",
+      "title": "Frames of Mind",
+      "year": 2011,
+      "sourceId": "src-gardner-frames",
+      "theoryIds": [
+        "lt-multiple-intelligences"
+      ]
+    }
+  ],
+  "experiments": [
+    {
+      "id": "exp-pavlov",
+      "title": "งาน conditioning ของ Pavlov",
+      "theoryIds": [
+        "lt-pavlov"
+      ],
+      "ethics": "งานสัตว์ตามมาตรฐานยุคที่ต่างจากปัจจุบัน",
+      "evidenceNote": "conditioning เป็นปรากฏการณ์ยืนยันซ้ำ แต่ทฤษฎีร่วมสมัยเพิ่มกลไกเชิงทำนาย"
+    },
+    {
+      "id": "exp-little-albert",
+      "title": "Little Albert",
+      "theoryIds": [
+        "lt-watson",
+        "lt-pavlov"
+      ],
+      "ethics": "ไม่ผ่านมาตรฐาน consent และการคุ้มครองเด็กปัจจุบัน",
+      "evidenceNote": "รายละเอียดตัวตน ผล และการติดตามถูกเล่าซ้ำเกินหลักฐาน"
+    },
+    {
+      "id": "exp-puzzle-box",
+      "title": "Puzzle-box studies",
+      "theoryIds": [
+        "lt-thorndike"
+      ],
+      "ethics": "งานสัตว์และกรอบวิวัฒนาการต้องอ่านตามบริบทยุค",
+      "evidenceNote": "แสดงการเปลี่ยนเวลาแก้ปัญหาจากผลตามหลัง แต่ไม่สรุปการเรียนทุกแบบ"
+    },
+    {
+      "id": "exp-kohler",
+      "title": "Köhler’s ape problem solving",
+      "theoryIds": [
+        "lt-gestalt"
+      ],
+      "ethics": "งานสัตว์และการตีความ insight มีข้อจำกัด",
+      "evidenceNote": "เป็นหลักฐานประวัติศาสตร์สำคัญ แต่การแก้ปัญหามีกลไกหลายแบบ"
+    },
+    {
+      "id": "exp-bobo",
+      "title": "Bobo doll studies",
+      "theoryIds": [
+        "lt-bandura"
+      ],
+      "ethics": "เด็กถูกทำให้เห็นแบบอย่างก้าวร้าวและมาตรฐานปัจจุบันเข้มกว่า",
+      "evidenceNote": "สนับสนุน observational learning แต่ไม่ใช่แบบจำลองความรุนแรงจริงทั้งหมด"
+    },
+    {
+      "id": "exp-worked-example",
+      "title": "Worked-example experiments",
+      "theoryIds": [
+        "lt-cognitive-load"
+      ],
+      "ethics": "ความเสี่ยงต่ำโดยทั่วไป แต่ผลขึ้นกับกลุ่มตัวอย่างและงาน",
+      "evidenceNote": "ผล worked example พบซ้ำมาก โดยเฉพาะผู้เริ่มต้น"
+    },
+    {
+      "id": "exp-retrieval",
+      "title": "Retrieval-practice experiments",
+      "theoryIds": [
+        "lt-retrieval"
+      ],
+      "ethics": "ต้องแยก quiz เดิมพันต่ำจากการสอบที่มีผลสูง",
+      "evidenceNote": "ผลต่อความจำมีฐานกว้าง ส่วน transfer ขึ้นกับรูปแบบฝึก"
+    },
+    {
+      "id": "exp-learning-styles",
+      "title": "Meshing-hypothesis tests",
+      "theoryIds": [
+        "lt-learning-styles"
+      ],
+      "ethics": "การติดป้ายอาจจำกัดความคาดหวังผู้เรียน",
+      "evidenceNote": "ไม่พบหลักฐานพอให้จับคู่วิธีสอนตามประเภท learning style"
+    }
+  ],
+  "worldContexts": [
+    {
+      "id": "ctx-print-schooling",
+      "period": "1600-1850",
+      "title": "สิ่งพิมพ์ รัฐ และการขยายการศึกษามวลชน",
+      "summary": "แบบเรียน หลักสูตร และการผลิตครูทำให้แนวคิดการสอนเดินทางและถูกทำให้เป็นมาตรฐาน"
+    },
+    {
+      "id": "ctx-experimental-psychology",
+      "period": "1850-1913",
+      "title": "ห้องทดลองและการเกิดจิตวิทยาเชิงทดลอง",
+      "summary": "การวัดเวลา การรับรู้ ความจำ และพฤติกรรมเปลี่ยนคำถามเรื่องการเรียนให้เป็นปัญหาทดลอง"
+    },
+    {
+      "id": "ctx-industrial-measurement",
+      "period": "1850-1913",
+      "title": "อุตสาหกรรม การสอบ และการวัดความสามารถ",
+      "summary": "ระบบโรงเรียนขนาดใหญ่ต้องการการจัดกลุ่มและมาตรฐาน แต่เครื่องมือวัดก็มาพร้อมอคติและการใช้อำนาจ"
+    },
+    {
+      "id": "ctx-behaviorism",
+      "period": "1913-1956",
+      "title": "พฤติกรรมนิยมและอุดมคติวิทยาศาสตร์ที่สังเกตได้",
+      "summary": "นักจิตวิทยาหลายกลุ่มจำกัดการอธิบายให้พึ่งพฤติกรรมที่วัดได้ แม้จะเห็นกลไกต่างกัน"
+    },
+    {
+      "id": "ctx-cognitive-revolution",
+      "period": "1956-1980",
+      "title": "การปฏิวัติการรู้คิด",
+      "summary": "คอมพิวเตอร์ ภาษาศาสตร์ และข้อจำกัดของ behaviorism เปิดพื้นที่ให้ศึกษาความจำ ภาษา และการแก้ปัญหา"
+    },
+    {
+      "id": "ctx-decolonization-rights",
+      "period": "1956-1980",
+      "title": "การปลดอาณานิคม ขบวนการสิทธิ และการศึกษาประชาชน",
+      "summary": "คำถามว่าใครนิยามความรู้และการศึกษาเพื่อใครผลักให้ pedagogy เชื่อมกับอำนาจและการเปลี่ยนสังคม"
+    },
+    {
+      "id": "ctx-digital-networks",
+      "period": "1980-present",
+      "title": "คอมพิวเตอร์ อินเทอร์เน็ต และเครือข่ายความรู้",
+      "summary": "เครื่องมือสร้างสื่อ การเขียนโปรแกรม และแพลตฟอร์มเปลี่ยนทั้งสิ่งที่เรียนและโครงสร้างการเข้าถึงความรู้"
+    },
+    {
+      "id": "ctx-evidence-replication",
+      "period": "1980-present",
+      "title": "systematic review, replication และ evidence-informed education",
+      "summary": "การทบทวนหลักฐานจำนวนมากช่วยแยกแนวคิดยอดนิยมออกจากผลที่ทำซ้ำได้ พร้อมเผยข้อจำกัดของการขยายผล"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-001",
+      "fromId": "lt-associationism",
+      "toId": "lt-locke",
+      "type": "builds_on",
+      "summary": "ประสบการณ์นิยมยุโรปพัฒนาแนวคิดการเชื่อมความคิดอย่างเป็นระบบมากขึ้น",
+      "sourceIds": [
+        "src-apa-associationism",
+        "src-sep-locke"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-002",
+      "fromId": "lt-locke",
+      "toId": "lt-thorndike",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองให้ความสำคัญกับประสบการณ์ แต่ต่างยุค วิธี และสถานะวิทยาศาสตร์",
+      "sourceIds": [
+        "src-sep-locke",
+        "src-britannica-thorndike"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-003",
+      "fromId": "lt-rousseau",
+      "toId": "lt-dewey",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งคู่คัดค้านการสอนที่แยกจากประสบการณ์เด็ก แต่ Dewey ไม่รับ individualism แบบเดียวกับ Rousseau",
+      "sourceIds": [
+        "src-sep-rousseau",
+        "src-sep-dewey"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-004",
+      "fromId": "lt-herbart",
+      "toId": "lt-ausubel",
+      "type": "runs_parallel_to",
+      "summary": "แนว apperception และ prior knowledge คล้ายกันบางส่วนโดยไม่ควรถือว่าเป็นทฤษฎีเดียวกัน",
+      "sourceIds": [
+        "src-herbart-science-education",
+        "src-ausubel-organizer"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-005",
+      "fromId": "lt-dewey",
+      "toId": "lt-experiential",
+      "type": "builds_on",
+      "summary": "Kolb นำ Dewey และนักคิดอีกหลายคนมาสังเคราะห์เป็นวงจรประสบการณ์",
+      "sourceIds": [
+        "src-dewey-experience-education",
+        "src-kolb-experiential"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-006",
+      "fromId": "lt-dewey",
+      "toId": "lt-bruner",
+      "type": "builds_on",
+      "summary": "inquiry และประสบการณ์ของ Dewey เป็นรากหนึ่งของแนว discovery และ curriculum สมัยหลัง",
+      "sourceIds": [
+        "src-sep-dewey",
+        "src-bruner-discovery"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-007",
+      "fromId": "lt-thorndike",
+      "toId": "lt-skinner",
+      "type": "extends",
+      "summary": "งานผลตามหลังพฤติกรรมถูกพัฒนาต่อใน operant analysis",
+      "sourceIds": [
+        "src-thorndike-animal-intelligence",
+        "src-skinner-science-human-behavior"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-008",
+      "fromId": "lt-pavlov",
+      "toId": "lt-watson",
+      "type": "builds_on",
+      "summary": "Watson ใช้งาน conditioning เป็นฐานส่วนหนึ่งของโครงการ behaviorism",
+      "sourceIds": [
+        "src-pavlov-lecture",
+        "src-watson-manifesto"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-009",
+      "fromId": "lt-watson",
+      "toId": "lt-skinner",
+      "type": "extends",
+      "summary": "Skinner พัฒนา radical behaviorism และ operant conditioning ที่ต่างจาก methodological behaviorism ของ Watson",
+      "sourceIds": [
+        "src-watson-manifesto",
+        "src-skinner-science-human-behavior"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-010",
+      "fromId": "lt-watson",
+      "toId": "lt-gestalt",
+      "type": "reacts_against",
+      "summary": "Gestalt คัดค้านการลดจิตและการเรียนเป็นองค์ประกอบย่อยเชื่อมต่อกันเท่านั้น",
+      "sourceIds": [
+        "src-watson-manifesto",
+        "src-kohler-apes"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-011",
+      "fromId": "lt-thorndike",
+      "toId": "lt-tolman",
+      "type": "reacts_against",
+      "summary": "Tolman รักษาการวัดพฤติกรรมแต่เพิ่มจุดหมาย ความคาดหมาย และแผนที่ทางปัญญา",
+      "sourceIds": [
+        "src-thorndike-animal-intelligence",
+        "src-tolman-cognitive-maps"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-012",
+      "fromId": "lt-tolman",
+      "toId": "lt-information-processing",
+      "type": "runs_parallel_to",
+      "summary": "cognitive maps ช่วยเปิดพื้นที่ให้ตัวแปรภายในก่อนการปฏิวัติการรู้คิด",
+      "sourceIds": [
+        "src-tolman-cognitive-maps",
+        "src-atkinson-shiffrin"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-013",
+      "fromId": "lt-piaget",
+      "toId": "lt-bruner",
+      "type": "builds_on",
+      "summary": "Bruner รับอิทธิพลจาก developmental constructivism แต่เสนอ representation และ curriculum ต่างออกไป",
+      "sourceIds": [
+        "src-britannica-piaget",
+        "src-bruner-discovery"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-014",
+      "fromId": "lt-vygotsky",
+      "toId": "lt-situated",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองให้ความสำคัญกับสังคมและเครื่องมือ แต่ situated learning มีเส้นทางทฤษฎีของตน",
+      "sourceIds": [
+        "src-vygotsky-mind-society",
+        "src-lave-wenger-situated"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-015",
+      "fromId": "lt-vygotsky",
+      "toId": "lt-bruner",
+      "type": "builds_on",
+      "summary": "งานของ Bruner และเพื่อนร่วมงานพัฒนาแนว scaffolding ในบริบทที่ได้รับอิทธิพลจาก Vygotsky",
+      "sourceIds": [
+        "src-vygotsky-mind-society",
+        "src-bruner-discovery"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-016",
+      "fromId": "lt-information-processing",
+      "toId": "lt-schema",
+      "type": "extends",
+      "summary": "schema อธิบายบทบาทของโครงความรู้เดิมในกระบวนการตีความและจำ",
+      "sourceIds": [
+        "src-atkinson-shiffrin",
+        "src-rumelhart-schemata"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-017",
+      "fromId": "lt-information-processing",
+      "toId": "lt-cognitive-load",
+      "type": "builds_on",
+      "summary": "CLT ใช้ข้อจำกัดความจำทำงานและบทบาทความจำระยะยาวเป็นฐาน",
+      "sourceIds": [
+        "src-atkinson-shiffrin",
+        "src-sweller-cognitive-load"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-018",
+      "fromId": "lt-cognitive-load",
+      "toId": "lt-multimedia",
+      "type": "builds_on",
+      "summary": "multimedia learning รวมข้อจำกัดการประมวลผลกับสมมติฐานช่องทางคำและภาพ",
+      "sourceIds": [
+        "src-sweller-cognitive-load",
+        "src-mayer-multimedia-book"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-019",
+      "fromId": "lt-watson",
+      "toId": "lt-bandura",
+      "type": "reacts_against",
+      "summary": "Bandura แสดงว่าการสังเกตและกระบวนการรู้คิดเกินคำอธิบาย stimulus-response แบบแคบ",
+      "sourceIds": [
+        "src-watson-manifesto",
+        "src-bandura-bobo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-020",
+      "fromId": "lt-bandura",
+      "toId": "lt-srl",
+      "type": "builds_on",
+      "summary": "self-efficacy และ self-regulation เป็นฐานสำคัญของโมเดล SRL",
+      "sourceIds": [
+        "src-apa-social-learning",
+        "src-zimmerman-srl"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-021",
+      "fromId": "lt-vygotsky",
+      "toId": "lt-situated",
+      "type": "builds_on",
+      "summary": "sociocultural attention to mediation เป็นหนึ่งในรากร่วมของการเรียนรู้ตามสถานการณ์",
+      "sourceIds": [
+        "src-vygotsky-mind-society",
+        "src-lave-wenger-situated"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-022",
+      "fromId": "lt-situated",
+      "toId": "lt-community-practice",
+      "type": "extends",
+      "summary": "Communities of Practice ขยายการอภิปราย participation, identity และ practice",
+      "sourceIds": [
+        "src-lave-wenger-situated",
+        "src-wenger-communities"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-023",
+      "fromId": "lt-piaget",
+      "toId": "lt-constructionism",
+      "type": "builds_on",
+      "summary": "Papert พัฒนาแนว constructivist ผ่านการสร้างสิ่งที่แบ่งปันได้และการใช้คอมพิวเตอร์",
+      "sourceIds": [
+        "src-britannica-piaget",
+        "src-papert-constructionism"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-024",
+      "fromId": "lt-dewey",
+      "toId": "lt-constructionism",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งคู่ให้ความสำคัญกับการลงมือและการสร้างปัญหาที่มีความหมาย",
+      "sourceIds": [
+        "src-dewey-democracy",
+        "src-mit-mindstorms"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-025",
+      "fromId": "lt-rogers",
+      "toId": "lt-sdt",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองสนใจ autonomy และสภาพแวดล้อมสนับสนุน แต่ SDT มีโครงทดสอบเฉพาะกว่า",
+      "sourceIds": [
+        "src-rogers-freedom-learn",
+        "src-deci-ryan-2000"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-026",
+      "fromId": "lt-maslow",
+      "toId": "lt-sdt",
+      "type": "reacts_against",
+      "summary": "SDT เสนอ basic needs ที่ไม่เรียงเป็นพีระมิดและทดสอบเชิงประจักษ์ต่างจาก Maslow",
+      "sourceIds": [
+        "src-maslow-motivation",
+        "src-deci-ryan-2000"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-027",
+      "fromId": "lt-freire",
+      "toId": "lt-feminist-pedagogy",
+      "type": "builds_on",
+      "summary": "นักการศึกษาสตรีนิยมจำนวนหนึ่งต่อยอด dialogue และ critique พร้อมเพิ่มเพศ ร่างกาย และ positionality",
+      "sourceIds": [
+        "src-freire-oppressed",
+        "src-hooks-transgress"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-028",
+      "fromId": "lt-dewey",
+      "toId": "lt-freire",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งคู่เชื่อมการศึกษากับประชาธิปไตยและการลงมือ แต่บริบทและการวิเคราะห์อำนาจต่างกัน",
+      "sourceIds": [
+        "src-sep-dewey",
+        "src-freire-oppressed"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-029",
+      "fromId": "lt-situated",
+      "toId": "lt-connectivism",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองมองความรู้เกินตัวบุคคล แต่ connectivism เน้นเครือข่ายดิจิทัลและมีสถานะทฤษฎีที่ถกเถียง",
+      "sourceIds": [
+        "src-lave-wenger-situated",
+        "src-siemens-connectivism"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-030",
+      "fromId": "lt-connectivism",
+      "toId": "lt-community-practice",
+      "type": "contested_by",
+      "summary": "งานวิจารณ์ connectivism ถามว่าสิ่งใหม่เกินกรอบ social/network learning เดิมเพียงใด",
+      "sourceIds": [
+        "src-kop-hill-connectivism",
+        "src-wenger-communities"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-031",
+      "fromId": "lt-information-processing",
+      "toId": "lt-retrieval",
+      "type": "applied_in",
+      "summary": "retrieval practice ใช้กลไก encoding และ retrieval จาก memory research ในหลักการเรียนเฉพาะ",
+      "sourceIds": [
+        "src-atkinson-shiffrin",
+        "src-karpicke-blunt"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-032",
+      "fromId": "lt-schema",
+      "toId": "lt-retrieval",
+      "type": "runs_parallel_to",
+      "summary": "การเรียกคืนสัมพันธ์กับความรู้เดิมและโครงสร้างคำถาม แต่ไม่ใช่ผลจาก schema เพียงอย่างเดียว",
+      "sourceIds": [
+        "src-rumelhart-schemata",
+        "src-karpicke-blunt"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-033",
+      "fromId": "lt-bruner",
+      "toId": "lt-cognitive-load",
+      "type": "contested_by",
+      "summary": "หลักฐานเรื่อง minimal guidance จำกัดการตีความ discovery learning แบบปล่อยผู้เริ่มต้นค้นเอง",
+      "sourceIds": [
+        "src-kirschner-minimal-guidance",
+        "src-sweller-cognitive-load"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-034",
+      "fromId": "lt-experiential",
+      "toId": "lt-learning-styles",
+      "type": "contested_by",
+      "summary": "การนำ Kolb ไปจัดคนเป็น learning styles ถูกวิจารณ์และไม่รองรับ meshing prescription",
+      "sourceIds": [
+        "src-kolb-experiential",
+        "src-pashler-learning-styles"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rel-035",
+      "fromId": "lt-learning-styles",
+      "toId": "lt-multiple-intelligences",
+      "type": "runs_parallel_to",
+      "summary": "สองแนวคิดมักถูกผสมในโรงเรียน แต่กล่าวถึงคนละเรื่องและไม่มีฐานให้จับคู่การสอนตามประเภท",
+      "sourceIds": [
+        "src-coffield-learning-styles",
+        "src-waterhouse-mi"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-036",
+      "fromId": "lt-bloom",
+      "toId": "lt-udl",
+      "type": "applied_in",
+      "summary": "ทั้งสองใช้ร่วมใน instructional design ได้ แต่ taxonomy จัดเป้าหมาย ส่วน UDL ตรวจอุปสรรคและทางเลือก",
+      "sourceIds": [
+        "src-vanderbilt-bloom",
+        "src-cast-udl"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-037",
+      "fromId": "lt-sdt",
+      "toId": "lt-srl",
+      "type": "builds_on",
+      "summary": "แรงจูงใจแบบ internalized และ autonomy support ช่วยอธิบายเงื่อนไขของ self-regulation",
+      "sourceIds": [
+        "src-deci-ryan-2000",
+        "src-zimmerman-srl"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-038",
+      "fromId": "lt-bandura",
+      "toId": "lt-sdt",
+      "type": "runs_parallel_to",
+      "summary": "self-efficacy และ basic needs เป็น construct ต่างกันที่ร่วมอธิบายแรงจูงใจได้",
+      "sourceIds": [
+        "src-apa-social-learning",
+        "src-deci-ryan-2000"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-039",
+      "fromId": "lt-vygotsky",
+      "toId": "lt-udl",
+      "type": "applied_in",
+      "summary": "UDL ใช้ scaffolding และเครื่องมือเข้าถึงได้ แต่ไม่ใช่ผลสืบตรงจาก Vygotsky เพียงคนเดียว",
+      "sourceIds": [
+        "src-vygotsky-mind-society",
+        "src-cast-udl"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rel-040",
+      "fromId": "lt-information-processing",
+      "toId": "lt-bloom",
+      "type": "runs_parallel_to",
+      "summary": "Bloom เป็น taxonomy และไม่ใช่แผนผังกระบวนการความจำ แม้มักถูกใช้ร่วมในงานออกแบบ",
+      "sourceIds": [
+        "src-atkinson-shiffrin",
+        "src-vanderbilt-bloom"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-041",
+      "fromId": "lt-ubuntu",
+      "toId": "lt-community-practice",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองแนวให้ความสัมพันธ์และการมีส่วนร่วมเป็นแกน แต่เกิดจากประวัติทางความคิดต่างกันและไม่มีหลักฐานว่าแนวหนึ่งสืบตรงจากอีกแนวหนึ่ง",
+      "sourceIds": [
+        "src-ubuntu-letseka",
+        "src-wenger-communities"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rel-042",
+      "fromId": "lt-nyerere-self-reliance",
+      "toId": "lt-freire",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งคู่เชื่อมการศึกษากับอำนาจและการเปลี่ยนสังคมในโลกหลังอาณานิคม แต่รายการนี้บันทึกความขนาน ไม่อ้างสายอิทธิพลโดยตรง",
+      "sourceIds": [
+        "src-nyerere-esr",
+        "src-freire-oppressed"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-043",
+      "fromId": "lt-nai-talim",
+      "toId": "lt-dewey",
+      "type": "runs_parallel_to",
+      "summary": "Nai Talim และ pragmatism ต่างเชื่อมประสบการณ์กับการศึกษา แต่จุดหมายทางการเมือง เศรษฐกิจ และจริยธรรมไม่เหมือนกัน",
+      "sourceIds": [
+        "src-gandhi-nai-talim",
+        "src-dewey-democracy"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rel-044",
+      "fromId": "lt-tagore-education",
+      "toId": "lt-dewey",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองวิจารณ์โรงเรียนที่แยกจากชีวิตและให้ความสำคัญกับประสบการณ์ แต่หลักฐานชุดนี้ยังไม่ใช้ยืนยันการส่งต่อแนวคิดโดยตรง",
+      "sourceIds": [
+        "src-tagore-visva-history",
+        "src-sep-dewey"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rel-045",
+      "fromId": "lt-among-system",
+      "toId": "lt-montessori",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองให้เสรีภาพภายใต้สภาพแวดล้อมและการดูแลของผู้ใหญ่ แต่ระบบ Among เน้นบทบาทเชิงสัมพันธ์ของครอบครัว โรงเรียน และชุมชนมากกว่า",
+      "sourceIds": [
+        "src-dewantara-among-study",
+        "src-montessori-method"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rel-046",
+      "fromId": "lt-islamic-adab",
+      "toId": "lt-ibn-khaldun-pedagogy",
+      "type": "runs_parallel_to",
+      "summary": "งานของ Ibn Khaldun อยู่ในโลกวิทยาการอิสลามแต่เสนอการวิเคราะห์การสอนเฉพาะของตน จึงไม่ควรถูกลดเป็นตัวแทนของ adab ทั้งหมด",
+      "sourceIds": [
+        "src-sep-al-ghazali",
+        "src-ibnkhaldun-muqaddimah"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-047",
+      "fromId": "lt-lopi",
+      "toId": "lt-situated",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองอธิบายการเรียนผ่านการมีส่วนในกิจกรรมทางสังคม แต่ LOPI ระบุรูปแบบการจัดการความสนใจและความริเริ่มจากชุมชน Indigenous-heritage โดยเฉพาะ",
+      "sourceIds": [
+        "src-lopi-framework",
+        "src-lave-wenger-situated"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rel-048",
+      "fromId": "lt-sankofa-pedagogy",
+      "toId": "lt-freire",
+      "type": "runs_parallel_to",
+      "summary": "ทั้งสองท้าทายอำนาจที่กำหนดว่าความรู้ใดมีคุณค่า แต่ Sankofa case นี้ยึดทุนวัฒนธรรมและการออกแบบร่วมในกานา ไม่ใช่การประยุกต์ Freire โดยอัตโนมัติ",
+      "sourceIds": [
+        "src-sankofa-case",
+        "src-freire-oppressed"
+      ],
+      "confidence": "low"
+    }
+  ],
+  "syntheses": [
+    {
+      "id": "syn-01",
+      "title": "จากการฝึกตนสู่ทฤษฎีทดลอง",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-confucian",
+        "lt-buddhist-training",
+        "lt-islamic-adab",
+        "lt-thorndike"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-02",
+      "title": "ประสบการณ์หมายถึงอะไรในคนละทฤษฎี",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-locke",
+        "lt-dewey",
+        "lt-experiential"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-03",
+      "title": "เมื่อพฤติกรรมที่มองเห็นได้กลายเป็นวิทยาศาสตร์",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-pavlov",
+        "lt-watson",
+        "lt-skinner",
+        "lt-tolman"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-04",
+      "title": "การปฏิวัติการรู้คิดและข้อจำกัดของความจำ",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-information-processing",
+        "lt-schema",
+        "lt-cognitive-load",
+        "lt-retrieval"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-05",
+      "title": "ผู้เรียนสร้างความรู้คนเดียวหรือกับสังคม",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-piaget",
+        "lt-vygotsky",
+        "lt-situated",
+        "lt-community-practice"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-06",
+      "title": "ครูควรนำมากแค่ไหน",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-bruner",
+        "lt-cognitive-load",
+        "lt-montessori",
+        "lt-udl"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-07",
+      "title": "แรงจูงใจ ความต้องการ และการกำกับตน",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-maslow",
+        "lt-rogers",
+        "lt-sdt",
+        "lt-srl"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-08",
+      "title": "การเรียนรู้กับอำนาจและเสียงที่ถูกนับ",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-freire",
+        "lt-feminist-pedagogy",
+        "lt-transformative"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-09",
+      "title": "เมื่อการเรียนย้ายเข้าสู่เครือข่ายดิจิทัล",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-constructionism",
+        "lt-connectivism",
+        "lt-community-practice"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-10",
+      "title": "ของยอดนิยมที่ไม่ใช่ทฤษฎีการเรียนรู้",
+      "summary": "เส้นทางอ่านเปรียบเทียบที่แยกบริบท ความสัมพันธ์ และสถานะหลักฐาน",
+      "theoryIds": [
+        "lt-bloom",
+        "lt-learning-styles",
+        "lt-multiple-intelligences",
+        "lt-maslow"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-11",
+      "title": "การเรียนรู้ของเด็ก: พัฒนาการ การสำรวจ และชุมชน",
+      "summary": "เริ่มจากคำถามว่าเด็กสร้างความเข้าใจผ่านพัฒนาการ สิ่งแวดล้อม การช่วยเหลือ และการมีส่วนร่วมในชีวิตชุมชนอย่างไร โดยไม่เหมารวมว่าเด็กทุกคนต้องเรียนแบบเดียวกัน",
+      "theoryIds": [
+        "lt-montessori",
+        "lt-piaget",
+        "lt-vygotsky",
+        "lt-lopi"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-12",
+      "title": "ผู้ใหญ่ การทำงาน และการเปลี่ยนมุมมอง",
+      "summary": "สำรวจบทบาทของประสบการณ์เดิม ปัญหาจริง ชุมชนนักปฏิบัติ และการทบทวนกรอบคิด โดยไม่ถือว่าผู้ใหญ่ทุกคนต้องพร้อมเรียนรู้ด้วยตนเองเท่ากัน",
+      "theoryIds": [
+        "lt-andragogy",
+        "lt-experiential",
+        "lt-community-practice",
+        "lt-transformative"
+      ],
+      "evidenceStatus": "public-ready"
+    },
+    {
+      "id": "syn-13",
+      "title": "พัฒนาตนเอง แรงจูงใจ และการกำกับการเรียนรู้",
+      "summary": "อ่านเรื่องการฝึกตน ความเป็นมนุษย์ แรงจูงใจ และการวางแผนติดตามการเรียนของตน โดยไม่เปลี่ยนแนวคิดการเรียนรู้ให้เป็นคำสัญญาแบบ self-help",
+      "theoryIds": [
+        "lt-buddhist-training",
+        "lt-rogers",
+        "lt-sdt",
+        "lt-srl"
+      ],
+      "evidenceStatus": "public-ready"
+    }
+  ]
+}

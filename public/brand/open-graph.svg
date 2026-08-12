@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">แผนที่ประวัติศาสตร์แนวคิดการเรียนรู้โลก</title>
+  <desc id="desc">ภาพแชร์สำหรับเว็บไซต์ แสดงตราหลายเส้นทางและชื่อคลังภาษาไทย</desc>
+  <rect width="1200" height="630" fill="#fffef8"/>
+  <path d="M0 548C245 486 415 582 638 530s363-25 562-89v189H0Z" fill="#e4f7f6"/>
+  <circle cx="220" cy="270" r="154" fill="#ffffff" stroke="#d9dfda" stroke-width="3"/>
+  <image href="logo-mark.svg" x="112" y="162" width="216" height="216"/>
+  <text x="430" y="242" fill="#2f3338" font-family="Kanit, Tahoma, sans-serif" font-size="62" font-weight="600">แผนที่ประวัติศาสตร์</text>
+  <text x="430" y="322" fill="#2f3338" font-family="Kanit, Tahoma, sans-serif" font-size="62" font-weight="600">แนวคิดการเรียนรู้โลก</text>
+  <text x="434" y="389" fill="#66706f" font-family="Bai Jamjuree, Tahoma, sans-serif" font-size="27">หลายเส้นทาง หลายบริบท และหลักฐานที่ตรวจย้อนกลับได้</text>
+  <rect x="434" y="429" width="92" height="8" rx="4" fill="#50c2c0"/>
+  <rect x="536" y="429" width="55" height="8" rx="4" fill="#f4b321"/>
+  <rect x="601" y="429" width="55" height="8" rx="4" fill="#6e5aa8"/>
+</svg>

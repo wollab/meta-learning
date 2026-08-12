@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import {archive} from '../../data/theories';
+import {ExternalLink,Search} from 'lucide-astro';
+const roles=[...new Set(archive.sources.map(x=>x.role))].sort();
+---
+<BaseLayout title="แหล่งข้อมูล | Meta Learning">
+  <div class="page-shell">
+    <PageIntro eyebrow="Original works and current evidence" title="แหล่งข้อมูล" lead="ผลงานต้นฉบับใช้ตอบว่าแนวคิดเสนออะไร งานประวัติศาสตร์ใช้วางบริบท และงานทบทวนใช้ประเมินว่าส่วนใดยังได้รับการสนับสนุน"/>
+    <section class="filter-panel source-filter">
+      <label class="search-field"><Search/><span class="sr-only">ค้นหา</span><input id="source-search" type="search" placeholder="ค้นชื่อผลงาน สำนักพิมพ์ หรือตำแหน่งอ้างอิง"/></label>
+      <label><span>บทบาทแหล่ง</span><select id="source-role"><option value="">ทุกบทบาท</option>{roles.map(x=><option value={x}>{x}</option>)}</select></label>
+      <div class="filter-count"><span id="source-count">{archive.sources.length} แหล่ง</span></div>
+    </section>
+    <div class="source-list">
+      {archive.sources.map((x:any,index)=><article data-search={`${x.title} ${x.publisher} ${x.locator??''}`.toLowerCase()} data-role={x.role}>
+        <span>{String(index+1).padStart(3,'0')}</span>
+        <div>
+          <h2>{x.title}</h2><p>{x.publisher} · {x.year??'ไม่ระบุปี'} · {x.role}</p>
+          {x.locator&&<small><strong>ตำแหน่ง:</strong> {x.locator}</small>}
+          {x.limitations&&<small><strong>ข้อจำกัด:</strong> {x.limitations}</small>}
+        </div>
+        {x.url?<a href={x.url} target="_blank" rel="noreferrer" aria-label={`เปิดแหล่งต้นทาง: ${x.title}`}><ExternalLink/></a>:<span aria-label="ยังไม่มีลิงก์ฉบับเปิดที่ตรวจแล้ว">—</span>}
+      </article>)}
+    </div>
+    <p class="empty-state" hidden>ไม่พบแหล่งที่ตรงกับตัวกรอง</p>
+  </div>
+  <script is:inline>
+    const items=[...document.querySelectorAll('.source-list article')],q=document.querySelector('#source-search'),r=document.querySelector('#source-role'),c=document.querySelector('#source-count'),e=document.querySelector('.empty-state');
+    function run(){let n=0;items.forEach(x=>{const s=(!q.value||x.dataset.search.includes(q.value.toLowerCase()))&&(!r.value||x.dataset.role===r.value);x.hidden=!s;if(s)n++});c.textContent=`${n} แหล่ง`;e.hidden=n!==0}
+    [q,r].forEach(x=>x.addEventListener('input',run));
+  </script>
+</BaseLayout>

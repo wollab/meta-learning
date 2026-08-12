@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">รูปโปรไฟล์แผนที่ประวัติศาสตร์แนวคิดการเรียนรู้โลก</title>
+  <desc id="desc">ตราหลายเส้นทางบนพื้นกระดาษสีอุ่น มีพื้นที่ปลอดภัยสำหรับการครอปเป็นวงกลม</desc>
+  <rect width="1080" height="1080" fill="#fffef8"/>
+  <circle cx="540" cy="540" r="420" fill="#ffffff" stroke="#d9dfda" stroke-width="4"/>
+  <image href="logo-mark.svg" x="258" y="258" width="564" height="564"/>
+</svg>

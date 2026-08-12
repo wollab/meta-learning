@@ -1,0 +1,14 @@
+---
+const {eyebrow,title,lead}=Astro.props;
+const publicEyebrow: Record<string, string> = {
+  'Ideas do not move in one line': 'แนวคิดไม่ได้เคลื่อนเป็นเส้นเดียว',
+  'Context changes the questions': 'บริบทเปลี่ยนคำถาม',
+  'More than a great-person timeline': 'มากกว่าประวัติของบุคคลผู้ยิ่งใหญ่',
+  'Influential is not the same as supported': 'มีอิทธิพล ไม่เท่ากับมีหลักฐานรองรับ',
+  'Coverage is not completeness': 'ความครอบคลุม ไม่ใช่ความสมบูรณ์',
+  'Theory is a type, not a catch-all': 'ทฤษฎีเป็นประเภทหนึ่ง ไม่ใช่ชื่อรวม',
+  'Original works and current evidence': 'ผลงานต้นฉบับและหลักฐานปัจจุบัน',
+};
+const eyebrowLabel = publicEyebrow[eyebrow] ?? eyebrow;
+---
+<header class="page-intro"><p class="eyebrow">{eyebrowLabel}</p><h1>{title}</h1><p>{lead}</p></header>

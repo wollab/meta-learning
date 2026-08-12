@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { archive, kindLabels, familyLabels } from '../../data/theories';
+import { GitFork, Scale } from 'lucide-astro';
+
+const base = import.meta.env.BASE_URL;
+const defaultIds = ['lt-skinner', 'lt-piaget', 'lt-bandura'];
+---
+
+<BaseLayout title="เปรียบเทียบแนวคิด | Meta Learning">
+  <div class="page-shell compare-lab">
+    <header class="lab-intro">
+      <div>
+        <p class="play-note">ลองสถานการณ์นี้ดู!</p>
+        <h1>แต่ละแนวคิดอธิบายอย่างไร?</h1>
+        <p id="scenario-prompt">เด็กคนหนึ่งเลิกลองหลังตอบผิดสามครั้ง แต่กลับสนใจเมื่อได้ฝึกทีละขั้นและเห็นผลทันที</p>
+        <div class="scenario-tabs" role="group" aria-label="เลือกสถานการณ์ในชีวิตประจำวัน">
+          <button type="button" class="active" data-scenario="practice">ฝึกทักษะ</button>
+          <button type="button" data-scenario="understand">ทำความเข้าใจ</button>
+          <button type="button" data-scenario="together">เรียนกับผู้อื่น</button>
+        </div>
+      </div>
+      <img src={`${base}images/doodles/compare-scenes.png`} alt="ภาพวาดเปรียบเทียบการฝึกพร้อมผลตอบกลับ การสร้างความเข้าใจ และการเรียนกับผู้อื่น" />
+    </header>
+
+    <section class="compare-picker" aria-label="เลือกแนวคิดเพื่อเปรียบเทียบ">
+      {[0, 1, 2].map((slot) => (
+        <label>
+          <span>แนวคิดที่ {slot + 1}</span>
+          <select class="compare-select" data-slot={slot}>
+            {archive.theories.map((item) => <option value={item.id} selected={item.id === defaultIds[slot]}>{item.titleTh} ({item.titleEn})</option>)}
+          </select>
+        </label>
+      ))}
+      <div><Scale /><span>เปรียบเทียบได้สูงสุด 3 แนวคิด</span></div>
+    </section>
+
+    <section class="compare-guide" aria-label="วิธีอ่านตาราง">
+      <strong>อ่านจากบนลงล่าง</strong>
+      <span>เริ่มจากมุมมองต่อผู้เรียน แล้วจึงดูวิธีเรียน บทบาทผู้สอน หลักฐาน และข้อจำกัด</span>
+      <a href={`${base}map/`}><GitFork size={18} /> ดูความสัมพันธ์ต่อ</a>
+    </section>
+    <div id="compare-output" class="compare-output" role="region" aria-label="ตารางเปรียบเทียบ เลื่อนซ้ายขวาได้บนจอเล็ก" tabindex="0" aria-live="polite"></div>
+    <script is:inline type="application/json" id="theory-json" set:html={JSON.stringify({ theories: archive.theories, kindLabels, familyLabels })}></script>
+  </div>
+  <script is:inline>
+    const payload = JSON.parse(document.querySelector('#theory-json').textContent);
+    const selects = [...document.querySelectorAll('.compare-select')];
+    const output = document.querySelector('#compare-output');
+    const params = new URLSearchParams(location.search);
+    const requested = (params.get('ids') || '').split(',')
+      .map((value) => payload.theories.find((item) => item.id === value || item.slug === value)?.id)
+      .filter(Boolean).slice(0, 3);
+    requested.forEach((id, index) => { selects[index].value = id; });
+
+    const scenarios = {
+      practice: 'เด็กคนหนึ่งเลิกลองหลังตอบผิดสามครั้ง แต่กลับสนใจเมื่อได้ฝึกทีละขั้นและเห็นผลทันที',
+      understand: 'ผู้เรียนจำคำตอบได้ แต่ยังอธิบายไม่ได้ว่าความรู้ใหม่เชื่อมกับสิ่งที่เคยรู้ตรงไหน',
+      together: 'ผู้เรียนยังทำคนเดียวไม่สำเร็จ แต่เริ่มทำได้เมื่อเห็นเพื่อนลองและช่วยกันคิด',
+    };
+    const prompt = document.querySelector('#scenario-prompt');
+    const scenarioButtons = [...document.querySelectorAll('[data-scenario]')];
+    const setScenario = (id) => {
+      prompt.textContent = scenarios[id];
+      scenarioButtons.forEach((button) => {
+        const active = button.dataset.scenario === id;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+    };
+    scenarioButtons.forEach((button) => button.addEventListener('click', () => setScenario(button.dataset.scenario)));
+
+    const rows = [
+      ['ชนิด', 'kind'], ['ตระกูล', 'family'], ['มุมมองต่อผู้เรียน', 'learnerView'],
+      ['กลไกการเรียนรู้', 'mechanism'], ['บทบาทผู้สอนหรือสิ่งแวดล้อม', 'teacherRole'],
+      ['แรงจูงใจ', 'motivation'], ['อิทธิพลทางประวัติศาสตร์', 'historicalInfluence'],
+      ['หลักฐานปัจจุบัน', 'currentEvidence'], ['ข้อวิจารณ์และขอบเขต', 'critiques'],
+      ['ข้อควรระวัง', 'misuseWarning'],
+    ];
+    function render() {
+      const chosen = selects.map((select) => payload.theories.find((item) => item.id === select.value));
+      selects.forEach((select, index) => [...select.options].forEach((option) => {
+        option.disabled = selects.some((other, otherIndex) => otherIndex !== index && other.value === option.value);
+      }));
+      const ids = chosen.map((item) => item.id).join(',');
+      history.replaceState(null, '', `${location.pathname}?ids=${encodeURIComponent(ids)}`);
+      output.innerHTML = `<div class="compare-table"><div class="compare-row compare-head"><strong>หัวข้อ</strong>${chosen.map((item, index) => `<div data-tone="${index}"><strong>${item.titleTh}</strong><small>${item.titleEn}</small></div>`).join('')}</div>${rows.map(([label, key]) => `<div class="compare-row"><strong>${label}</strong>${chosen.map((item) => `<p>${key === 'kind' ? payload.kindLabels[item[key]] : key === 'family' ? payload.familyLabels[item[key]] : item[key]}</p>`).join('')}</div>`).join('')}</div>`;
+    }
+    selects.forEach((select) => select.addEventListener('change', render));
+    setScenario(params.get('scenario') in scenarios ? params.get('scenario') : 'practice');
+    render();
+  </script>
+</BaseLayout>
