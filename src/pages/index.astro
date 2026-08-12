@@ -38,7 +38,7 @@ const questions = [
     <div class="question-copy">
       <p class="play-note">สวัสดี นักสำรวจ!</p>
       <h1>Meta Learning</h1>
-      <p class="hero-lead">เริ่มจากคำถามใกล้ตัว แล้วดูว่าแนวคิดต่างยุคต่างบริบทให้คำอธิบายเหมือนหรือต่างกันตรงไหน</p>
+      <p class="hero-lead">เว็บนี้คือแผนที่ช่วยให้คุณรู้ว่า “เราเรียนรู้กันอย่างไร” เริ่มจากคำถามของตัวเอง แล้วเชื่อมไปยังแนวคิด หลักฐาน เครื่องมือสะท้อน และการออกแบบ learning outcome</p>
       <div class="question-list" aria-label="เลือกคำถามเพื่อเริ่มสำรวจ">
         {questions.map((question) => (
           <a class={`question-row ${question.tone}`} href={`${base}compare/?ids=${question.ids}`}>
@@ -70,6 +70,27 @@ const questions = [
     <span><strong>{archive.theories.length}</strong> แนวคิดและกรอบ</span>
     <span><strong>{archive.relationships.length}</strong> ความสัมพันธ์</span>
     <span><strong>{archive.sources.length}</strong> แหล่งที่ถูกอ้างถึง</span>
+  </section>
+
+  <section class="play-section flywheel-section">
+    <div class="section-title playful-title">
+      <div><p class="eyebrow">Learning Flywheel</p><h2>ใช้เว็บนี้เป็นวงจร ไม่ใช่สารานุกรมหน้าเดียว</h2></div>
+      <p>เริ่มจากโจทย์จริงของคุณ แล้ววนกลับมาทดลอง อ่านเพิ่ม และปรับวิธีเรียนรู้ของตัวเองให้ดีขึ้น</p>
+    </div>
+    <div class="flywheel-grid">
+      <a href="https://wollab.github.io/WoL_GameLab/9-learning-angles/?utm_source=meta_learning&utm_medium=ecosystem_link&utm_campaign=learning_flywheel" data-wol-event="ecosystem_link" data-wol-target="9-learning-angles">
+        <span>1</span><strong>รู้จักท่าการเรียนรู้</strong><small>ดู Learning Move ที่คุณกำลังใช้บ่อย</small>
+      </a>
+      <a href={`${base}paths/`} data-wol-event="ecosystem_link" data-wol-target="meta-learning-paths">
+        <span>2</span><strong>อ่านแนวคิดที่เกี่ยวข้อง</strong><small>เลือกตามเด็ก ผู้ใหญ่ self-development pedagogy หรือโจทย์อื่น</small>
+      </a>
+      <a href="https://wollab.github.io/WoL_Tarot_of_Learning/?utm_source=meta_learning&utm_medium=ecosystem_link&utm_campaign=learning_flywheel" data-wol-event="ecosystem_link" data-wol-target="tarot-of-learning">
+        <span>3</span><strong>สะท้อนคำถามวันนี้</strong><small>ใช้ไพ่เป็น prompt เพื่อเปิดมุมมองใหม่</small>
+      </a>
+      <a href="https://wollab.github.io/WizardHat_LearningOutcome/?utm_source=meta_learning&utm_medium=ecosystem_link&utm_campaign=learning_flywheel" data-wol-event="ecosystem_link" data-wol-target="wizardhat-learning-outcome">
+        <span>4</span><strong>ออกแบบ outcome</strong><small>แปลงกิจกรรมหรือเกมเป็นสมมติฐานที่นำไปทดสอบต่อ</small>
+      </a>
+    </div>
   </section>
 
   <section class="play-section journey-section">

@@ -3,12 +3,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { ArrowRight, BookOpen, Compass, Sparkles, Wand2 } from 'lucide-astro';
 
 const base = import.meta.env.BASE_URL;
+const track = (href: string, source = 'meta_learning_tools') => {
+  const joiner = href.includes('?') ? '&' : '?';
+  return `${href}${joiner}utm_source=${source}&utm_medium=ecosystem_link&utm_campaign=meta_learning_flywheel`;
+};
 const tools = [
   {
     title: '9 Learning Angles',
     eyebrow: 'เริ่มจากตัวเอง',
     detail: 'ตอบคำถามสั้น ๆ เพื่อเห็น Learning Move ที่กำลังใช้บ่อย และมุมที่อยากฝึกเพิ่ม',
-    href: 'https://wollab.github.io/WoL_GameLab/9-learning-angles/',
+    href: track('https://wollab.github.io/WoL_GameLab/9-learning-angles/'),
     icon: Compass,
   },
   {
@@ -22,14 +26,14 @@ const tools = [
     title: 'Tarot of Learning',
     eyebrow: 'สะท้อนคำถามวันนี้',
     detail: 'เปิดไพ่เพื่อเปลี่ยนความกังวลหรือเป้าหมายให้เป็นคำถามเรียนรู้ที่จับต้องได้',
-    href: 'https://wollab.github.io/WoL_Tarot_of_Learning/',
+    href: track('https://wollab.github.io/WoL_Tarot_of_Learning/'),
     icon: Sparkles,
   },
   {
     title: 'Wizard Hat — Learning Outcome',
     eyebrow: 'แปลงเป็น outcome',
     detail: 'ใช้เมื่ออยากออกแบบกิจกรรม เกม หรือ workshop แล้วประเมินว่า deck/กลไกน่าจะฝึกทักษะอะไร',
-    href: 'https://wollab.github.io/WizardHat_LearningOutcome/',
+    href: track('https://wollab.github.io/WizardHat_LearningOutcome/'),
     icon: Wand2,
   },
 ];
@@ -50,7 +54,7 @@ const tools = [
 
     <div class="journey-list">
       {tools.map(({ title, eyebrow, detail, href, icon: Icon }) => (
-        <a href={href}>
+        <a href={href} data-wol-event="ecosystem_link" data-wol-source="meta-learning-tools" data-wol-target={title}>
           <Icon />
           <span>
             <strong>{title}</strong>
@@ -70,22 +74,22 @@ const tools = [
       </div>
     </div>
     <div class="journey-list">
-      <a href="https://wollab.github.io/WoL_GameLab/9-learning-angles/">
+      <a href={track('https://wollab.github.io/WoL_GameLab/9-learning-angles/', 'meta_learning_flywheel')} data-wol-event="ecosystem_link" data-wol-source="meta-learning-tools" data-wol-target="9-learning-angles">
         <Compass />
         <span><strong>1. รู้จัก Learning Move ของตัวเอง</strong><small>เห็นจุดแข็งและมุมที่ยังอยากฝึก โดยไม่ตีตราว่าเป็นบุคลิกถาวร</small></span>
         <ArrowRight />
       </a>
-      <a href={`${base}paths/`}>
+      <a href={`${base}paths/`} data-wol-event="ecosystem_link" data-wol-source="meta-learning-tools" data-wol-target="meta-learning-paths">
         <BookOpen />
         <span><strong>2. อ่านแนวคิดที่ตอบโจทย์</strong><small>เลือกเส้นทางเด็ก ผู้ใหญ่ การทำงาน การพัฒนาตนเอง หรือการออกแบบการสอน</small></span>
         <ArrowRight />
       </a>
-      <a href="https://wollab.github.io/WoL_Tarot_of_Learning/">
+      <a href={track('https://wollab.github.io/WoL_Tarot_of_Learning/', 'meta_learning_flywheel')} data-wol-event="ecosystem_link" data-wol-source="meta-learning-tools" data-wol-target="tarot-of-learning">
         <Sparkles />
         <span><strong>3. ตั้งคำถามสะท้อนตัวเอง</strong><small>ใช้ไพ่เป็น prompt เพื่อมองสถานการณ์เดิมด้วยคำถามใหม่</small></span>
         <ArrowRight />
       </a>
-      <a href="https://wollab.github.io/WizardHat_LearningOutcome/">
+      <a href={track('https://wollab.github.io/WizardHat_LearningOutcome/', 'meta_learning_flywheel')} data-wol-event="ecosystem_link" data-wol-source="meta-learning-tools" data-wol-target="wizardhat-learning-outcome">
         <Wand2 />
         <span><strong>4. ทดลองออกแบบ outcome</strong><small>อ่านผลเป็นสมมติฐานจากกลไกและพฤติกรรมที่กิจกรรมเรียกร้อง แล้วนำไปทดสอบกับผู้เรียนจริง</small></span>
         <ArrowRight />

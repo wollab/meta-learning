@@ -2,13 +2,18 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageIntro from '../../components/PageIntro.astro';
 import { archive, byId, kindLabels } from '../../data/theories';
-import { ArrowRight, Baby, BriefcaseBusiness, Compass, Sprout } from 'lucide-astro';
+import { ArrowRight, Baby, BookOpenCheck, BriefcaseBusiness, Compass, GraduationCap, Network, Scale, Sprout, Users } from 'lucide-astro';
 
 const base = import.meta.env.BASE_URL;
 const focus = [
   { id: 'syn-11', label: 'เด็กและพัฒนาการ', icon: Baby, tone: 'turquoise' },
   { id: 'syn-12', label: 'ผู้ใหญ่และการทำงาน', icon: BriefcaseBusiness, tone: 'yellow' },
   { id: 'syn-13', label: 'พัฒนาตนเอง', icon: Sprout, tone: 'violet' },
+  { id: 'syn-06', label: 'Pedagogy และการออกแบบการสอน', icon: GraduationCap, tone: 'turquoise' },
+  { id: 'syn-04', label: 'เรียนให้จำและคิดได้ดีขึ้น', icon: BookOpenCheck, tone: 'yellow' },
+  { id: 'syn-05', label: 'เรียนรู้ร่วมกับคนอื่น', icon: Users, tone: 'violet' },
+  { id: 'syn-08', label: 'Critical / Inclusive Pedagogy', icon: Scale, tone: 'turquoise' },
+  { id: 'syn-09', label: 'Digital และ networked learning', icon: Network, tone: 'yellow' },
 ];
 const paths = archive.syntheses.filter((path) => path.evidenceStatus === 'public-ready');
 const focusById = new Map(focus.map((item) => [item.id, item]));
@@ -19,7 +24,7 @@ const focusById = new Map(focus.map((item) => [item.id, item]));
     <PageIntro eyebrow="ไม่ต้องเริ่มจากชื่อทฤษฎี" title="วันนี้คุณอยากเข้าใจการเรียนรู้เรื่องไหน?" lead="เลือกจากผู้เรียนและเป้าหมายก่อน แล้วค่อยเปิดแนวคิดต่างชนิดมาเทียบกัน เส้นทางเหล่านี้เป็นคำแนะนำในการอ่าน ไม่ใช่คำวินิจฉัยว่าคนกลุ่มหนึ่งต้องเรียนแบบใดแบบหนึ่ง" />
 
     <section class="path-focus" aria-labelledby="focus-title">
-      <div class="section-title playful-title"><div><p class="eyebrow">ทางเข้าที่ถามบ่อย</p><h2 id="focus-title">เริ่มจากช่วงชีวิตและบริบท</h2></div></div>
+      <div class="section-title playful-title"><div><p class="eyebrow">ทางเข้าที่ถามบ่อย</p><h2 id="focus-title">เริ่มจากเป้าหมายของคุณ</h2></div></div>
       <div class="focus-grid">
         {focus.map(({ id, label, icon: Icon, tone }) => {
           const path = paths.find((item) => item.id === id);
