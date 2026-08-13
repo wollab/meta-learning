@@ -1,4 +1,323 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';import PageIntro from '../../components/PageIntro.astro';import {archive,byId,relationLabels} from '../../data/theories';import {ArrowRight,GitFork} from 'lucide-astro';const base=import.meta.env.BASE_URL;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { archive, byId, relationLabels } from '../../data/theories';
+import { ArrowRight, GitFork, Info, MousePointer2 } from 'lucide-astro';
+
+const base = import.meta.env.BASE_URL;
+
+const relationStyles: Record<string, { label: string; tone: string; symbol: string; plain: string; reading: string }> = {
+  builds_on: {
+    label: relationLabels.builds_on,
+    tone: 'teal',
+    symbol: '↗',
+    plain: 'แนวคิดหลังรับช่วงหรือใช้รากบางส่วนจากแนวคิดก่อนหน้า',
+    reading: 'อ่านเป็นสายอิทธิพลหรือรากความคิด แต่ยังต้องดูหลักฐานในแต่ละเส้น',
+  },
+  extends: {
+    label: relationLabels.extends,
+    tone: 'green',
+    symbol: '+',
+    plain: 'แนวคิดหนึ่งขยายรายละเอียดหรือทำให้แนวคิดก่อนหน้าใช้งานเฉพาะขึ้น',
+    reading: 'เหมาะอ่านต่อเนื่องกัน แต่ไม่ใช่ทุกส่วนจะเหมือนกัน',
+  },
+  reacts_against: {
+    label: relationLabels.reacts_against,
+    tone: 'orange',
+    symbol: '!',
+    plain: 'แนวคิดหนึ่งเกิดจากการโต้กลับ วิจารณ์ หรือแก้ข้อจำกัดของอีกแนวคิด',
+    reading: 'อ่านเป็นความตึงเครียดทางความคิด ไม่ใช่แปลว่าอีกฝ่ายผิดทั้งหมด',
+  },
+  synthesizes: {
+    label: relationLabels.synthesizes,
+    tone: 'purple',
+    symbol: '∴',
+    plain: 'แนวคิดหนึ่งรวมองค์ประกอบจากหลายสายเข้าด้วยกัน',
+    reading: 'ควรดูว่ารวมอะไร และตัดอะไรทิ้ง',
+  },
+  runs_parallel_to: {
+    label: relationLabels.runs_parallel_to,
+    tone: 'blue',
+    symbol: '∥',
+    plain: 'แนวคิดสองสายคล้ายหรือเทียบกันได้ แต่ไม่ได้อ้างสายอิทธิพลโดยตรง',
+    reading: 'ใช้เทียบเลนส์การอ่าน ห้ามตีความว่าแนวหนึ่งทำให้เกิดอีกแนวหนึ่ง',
+  },
+  contested_by: {
+    label: relationLabels.contested_by,
+    tone: 'red',
+    symbol: '×',
+    plain: 'แนวคิดหรือข้ออ้างถูกวิจารณ์หรือท้าทายด้วยหลักฐาน/ข้อโต้แย้ง',
+    reading: 'เหมาะอ่านเพื่อเห็นข้อจำกัด ความเข้าใจผิด หรือสถานะที่ยังถกเถียง',
+  },
+  applied_in: {
+    label: relationLabels.applied_in,
+    tone: 'yellow',
+    symbol: '▣',
+    plain: 'แนวคิดถูกนำไปใช้ในโมเดล เครื่องมือ การออกแบบ หรือบริบทปฏิบัติ',
+    reading: 'การนำไปใช้ไม่เท่ากับหลักฐานว่าทำงานได้ทุกสถานการณ์',
+  },
+};
+
+const periods = [
+  'roots-before-1600',
+  '1600-1850',
+  '1850-1913',
+  '1913-1956',
+  '1956-1980',
+  '1980-present',
+];
+
+const periodLabels: Record<string, string> = {
+  'roots-before-1600': 'ก่อน 1600',
+  '1600-1850': '1600–1850',
+  '1850-1913': '1850–1913',
+  '1913-1956': '1913–1956',
+  '1956-1980': '1956–1980',
+  '1980-present': '1980–ปัจจุบัน',
+};
+
+const familyRows = [
+  'philosophical-roots',
+  'behavioral',
+  'cognitive',
+  'social-cultural',
+  'developmental',
+  'design-frameworks',
+  'humanistic',
+  'adult-learning',
+  'critical',
+  'networked-learning',
+  'motivation-self-regulation',
+  'contested-popular-models',
+];
+
+const relationIds = Array.from(new Set(archive.relationships.flatMap((edge: any) => [edge.fromId, edge.toId])));
+const relationNodes = relationIds
+  .map((id) => byId.get(id))
+  .filter(Boolean)
+  .map((item: any, index) => {
+    const periodIndex = Math.max(0, periods.indexOf(item.period));
+    const familyIndex = Math.max(0, familyRows.indexOf(item.family));
+    const periodCount = relationIds
+      .map((id) => byId.get(id))
+      .filter((node: any) => node?.period === item.period && node?.family === item.family).length;
+    const siblingOffset = periodCount > 1 ? (index % 3 - 1) * 2.8 : 0;
+    return {
+      id: item.id,
+      slug: item.slug,
+      titleTh: item.titleTh,
+      titleEn: item.titleEn,
+      family: item.family,
+      kind: item.kind,
+      x: 8 + periodIndex * 17 + ((index % 2) * 2.2),
+      y: 10 + familyIndex * 7.2 + siblingOffset,
+    };
+  });
+
+const nodeById = new Map(relationNodes.map((node) => [node.id, node]));
+const drawableEdges = archive.relationships
+  .map((edge: any, index) => {
+    const from = nodeById.get(edge.fromId);
+    const to = nodeById.get(edge.toId);
+    if (!from || !to) return null;
+    const style = relationStyles[edge.type] ?? relationStyles.runs_parallel_to;
+    const confidence = edge.confidence === 'high' ? 'สูง' : edge.confidence === 'medium' ? 'ปานกลาง' : 'ต่ำ';
+    return { ...edge, index, from, to, style, confidence };
+  })
+  .filter(Boolean);
 ---
-<BaseLayout title="แผนที่ความสัมพันธ์ | Meta Learning"><div class="page-shell"><PageIntro eyebrow="Ideas do not move in one line" title="แผนที่ความสัมพันธ์" lead="ลูกศรแต่ละเส้นระบุชนิด แหล่งรองรับ และระดับความมั่นใจ ไม่ได้แปลว่าแนวคิดหนึ่งเป็นสาเหตุของอีกแนวคิดโดยอัตโนมัติ"/><section class="relation-filter"><label><span>ดูความสัมพันธ์</span><select id="relation-type"><option value="">ทุกชนิด</option>{archive.relationshipTypes.map(x=><option value={x}>{relationLabels[x]}</option>)}</select></label><div><GitFork/><strong id="relation-count">{archive.relationships.length} เส้น</strong></div></section><div class="relation-map">{archive.relationships.map(edge=>{const from=byId.get(edge.fromId),to=byId.get(edge.toId);const confidence=edge.confidence==='high'?'สูง':edge.confidence==='medium'?'ปานกลาง':'ต่ำ';return <article data-type={edge.type}><a href={`${base}theories/${from?.slug}/`}><small>จาก</small><strong>{from?.titleTh}</strong></a><div><span>{relationLabels[edge.type]}</span><ArrowRight/></div><a href={`${base}theories/${to?.slug}/`}><small>ไปยัง</small><strong>{to?.titleTh}</strong></a><p>{edge.summary}<span class="relation-meta">หลักฐาน {edge.sourceIds.length} แหล่ง · ความมั่นใจ {confidence}</span></p></article>})}</div><p class="empty-state" hidden>ยังไม่มีเส้นความสัมพันธ์ชนิดนี้</p></div><script is:inline>const select=document.querySelector('#relation-type'),items=[...document.querySelectorAll('.relation-map article')],count=document.querySelector('#relation-count'),empty=document.querySelector('.empty-state');select.addEventListener('change',()=>{let n=0;items.forEach(x=>{const show=!select.value||x.dataset.type===select.value;x.hidden=!show;if(show)n++});count.textContent=`${n} เส้น`;empty.hidden=n!==0});</script></BaseLayout>
+
+<BaseLayout title="แผนที่ความสัมพันธ์ | Meta Learning">
+  <div class="page-shell map-page">
+    <PageIntro
+      eyebrow="Ideas do not move in one line"
+      title="แผนที่ความสัมพันธ์"
+      lead="หน้านี้ช่วยอ่านว่าแนวคิดการเรียนรู้เชื่อมกันอย่างไร เส้นแต่ละสีมีความหมายต่างกัน และลูกศรไม่ได้แปลว่าแนวคิดหนึ่งเป็นสาเหตุของอีกแนวคิดโดยอัตโนมัติ"
+    />
+
+    <section class="map-howto" aria-labelledby="map-howto-title">
+      <div>
+        <p class="play-note"><Info size={18} /> วิธีอ่านแผนที่</p>
+        <h2 id="map-howto-title">ดูชนิดของเส้นก่อนตีความความสัมพันธ์</h2>
+        <p>
+          แผนที่นี้แยก “อิทธิพลทางประวัติศาสตร์”, “การต่อยอด”, “การโต้แย้ง”, “ความขนาน” และ “การนำไปใช้”
+          ออกจากกัน เพื่อไม่ให้ความสัมพันธ์ทุกแบบถูกอ่านเหมือนเป็นเส้นสาเหตุเดียวกัน
+        </p>
+      </div>
+      <ul>
+        <li><strong>เริ่มจากสี/สัญลักษณ์:</strong> สีบอกชนิดความสัมพันธ์ ไม่ใช่ระดับความสำคัญ</li>
+        <li><strong>ดูทิศทางลูกศร:</strong> จากแนวคิดที่ถูกอ่านเป็นต้นทาง ไปยังแนวคิดที่สัมพันธ์ตามหลักฐานในคลัง</li>
+        <li><strong>อ่านรายละเอียดด้านล่าง:</strong> ทุกเส้นมีคำอธิบาย แหล่งรองรับ และระดับความมั่นใจ</li>
+      </ul>
+    </section>
+
+    <section class="relation-legend" aria-labelledby="legend-title">
+      <div class="section-title playful-title">
+        <div>
+          <p class="eyebrow">Legend</p>
+          <h2 id="legend-title">เส้นแต่ละแบบหมายถึงอะไร?</h2>
+        </div>
+      </div>
+      <div class="legend-grid">
+        {archive.relationshipTypes.map((type: string) => {
+          const style = relationStyles[type];
+          return (
+            <article class={`legend-card ${style.tone}`} data-type={type}>
+              <span class="legend-symbol">{style.symbol}</span>
+              <div>
+                <h3>{style.label}</h3>
+                <p>{style.plain}</p>
+                <small>{style.reading}</small>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="relation-filter relation-filter-map">
+      <label>
+        <span>ดูความสัมพันธ์</span>
+        <select id="relation-type">
+          <option value="">ทุกชนิด</option>
+          {archive.relationshipTypes.map((type: string) => <option value={type}>{relationStyles[type].label}</option>)}
+        </select>
+      </label>
+      <div>
+        <GitFork />
+        <strong id="relation-count">{archive.relationships.length} เส้น</strong>
+      </div>
+    </section>
+
+    <section class="relation-canvas-wrap" aria-labelledby="canvas-title">
+      <div class="canvas-head">
+        <div>
+          <p class="eyebrow">Map view</p>
+          <h2 id="canvas-title">ภาพรวม node + relationship</h2>
+          <p>แกนซ้ายไปขวาคือช่วงเวลาโดยประมาณ ส่วนตำแหน่งแนวตั้งช่วยกระจายตระกูลแนวคิดให้อ่านเส้นง่ายขึ้น</p>
+        </div>
+        <p><MousePointer2 size={17} /> กดชื่อแนวคิดเพื่อเปิดรายละเอียด</p>
+      </div>
+
+      <div class="relation-canvas-scroll" tabindex="0" aria-label="แผนที่ความสัมพันธ์ เลื่อนซ้ายขวาได้บนจอเล็ก">
+        <svg class="relation-canvas" viewBox="0 0 1160 760" role="img" aria-labelledby="relation-map-title relation-map-desc">
+          <title id="relation-map-title">แผนที่ความสัมพันธ์ของแนวคิดการเรียนรู้</title>
+          <desc id="relation-map-desc">แสดง node ของแนวคิดตามช่วงเวลาและเส้นความสัมพันธ์สีต่างกันตามชนิดความสัมพันธ์</desc>
+          <defs>
+            {Array.from(new Map(Object.values(relationStyles).map((style) => [style.tone, style])).values()).map((style) => (
+              <marker id={`arrow-${style.tone}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L0,6 L9,3 z" class={`arrow-fill ${style.tone}`}></path>
+              </marker>
+            ))}
+          </defs>
+
+          {periods.map((period, index) => (
+            <g>
+              <line class="period-line" x1={80 + index * 185} y1="52" x2={80 + index * 185} y2="715"></line>
+              <text class="period-label" x={80 + index * 185} y="34">{periodLabels[period]}</text>
+            </g>
+          ))}
+
+          {drawableEdges.map((edge: any) => (
+            <g class={`canvas-edge ${edge.style.tone}`} data-type={edge.type}>
+              <line
+                x1={edge.from.x * 11.2}
+                y1={edge.from.y * 7.3}
+                x2={edge.to.x * 11.2}
+                y2={edge.to.y * 7.3}
+                marker-end={`url(#arrow-${edge.style.tone})`}
+              />
+              <text
+                x={(edge.from.x * 11.2 + edge.to.x * 11.2) / 2}
+                y={(edge.from.y * 7.3 + edge.to.y * 7.3) / 2 - 4}
+              >
+                {edge.style.symbol}
+              </text>
+            </g>
+          ))}
+
+          {relationNodes.map((node) => (
+            <a href={`${base}theories/${node.slug}/`} aria-label={`${node.titleTh} (${node.titleEn})`}>
+              <g class="canvas-node">
+                <circle cx={node.x * 11.2} cy={node.y * 7.3} r="7"></circle>
+                <text x={node.x * 11.2 + 11} y={node.y * 7.3 + 4}>{node.titleEn}</text>
+              </g>
+            </a>
+          ))}
+        </svg>
+      </div>
+    </section>
+
+    <section class="relation-detail-section" aria-labelledby="detail-title">
+      <div class="section-title playful-title">
+        <div>
+          <p class="eyebrow">Relationship details</p>
+          <h2 id="detail-title">รายละเอียดเส้นทั้งหมด</h2>
+        </div>
+      </div>
+
+      <div class="relation-map">
+        {archive.relationships.map((edge: any) => {
+          const from = byId.get(edge.fromId);
+          const to = byId.get(edge.toId);
+          const style = relationStyles[edge.type] ?? relationStyles.runs_parallel_to;
+          const confidence = edge.confidence === 'high' ? 'สูง' : edge.confidence === 'medium' ? 'ปานกลาง' : 'ต่ำ';
+          return (
+            <article class={style.tone} data-type={edge.type}>
+              <a href={`${base}theories/${from?.slug}/`}>
+                <small>จาก</small>
+                <strong>{from?.titleTh}</strong>
+                <span>{from?.titleEn}</span>
+              </a>
+              <div>
+                <b>{style.symbol}</b>
+                <span>{style.label}</span>
+                <ArrowRight />
+              </div>
+              <a href={`${base}theories/${to?.slug}/`}>
+                <small>ไปยัง</small>
+                <strong>{to?.titleTh}</strong>
+                <span>{to?.titleEn}</span>
+              </a>
+              <p>
+                {edge.summary}
+                <span class="relation-meta">หลักฐาน {edge.sourceIds.length} แหล่ง · ความมั่นใจ {confidence}</span>
+              </p>
+            </article>
+          );
+        })}
+      </div>
+      <p class="empty-state" hidden>ยังไม่มีเส้นความสัมพันธ์ชนิดนี้</p>
+    </section>
+  </div>
+
+  <script is:inline>
+    const select = document.querySelector('#relation-type');
+    const cards = [...document.querySelectorAll('.relation-map article')];
+    const edges = [...document.querySelectorAll('.canvas-edge')];
+    const legendCards = [...document.querySelectorAll('.legend-card')];
+    const count = document.querySelector('#relation-count');
+    const empty = document.querySelector('.empty-state');
+
+    function updateRelationFilter() {
+      let n = 0;
+      const selected = select.value;
+      cards.forEach((item) => {
+        const show = !selected || item.dataset.type === selected;
+        item.hidden = !show;
+        if (show) n += 1;
+      });
+      edges.forEach((item) => {
+        const show = !selected || item.dataset.type === selected;
+        item.classList.toggle('dimmed', !show);
+      });
+      legendCards.forEach((item) => {
+        item.classList.toggle('muted', !!selected && item.dataset.type !== selected);
+      });
+      count.textContent = `${n} เส้น`;
+      empty.hidden = n !== 0;
+    }
+
+    select.addEventListener('change', updateRelationFilter);
+  </script>
+</BaseLayout>
